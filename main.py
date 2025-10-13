@@ -4,6 +4,7 @@ import aiofiles
 from curl_cffi.requests import exceptions as curl_exceptions
 
 from modules import asyncreqs, reposources, repoparser
+import constants
 
 
 async def write(file_path: str, data: dict | list | str):
@@ -61,7 +62,7 @@ async def main():
             name="RagingEnby's AIO Source",
             subtitle="Every single repo I could find, united.",
             description="I got really sick and tired of typing in a billion different repos. So this one repo scrapes ~100 AltSources and combines them into one, beautiful, united repository.",
-            icon_url="https://github.com/RagingEnby/RagingEnby/blob/main/pfp.png?raw=true",
+            icon_url=constants.ICON_URL,
             header_url=None,
             website="https://ragingenby.dev/",
             fedi_username=None,
@@ -71,7 +72,7 @@ async def main():
             apps=list(filtered_apps.values()),
             news=[],
         )
-        await write("repo3.json", aio_source.to_dict())  # type: ignore
+        await write("repo4.json", aio_source.to_dict())  # type: ignore
     finally:
         await asyncreqs.close()
 

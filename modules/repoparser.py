@@ -5,6 +5,7 @@ from zoneinfo import ZoneInfo
 import re
 
 from modules import typings, asyncreqs
+import constants
 
 LOCAL_TZ = ZoneInfo("America/New_York")
 
@@ -182,7 +183,7 @@ class App:
             developer_name=data.get("developerName", "Unknown"),
             subtitle=data.get("subtitle"),
             localized_description=data.get("localizedDescription", data["name"]),
-            icon_url=data["iconURL"],
+            icon_url=data["iconURL"] or constants.ICON_URL,
             tint_color=data.get("tintColor"),
             category=data.get("category"),
             screenshots=data.get("screenshots"),

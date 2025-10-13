@@ -105,6 +105,7 @@ class AppVersion:
             max_os_version=data.get("maxOSVersion"),
         )
 
+
 class App:
     def __init__(
         self,

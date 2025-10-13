@@ -75,17 +75,22 @@
           "buildVersion": null,
           "marketingVersion": null,
           "date": "2022-07-05T18:00:00-04:00",
-          "localizedDescription": "This update contains the following changes:\n\n- Fixed ubershaders.\n- Fixed fastmem crashing on iOS 16 betas.\n\nThe next beta build will be based off the rewritten DolphiniOS source code.",
-          "downloadURL": "https://github.com/OatmealDome/dolphin/releases/download/3.2.1b1-213/DolphiniOS-NJB-Beta-3.2.1b1-213.ipa",
+          "localizedDescription": "This update contains the following changes:\n\n- Fixed ubershaders.\n- Fixed fastmem crashing on iOS 16 betas.\n\nThe next beta build will be based off the rewritten DolphiniOS source code.\n\nFor more information, see https://oatmealdome.me/blog/dolphinios-ver-3-2-0/.",
+          "downloadURL": "https://github.com/OatmealDome/dolphin/releases/download/3.2.1b1-213/DolphiniOS-NJB-Beta-Universal-3.2.1b1-213.ipa",
           "size": 80291610,
           "assetURLs": null,
-          "minOSVersion": "12.0",
-          "maxOSVersion": "99.0"
+          "minOSVersion": null,
+          "maxOSVersion": null
         }
       ],
       "appPermissions": {
         "entitlements": [],
-        "privacy": {}
+        "privacy": [
+          {
+            "name": "LocalNetwork",
+            "usageDescription": "DolphiniOS uses the local network to find and communicate with AltServer."
+          }
+        ]
       },
       "patreon": null
     },
@@ -22298,12 +22303,24 @@
           "buildVersion": null,
           "marketingVersion": null,
           "date": "2022-09-11T18:00:00-04:00",
-          "localizedDescription": "This update contains the following changes:\n\n- Fixed ubershaders.\n- Fixed fastmem crashing on iOS 16.\n\nPlease update DolphiniOS to version 3.2.1 before attempting to use it on iOS 16.",
-          "downloadURL": "https://github.com/OatmealDome/dolphin/releases/download/3.2.1/DolphiniOS-NJB-3.2.1-213.ipa",
+          "localizedDescription": "This update contains the following changes:\n\n- Fixed ubershaders.\n- Fixed fastmem crashing on iOS 16.\n\nFor more information, see https://oatmealdome.me/blog/dolphinios-ver-3-2-0/.",
+          "downloadURL": "https://github.com/OatmealDome/dolphin/releases/download/3.2.1/DolphiniOS-NJB-Universal-3.2.1-213.ipa",
           "size": 80253902,
           "assetURLs": null,
-          "minOSVersion": "12.0",
-          "maxOSVersion": "99.0"
+          "minOSVersion": null,
+          "maxOSVersion": null
+        },
+        {
+          "version": "3.2.0",
+          "buildVersion": null,
+          "marketingVersion": null,
+          "date": "2022-05-22T18:00:00-04:00",
+          "localizedDescription": "This update contains the following changes:\n\n- Fixes crashing when starting a game\n- Fixes graphical problems caused by an Apple silicon GPU driver bug\n- Integrates support for AltJIT and JitStreamer\n- Adds rumble when using the Touchscreen controller on iPhones\n\nFor more information, see https://oatmealdome.me/blog/dolphinios-ver-3-2-0/.",
+          "downloadURL": "https://github.com/OatmealDome/dolphin/releases/download/3.2.0/DolphiniOS-NJB-Universal-3.2.0-211.ipa",
+          "size": 80253902,
+          "assetURLs": null,
+          "minOSVersion": null,
+          "maxOSVersion": null
         }
       ],
       "appPermissions": {

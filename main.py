@@ -48,6 +48,8 @@ async def main():
         #await write("output/apps.json", [app.to_dict() for app in apps])
         filtered_apps: dict[str, repoparser.App] = {}
         for app in apps:
+            if not app.versions:
+                continue
             if app.bundle_identifier in filtered_apps:
                 last_updated = filtered_apps[app.bundle_identifier].last_updated
                 if app.last_updated > last_updated:

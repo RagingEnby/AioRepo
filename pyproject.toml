@@ -1,6 +1,7 @@
 [project]
 name = "aiorepo"
 version = "0.1.0"
+readme = "README.md"
 description = "Scrapes Altstore, Sidestore, and Feather repos to combine them into one single source"
 requires-python = ">=3.11"
 dependencies = [

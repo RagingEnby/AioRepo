@@ -120,7 +120,7 @@ class App:
         category: typings.Category | None,
         screenshots: list[typings.Screenshot] | None,
         versions: list[AppVersion],
-        app_permissions: list[typings.Permissions],
+        app_permissions: typings.Permissions,
         patreon: typings.Patreon | None,
     ):
         self.name = name
@@ -155,24 +155,21 @@ class App:
         return latest_version.date if latest_version else datetime.fromtimestamp(0, LOCAL_TZ)
         
     def to_dict(self) -> typings.App:
-        return cast(
-            typings.App,
-            {
-                "name": self.name,
-                "bundleIdentifier": self.bundle_identifier,
-                "marketplaceID": self.marketplace_id,
-                "developerName": self.developer_name,
-                "subtitle": self.subtitle,
-                "localizedDescription": self.localized_description,
-                "iconURL": self.icon_url,
-                "tintColor": self.tint_color,
-                "category": self.category,
-                "screenshots": self.screenshots,
-                "versions": [version.to_dict() for version in self.versions],
-                "appPermissions": self.app_permissions,
-                "patreon": self.patreon,
-            },
-        )
+        return {
+            "name": self.name,
+            "bundleIdentifier": self.bundle_identifier,
+            "marketplaceID": self.marketplace_id,
+            "developerName": self.developer_name,
+            "subtitle": self.subtitle,
+            "localizedDescription": self.localized_description,
+            "iconURL": self.icon_url,
+            "tintColor": self.tint_color,
+            "category": self.category,  # type: ignore
+            "screenshots": self.screenshots,
+            "versions": [version.to_dict() for version in self.versions],
+            "appPermissions": self.app_permissions,
+            "patreon": self.patreon,
+        }
         
     @classmethod
     def from_dict(cls, data: typings.App) -> "App":
@@ -190,7 +187,7 @@ class App:
             category=data.get("category"),
             screenshots=data.get("screenshots"),
             versions=[AppVersion.from_dict(version) for version in data.get("versions", [])],
-            app_permissions=data.get("appPermissions", []),
+            app_permissions=data.get("appPermissions", {"entitlements": [], "privacy": {}}),
             patreon=data.get("patreon"),
         )
         

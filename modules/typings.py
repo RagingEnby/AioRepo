@@ -30,7 +30,7 @@ class App(TypedDict):
     category: Category | None
     screenshots: list[Screenshot] | None
     versions: list[Version]
-    appPermissions: list[Permissions]
+    appPermissions: Permissions
     patreon: Patreon | None
     
     

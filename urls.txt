@@ -126,3 +126,4 @@ https://website.burrito.software/altstore/channels/burritosource.json
 https://theodyssey.dev/altstore/odysseysource.json
 https://ipa.cypwn.xyz/cypwn_altstore.json
 https://github.com/dvntm0/AltStore/raw/refs/heads/main/repo.json
+https://bunduuk.github.io/altstore-source/apps.json

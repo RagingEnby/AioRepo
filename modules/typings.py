@@ -47,6 +47,7 @@ class Version(TypedDict):
     date: str # This should be in **ISO 8601** format (e.g. `2023-2-17` or `2023-02-17T12:00:00-06:00`)
     localizedDescription: str | None
     downloadURL: str # If you're using Patreon with your app, you must attach your ADP or IPA to a Patreon post. For Altstore classic this is a url to a .ipa file. For Altstore PAL this is a url to the manifest.json in your uploaded ADP.
+    size: int
     assetURLs: dict[str, str] | None
     minOSVersion: str | None
     maxOSVersion: str | None

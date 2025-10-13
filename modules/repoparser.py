@@ -60,6 +60,7 @@ class AppVersion:
         date: datetime,
         localized_description: str | None,
         download_url: str,
+        size: int,
         asset_urls: dict[str, str] | None,
         min_os_version: str | None,
         max_os_version: str | None,
@@ -70,6 +71,7 @@ class AppVersion:
         self.date = date
         self.localized_description = localized_description
         self.download_url = download_url
+        self.size = size
         self.asset_urls = asset_urls
         self.min_os_version = min_os_version
         self.max_os_version = max_os_version
@@ -82,6 +84,7 @@ class AppVersion:
             "date": self.date.isoformat(),
             "localizedDescription": self.localized_description,
             "downloadURL": self.download_url,
+            "size": self.size,
             "assetURLs": self.asset_urls,
             "minOSVersion": self.min_os_version,
             "maxOSVersion": self.max_os_version,
@@ -96,6 +99,7 @@ class AppVersion:
             date=format_timestamp(data["date"]),
             localized_description=data.get("localizedDescription"),
             download_url=data["downloadURL"],
+            size=data["size"],
             asset_urls=data.get("assetURLs"),
             min_os_version=data.get("minOSVersion"),
             max_os_version=data.get("maxOSVersion"),

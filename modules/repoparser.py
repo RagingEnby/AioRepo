@@ -140,8 +140,11 @@ class App:
         
     @property
     def versions(self) -> list[AppVersion]:
-        # return self._versions sorted by date (newest -> oldest)
-        return sorted(self._versions, key=lambda x: x.date, reverse=True)
+        versions: dict[str, AppVersion] = {}
+        for version in sorted(self._versions, key=lambda x: x.date, reverse=True):
+            if version.version not in versions:
+                versions[version.version] = version
+        return list(versions.values())
         
     @property
     def latest_version(self) -> AppVersion | None:

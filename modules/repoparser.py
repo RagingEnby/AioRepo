@@ -139,6 +139,10 @@ class App:
         self.patreon = patreon
         
     @property
+    def is_pal(self) -> bool:
+        return self.marketplace_id is not None
+        
+    @property
     def versions(self) -> list[AppVersion]:
         versions: dict[str, AppVersion] = {}
         for version in sorted(self._versions, key=lambda x: x.date, reverse=True):

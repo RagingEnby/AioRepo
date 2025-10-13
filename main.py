@@ -49,7 +49,7 @@ async def main():
         #await write("output/apps.json", [app.to_dict() for app in apps])
         filtered_apps: dict[str, repoparser.App] = {}
         for app in apps:
-            if not app.versions:
+            if not app.versions or app.is_pal:
                 continue
             if app.bundle_identifier in filtered_apps:
                 last_updated = filtered_apps[app.bundle_identifier].last_updated
@@ -72,7 +72,7 @@ async def main():
             apps=list(filtered_apps.values()),
             news=[],
         )
-        await write("repo5.json", aio_source.to_dict())  # type: ignore
+        await write("repo6.json", aio_source.to_dict())  # type: ignore
     finally:
         await asyncreqs.close()
 

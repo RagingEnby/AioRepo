@@ -28,6 +28,7 @@ async def get_source(url: str) -> repoparser.Source | None:
         json.JSONDecodeError,
         curl_exceptions.InvalidURL,
         curl_exceptions.CertificateVerifyError,
+        curl_exceptions.ConnectionError,
     ) as e:
         print("Error processing", url, e)
         return None

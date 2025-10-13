@@ -69,7 +69,7 @@ async def main():
             patreon_url="https://patreon.com/RagingEnby",
             tint_color=None,
             featured_apps=None,
-            apps=list(filtered_apps.values()),
+            apps=sorted(filtered_apps.values(), key=lambda app: app.last_updated, reverse=True),
             news=[],
         )
         await write("repo.json", aio_source.to_dict())  # type: ignore

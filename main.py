@@ -69,7 +69,7 @@ async def main():
             apps=list(filtered_apps.values()),
             news=[],
         )
-        await write("altstore_repo.json", aio_source.to_dict())  # type: ignore
+        await write("repo.json", aio_source.to_dict())  # type: ignore
     finally:
         await asyncreqs.close()
 

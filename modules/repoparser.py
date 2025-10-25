@@ -3,6 +3,7 @@ from typing import cast
 from datetime import datetime
 from zoneinfo import ZoneInfo
 import re
+import json
 
 from modules import typings, asyncreqs
 import constants
@@ -52,6 +53,10 @@ class InvalidAppsError(Exception):
     pass
 
 
+class InvalidNameError(Exception):
+    pass
+
+
 class AppVersion:
     def __init__(
         self,
@@ -76,7 +81,7 @@ class AppVersion:
         self.asset_urls = asset_urls
         self.min_os_version = min_os_version
         self.max_os_version = max_os_version
-        
+
     def to_dict(self) -> typings.Version:
         return {
             "version": self.version,
@@ -90,7 +95,7 @@ class AppVersion:
             "minOSVersion": self.min_os_version,
             "maxOSVersion": self.max_os_version,
         }
-        
+
     @classmethod
     def from_dict(cls, data: typings.Version) -> "AppVersion":
         return cls(
@@ -137,11 +142,11 @@ class App:
         self._versions = versions
         self.app_permissions = app_permissions
         self.patreon = patreon
-        
+
     @property
     def is_pal(self) -> bool:
         return self.marketplace_id is not None
-        
+
     @property
     def versions(self) -> list[AppVersion]:
         versions: dict[str, AppVersion] = {}
@@ -149,19 +154,23 @@ class App:
             if version.version not in versions:
                 versions[version.version] = version
         return list(versions.values())
-        
+
     @property
     def latest_version(self) -> AppVersion | None:
         try:
             return self.versions[0]
         except IndexError:
             return None
-        
+
     @property
     def last_updated(self) -> datetime:
         latest_version = self.latest_version
-        return latest_version.date if latest_version else datetime.fromtimestamp(0, LOCAL_TZ)
-        
+        return (
+            latest_version.date
+            if latest_version
+            else datetime.fromtimestamp(0, LOCAL_TZ)
+        )
+
     def to_dict(self) -> typings.App:
         return {
             "name": self.name,
@@ -178,11 +187,13 @@ class App:
             "appPermissions": self.app_permissions,
             "patreon": self.patreon,
         }
-        
+
     @classmethod
     def from_dict(cls, data: typings.App) -> "App":
         if not data.get("bundleIdentifier"):
-            raise InvalidBundleIdentifierError(f"Invalid bundle identifier for {data['name']}: {data.get('bundleIdentifier')}")
+            raise InvalidBundleIdentifierError(
+                f"Invalid bundle identifier for {data['name']}: {data.get('bundleIdentifier')}"
+            )
         return cls(
             name=data["name"],
             bundle_identifier=data["bundleIdentifier"],
@@ -194,12 +205,16 @@ class App:
             tint_color=data.get("tintColor"),
             category=data.get("category"),
             screenshots=data.get("screenshots"),
-            versions=[AppVersion.from_dict(version) for version in data.get("versions", [])],
-            app_permissions=data.get("appPermissions", {"entitlements": [], "privacy": {}}),
+            versions=[
+                AppVersion.from_dict(version) for version in data.get("versions", [])
+            ],
+            app_permissions=data.get(
+                "appPermissions", {"entitlements": [], "privacy": {}}
+            ),
             patreon=data.get("patreon"),
         )
-        
-        
+
+
 class Source:
     def __init__(
         self,
@@ -228,7 +243,7 @@ class Source:
         self.featured_apps = featured_apps
         self.apps = apps
         self.news = news
-        
+
     def to_dict(self) -> typings.Source:
         return {
             "name": self.name,
@@ -244,11 +259,13 @@ class Source:
             "apps": [app.to_dict() for app in self.apps],
             "news": self.news,
         }
-        
+
     @classmethod
     def from_dict(cls, data: typings.Source) -> "Source":
         if not data.get("apps"):
             raise InvalidAppsError(f"No apps found for {data['name']}")
+        if not data.get("name"):
+            raise InvalidNameError(f"No name found for {data}")
         apps = []
         for app in data["apps"]:
             with suppress(InvalidBundleIdentifierError):
@@ -267,8 +284,8 @@ class Source:
             apps=apps,
             news=data.get("news", []),
         )
-        
-        
+
+
 async def get_source(url: str) -> Source:
     response = await asyncreqs.get(url)
     return Source.from_dict(response.json())

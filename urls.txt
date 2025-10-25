@@ -152,3 +152,15 @@ https://raw.githubusercontent.com/WuXu1/wuxuslibrary/main/wuxu-complete.json
 https://raw.githubusercontent.com/Broco8Dev/Prism-Repositories/refs/heads/main/altstore.json
 https://raw.githubusercontent.com/WangGuibin/IPA-for-self/main/ipa.json
 https://raw.githubusercontent.com/utmapp/altstore-repo/refs/heads/master/config.json
+https://raw.githubusercontent.com/ftchirou/Bemol/refs/heads/main/alt-store.json
+https://raw.githubusercontent.com/TheResonanceTeam/.default-sources/refs/heads/main/ResonanceTeamRepo.json
+https://raw.githubusercontent.com/TheResonanceTeam/.default-sources/refs/heads/main/BonnieRepo_2.0.json
+https://raw.githubusercontent.com/TheResonanceTeam/.default-sources/refs/heads/main/haxi0_2.0.json
+https://raw.githubusercontent.com/Auties00/Artemis/refs/heads/main/source.json
+https://raw.githubusercontent.com/Auties00/Artemis/refs/heads/main/source_pal.json
+https://raw.githubusercontent.com/DetachHead/altstore-repo/refs/heads/master/repo.json
+https://raw.githubusercontent.com/driftywinds/driftywinds.github.io/refs/heads/master/repos/YTLPaltstore.json
+https://raw.githubusercontent.com/driftywinds/driftywinds.github.io/refs/heads/master/repos/esign.json
+https://raw.githubusercontent.com/nabzclan-reborn/safe-check-app/refs/heads/main/repos/scarlet.json
+https://raw.githubusercontent.com/driftywinds/driftywinds.github.io/refs/heads/master/repos/trollapps.json
+https://github.com/nabzclan-reborn/safe-check-app/blob/main/repos/esign.json

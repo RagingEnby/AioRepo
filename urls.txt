@@ -126,7 +126,6 @@ https://theodyssey.dev/altstore/odysseysource.json
 https://ipa.cypwn.xyz/cypwn_altstore.json
 https://github.com/dvntm0/AltStore/raw/refs/heads/main/repo.json
 https://bunduuk.github.io/altstore-source/apps.json
-https://raw.githubusercontent.com/actuallyaridan/NeoFreeBird/refs/heads/main/AltSource.json
 https://raw.githubusercontent.com/WhySooooFurious/Ultimate-Sideloading-Guide/32015fc6e672708833792a0403b673b026a6784e/app-repo.json
 https://raw.githubusercontent.com/ios-tool/ipa/refs/heads/main/app.json
 https://quarksources.github.io/dist/quantumsource.min.json

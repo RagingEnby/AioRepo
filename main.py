@@ -61,11 +61,11 @@ async def main():
             else:
                 filtered_apps[app.bundle_identifier] = app
         # await write("output/filtered_apps.json", {k: app.to_dict() for k, app in filtered_apps.items()})
-        date = datetime.datetime.now().strftime("%-m/%-d/%y")
+        now = datetime.datetime.now()
         aio_source = repoparser.Source(
             name="RagingEnby's AIO Source",
-            subtitle=f"[{date}] Every single repo I could find, united.",
-            description="I got really sick and tired of typing in a billion different repos. So this one repo scrapes ~100 AltSources and combines them into one, beautiful, united repository.",
+            subtitle=f"[{now.month}/{now.day}/{now.year % 100:02d}] Every single repo I could find, united.",
+            description="I got really sick and tired of typing in a billion different repos. So this one repo scrapes 200-300 AltSources and combines them into one, beautiful, united repository.",
             icon_url=constants.ICON_URL,
             header_url=None,
             website="https://ragingenby.dev/",

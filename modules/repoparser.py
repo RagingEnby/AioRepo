@@ -261,10 +261,10 @@ class Source:
 
     @classmethod
     def from_dict(cls, data: typings.Source) -> "Source":
-        if not data.get("apps"):
-            raise InvalidAppsError(f"No apps found for {data['name']}")
         if not data.get("name"):
             raise InvalidNameError(f"No name found for {data}")
+        if not data.get("apps"):
+            raise InvalidAppsError(f"No apps found for {data['name']}")
         apps = []
         for app in data["apps"]:
             with suppress(InvalidBundleIdentifierError):

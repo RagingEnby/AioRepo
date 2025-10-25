@@ -42,13 +42,23 @@ async def get_sources(*urls: str) -> list[repoparser.Source]:
 
 
 async def write_source(
-    apps: list[repoparser.App], extra: bool = False
+    apps: list[repoparser.App], spam: bool = False
 ) -> repoparser.Source:
     now = datetime.datetime.now()
+    date_str = (
+        f"[{now.month}/{now.day}/{now.year % 100:02d} {now.hour:02d}:{now.minute:02d}]"
+    )
+    description = "I got really sick and tired of typing in a billion different repos. So this one repo scrapes 200-300 AltSources and combines them into one, beautiful, united repository."
+    subtitle = f"{date_str} Every single repo I could find, united."
+    if spam:
+        description = (
+            "RagingEnby's AIO Source but with ONLY spam apps (99% Nabzclan slop)"
+        )
+        subtitle = f"{date_str} {description}"
     aio_source = repoparser.Source(
-        name=f"RagingEnby's AIO Source{'++' if extra else ''}",
-        subtitle=f"[{now.month}/{now.day}/{now.year % 100:02d} {now.hour:02d}:{now.minute:02d}] Every single repo I could find, united.",
-        description="I got really sick and tired of typing in a billion different repos. So this one repo scrapes 200-300 AltSources and combines them into one, beautiful, united repository.",
+        name=f"RagingEnby's AIO Source{'++' if spam else ''}",
+        subtitle=subtitle,
+        description=description,
         icon_url=constants.ICON_URL,
         header_url=None,
         website="https://ragingenby.dev/",
@@ -59,9 +69,19 @@ async def write_source(
         apps=sorted(apps, key=lambda app: app.last_updated, reverse=True),
         news=[],
     )
-    file_name = "repo.json" if not extra else "repo++.json"
+    file_name = "repo.json" if not spam else "repo++.json"
     await write(file_name, aio_source.to_dict())  # type: ignore
     return aio_source
+
+
+def is_spam(app: repoparser.App) -> bool:
+    if not app.subtitle:
+        return False
+    if app.subtitle.startswith("Injected with "):
+        return True
+    if app.developer_name == "Holloway":
+        return True
+    return False
 
 
 async def main():
@@ -84,19 +104,16 @@ async def main():
             else:
                 no_duplicates[app.bundle_identifier] = app
         # await write("output/filtered_apps.json", {k: app.to_dict() for k, app in filtered_apps.items()})
-        spam_apps = [
-            app
-            for app in no_duplicates.values()
-            if app.subtitle and app.subtitle.startswith("Injected with ")
-        ]
-        rest_apps = [
-            app
-            for app in no_duplicates.values()
-            if not app.subtitle or not app.subtitle.startswith("Injected with ")
-        ]
+        spam_apps = []
+        rest_apps = []
+        for app in no_duplicates.values():
+            if is_spam(app):
+                spam_apps.append(app)
+            else:
+                rest_apps.append(app)
         await asyncio.gather(
-            write_source(rest_apps, extra=False),
-            write_source(spam_apps, extra=True),
+            write_source(rest_apps, spam=False),
+            write_source(spam_apps, spam=True),
         )
     finally:
         await asyncreqs.close()

@@ -9,12 +9,12 @@ I scrape the following sources to get a list of AltSources:
 - https://appdb.to/
 All of these are used to gather a collection of AltSources which are then scraped to export their apps into one json file, `repo.json`.
 # Installation
+The spam repo contains only apps made by spam authors such as Nabzclan. The main repo includes none of these.
 ## Main Repo
 [AltSource (raw)](https://raw.githubusercontent.com/RagingEnby/AioRepo/refs/heads/master/repo.json) 
 ([Add to AltStore](https://intradeus.github.io/http-protocol-redirector?r=altstore://source?url=https://raw.githubusercontent.com/RagingEnby/AioRepo/refs/heads/master/repo.json), 
 [Add to SideStore](https://intradeus.github.io/http-protocol-redirector?r=sidestore://source?url=https://raw.githubusercontent.com/RagingEnby/AioRepo/refs/heads/master/repo.json))
 ## Spam Repo
-Spam authors such as Nabzclan are categorized into this repo
 [AltSource (raw)](https://raw.githubusercontent.com/RagingEnby/AioRepo/refs/heads/master/repo++.json) 
 ([Add to AltStore](https://intradeus.github.io/http-protocol-redirector?r=altstore://source?url=https://raw.githubusercontent.com/RagingEnby/AioRepo/refs/heads/master/repo++.json), 
 [Add to SideStore](https://intradeus.github.io/http-protocol-redirector?r=sidestore://source?url=https://raw.githubusercontent.com/RagingEnby/AioRepo/refs/heads/master/repo++.json))

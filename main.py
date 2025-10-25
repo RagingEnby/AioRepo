@@ -41,6 +41,29 @@ async def get_sources(*urls: str) -> list[repoparser.Source]:
     return [source for source in sources if source is not None]
 
 
+async def write_source(
+    apps: list[repoparser.App], extra: bool = False
+) -> repoparser.Source:
+    now = datetime.datetime.now()
+    aio_source = repoparser.Source(
+        name=f"RagingEnby's AIO Source{'++' if extra else ''}",
+        subtitle=f"[{now.month}/{now.day}/{now.year % 100:02d} {now.hour:02d}:{now.minute:02d}] Every single repo I could find, united.",
+        description="I got really sick and tired of typing in a billion different repos. So this one repo scrapes 200-300 AltSources and combines them into one, beautiful, united repository.",
+        icon_url=constants.ICON_URL,
+        header_url=None,
+        website="https://ragingenby.dev/",
+        fedi_username=None,
+        patreon_url="https://patreon.com/RagingEnby",
+        tint_color=None,
+        featured_apps=None,
+        apps=sorted(apps, key=lambda app: app.last_updated, reverse=True),
+        news=[],
+    )
+    file_name = "repo.json" if not extra else "repo++.json"
+    await write(file_name, aio_source.to_dict())  # type: ignore
+    return aio_source
+
+
 async def main():
     try:
         repo_urls = await reposources.all()
@@ -50,35 +73,31 @@ async def main():
         for source in sources:
             apps.extend(source.apps)
         # await write("output/apps.json", [app.to_dict() for app in apps])
-        filtered_apps: dict[str, repoparser.App] = {}
+        no_duplicates: dict[str, repoparser.App] = {}
         for app in apps:
             if not app.versions or app.is_pal:
                 continue
-            if app.bundle_identifier in filtered_apps:
-                last_updated = filtered_apps[app.bundle_identifier].last_updated
+            if app.bundle_identifier in no_duplicates:
+                last_updated = no_duplicates[app.bundle_identifier].last_updated
                 if app.last_updated > last_updated:
-                    filtered_apps[app.bundle_identifier] = app
+                    no_duplicates[app.bundle_identifier] = app
             else:
-                filtered_apps[app.bundle_identifier] = app
+                no_duplicates[app.bundle_identifier] = app
         # await write("output/filtered_apps.json", {k: app.to_dict() for k, app in filtered_apps.items()})
-        now = datetime.datetime.now()
-        aio_source = repoparser.Source(
-            name="RagingEnby's AIO Source",
-            subtitle=f"[{now.month}/{now.day}/{now.year % 100:02d}] Every single repo I could find, united.",
-            description="I got really sick and tired of typing in a billion different repos. So this one repo scrapes 200-300 AltSources and combines them into one, beautiful, united repository.",
-            icon_url=constants.ICON_URL,
-            header_url=None,
-            website="https://ragingenby.dev/",
-            fedi_username=None,
-            patreon_url="https://patreon.com/RagingEnby",
-            tint_color=None,
-            featured_apps=None,
-            apps=sorted(
-                filtered_apps.values(), key=lambda app: app.last_updated, reverse=True
-            ),
-            news=[],
+        spam_apps = [
+            app
+            for app in no_duplicates.values()
+            if app.subtitle and app.subtitle.startswith("Injected with ")
+        ]
+        rest_apps = [
+            app
+            for app in no_duplicates.values()
+            if not app.subtitle or not app.subtitle.startswith("Injected with ")
+        ]
+        await asyncio.gather(
+            write_source(rest_apps, extra=False),
+            write_source(spam_apps, extra=True),
         )
-        await write("repo.json", aio_source.to_dict())  # type: ignore
     finally:
         await asyncreqs.close()
 

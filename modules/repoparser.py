@@ -3,7 +3,6 @@ from typing import cast
 from datetime import datetime
 from zoneinfo import ZoneInfo
 import re
-import json
 
 from modules import typings, asyncreqs
 import constants

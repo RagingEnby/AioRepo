@@ -1,6 +1,7 @@
 import asyncio
 import json
 import aiofiles
+import datetime
 from curl_cffi.requests import exceptions as curl_exceptions
 
 from modules import asyncreqs, reposources, repoparser
@@ -60,9 +61,10 @@ async def main():
             else:
                 filtered_apps[app.bundle_identifier] = app
         # await write("output/filtered_apps.json", {k: app.to_dict() for k, app in filtered_apps.items()})
+        date = datetime.datetime.now().strftime("%-m/%-d/%y")
         aio_source = repoparser.Source(
             name="RagingEnby's AIO Source",
-            subtitle="Every single repo I could find, united.",
+            subtitle=f"[{date}] Every single repo I could find, united.",
             description="I got really sick and tired of typing in a billion different repos. So this one repo scrapes ~100 AltSources and combines them into one, beautiful, united repository.",
             icon_url=constants.ICON_URL,
             header_url=None,

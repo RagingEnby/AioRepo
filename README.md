@@ -12,9 +12,9 @@ All of these are used to gather a collection of AltSources which are then scrape
 The spam repo contains only apps made by spam authors such as Nabzclan. The main repo includes none of these.
 ## Main Repo
 [AltSource (raw)](https://raw.githubusercontent.com/RagingEnby/AioRepo/refs/heads/master/repo.json) 
-([Add to AltStore](https://intradeus.github.io/http-protocol-redirector?r=altstore://source?url=https://raw.githubusercontent.com/RagingEnby/AioRepo/refs/heads/master/repo.json), 
-[Add to SideStore](https://intradeus.github.io/http-protocol-redirector?r=sidestore://source?url=https://raw.githubusercontent.com/RagingEnby/AioRepo/refs/heads/master/repo.json))
+([Add to AltStore](https://intradeus.github.io/http-protocol-redirector?r=altstore://source?url=https://raw.githubusercontent.com/RagingEnby/AioRepo/refs/heads/master/repo.json) | 
+[Add to SideStore](https://intradeus.github.io/http-protocol-redirector?r=sidestore://source?url=https://raw.githubusercontent.com/RagingEnby/AioRepo/refs/heads/master/repo.json) | [Online View](https://altsource.by.lao.sb/browse/?source=https%3A%2F%2Fraw.githubusercontent.com%2FRagingEnby%2FAioRepo%2Frefs%2Fheads%2Fmaster%2Frepo.json))
 ## Spam Repo
 [AltSource (raw)](https://raw.githubusercontent.com/RagingEnby/AioRepo/refs/heads/master/repo++.json) 
-([Add to AltStore](https://intradeus.github.io/http-protocol-redirector?r=altstore://source?url=https://raw.githubusercontent.com/RagingEnby/AioRepo/refs/heads/master/repo++.json), 
-[Add to SideStore](https://intradeus.github.io/http-protocol-redirector?r=sidestore://source?url=https://raw.githubusercontent.com/RagingEnby/AioRepo/refs/heads/master/repo++.json))
+([Add to AltStore](https://intradeus.github.io/http-protocol-redirector?r=altstore://source?url=https://raw.githubusercontent.com/RagingEnby/AioRepo/refs/heads/master/repo++.json) | 
+[Add to SideStore](https://intradeus.github.io/http-protocol-redirector?r=sidestore://source?url=https://raw.githubusercontent.com/RagingEnby/AioRepo/refs/heads/master/repo++.json) | [Online View](https://altsource.by.lao.sb/browse/?source=https%3A%2F%2Fraw.githubusercontent.com%2FRagingEnby%2FAioRepo%2Frefs%2Fheads%2Fmaster%2Frepo%2B%2B.json))

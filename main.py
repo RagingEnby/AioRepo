@@ -81,6 +81,10 @@ def is_spam(app: repoparser.App) -> bool:
         return True
     if app.developer_name == "Holloway":
         return True
+    if app.developer_name == "lscs3":
+        return True
+    if "nabzclan" in app.icon_url:
+        return True
     return False
 
 

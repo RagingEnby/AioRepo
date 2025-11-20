@@ -1,6 +1,6 @@
 {
   "name": "RagingEnby's AIO Source",
-  "subtitle": "[11/20/25 12:05] Every single repo I could find, united.",
+  "subtitle": "[11/20/25 12:13] Every single repo I could find, united.",
   "description": "I got really sick and tired of typing in a billion different repos. So this one repo scrapes 200-300 AltSources and combines them into one, beautiful, united repository.",
   "iconURL": "https://github.com/RagingEnby/RagingEnby/blob/main/pfp.png?raw=true",
   "headerURL": null,
@@ -2078,6 +2078,42 @@
       "patreon": null
     },
     {
+      "name": "NeoFreeBird - Twitter/X",
+      "bundleIdentifier": "com.atebits.Tweetie2",
+      "marketplaceID": null,
+      "developerName": "NeoFreeBird - Twitter/X x CyPwn",
+      "subtitle": null,
+      "localizedDescription": "NeoFreeBird 2.2 - Twitter/X 11.35",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/NeoFreeBird-2.2-Twitter-11.35 2.png",
+      "tintColor": "FFC300",
+      "category": null,
+      "screenshots": [
+        "https://ipa.cypwn.xyz/serve/screenshots/NeoFreeBird - Twitter/X/NeoFreeBird-2.2-Twitter-11.35 2-0.png",
+        "https://ipa.cypwn.xyz/serve/screenshots/NeoFreeBird - Twitter/X/NeoFreeBird-2.2-Twitter-11.35 2-1.png",
+        "https://ipa.cypwn.xyz/serve/screenshots/NeoFreeBird - Twitter/X/NeoFreeBird-2.2-Twitter-11.35 2-2.png",
+        "https://ipa.cypwn.xyz/serve/screenshots/NeoFreeBird - Twitter/X/NeoFreeBird-2.2-Twitter-11.35 2-3.png"
+      ],
+      "versions": [
+        {
+          "version": "11.35",
+          "buildVersion": null,
+          "marketingVersion": null,
+          "date": "2025-11-11T00:00:00-05:00",
+          "localizedDescription": null,
+          "downloadURL": "https://ipa.cypwn.xyz/serve/get.php?md5=56081f6efea1ab134da00d8334032ab5",
+          "size": 153113067,
+          "assetURLs": null,
+          "minOSVersion": null,
+          "maxOSVersion": null
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "patreon": null
+    },
+    {
       "name": "OldOS 2.0",
       "bundleIdentifier": "com.zurac.OldOSSL2",
       "marketplaceID": null,
@@ -2103,42 +2139,6 @@
           "localizedDescription": null,
           "downloadURL": "https://ipa.cypwn.xyz/serve/get.php?md5=5ea9ac3f7d2013d73813e657ead00efa",
           "size": 82606817,
-          "assetURLs": null,
-          "minOSVersion": null,
-          "maxOSVersion": null
-        }
-      ],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      },
-      "patreon": null
-    },
-    {
-      "name": "NeoFreeBird - Twitter/X",
-      "bundleIdentifier": "com.atebits.Tweetie2",
-      "marketplaceID": null,
-      "developerName": "NeoFreeBird - Twitter/X x CyPwn",
-      "subtitle": null,
-      "localizedDescription": "NeoFreeBird 2.2 - Twitter/X 11.35",
-      "iconURL": "https://ipa.cypwn.xyz/serve/icons/NeoFreeBird-2.2-Twitter-11.35 2.png",
-      "tintColor": "FFC300",
-      "category": null,
-      "screenshots": [
-        "https://ipa.cypwn.xyz/serve/screenshots/NeoFreeBird - Twitter/X/NeoFreeBird-2.2-Twitter-11.35 2-0.png",
-        "https://ipa.cypwn.xyz/serve/screenshots/NeoFreeBird - Twitter/X/NeoFreeBird-2.2-Twitter-11.35 2-1.png",
-        "https://ipa.cypwn.xyz/serve/screenshots/NeoFreeBird - Twitter/X/NeoFreeBird-2.2-Twitter-11.35 2-2.png",
-        "https://ipa.cypwn.xyz/serve/screenshots/NeoFreeBird - Twitter/X/NeoFreeBird-2.2-Twitter-11.35 2-3.png"
-      ],
-      "versions": [
-        {
-          "version": "11.35",
-          "buildVersion": null,
-          "marketingVersion": null,
-          "date": "2025-11-11T00:00:00-05:00",
-          "localizedDescription": null,
-          "downloadURL": "https://ipa.cypwn.xyz/serve/get.php?md5=56081f6efea1ab134da00d8334032ab5",
-          "size": 153113067,
           "assetURLs": null,
           "minOSVersion": null,
           "maxOSVersion": null
@@ -3499,7 +3499,17 @@
       "iconURL": "https://raw.githubusercontent.com/dayanch96/YTLite/refs/heads/main/Resources/icon.png",
       "tintColor": "#E36678",
       "category": null,
-      "screenshots": null,
+      "screenshots": [
+        "https://raw.githubusercontent.com/dayanch96/YTLite/refs/heads/main/Resources/scr1.jpg",
+        "https://raw.githubusercontent.com/dayanch96/YTLite/refs/heads/main/Resources/scr2.jpg",
+        "https://raw.githubusercontent.com/dayanch96/YTLite/refs/heads/main/Resources/scr3.jpg",
+        "https://raw.githubusercontent.com/dayanch96/YTLite/refs/heads/main/Resources/scr4.jpg",
+        "https://raw.githubusercontent.com/dayanch96/YTLite/refs/heads/main/Resources/scr5.jpg",
+        "https://raw.githubusercontent.com/dayanch96/YTLite/refs/heads/main/Resources/scr6.jpg",
+        "https://raw.githubusercontent.com/dayanch96/YTLite/refs/heads/main/Resources/scr7.jpg",
+        "https://raw.githubusercontent.com/dayanch96/YTLite/refs/heads/main/Resources/scr8.jpg",
+        "https://raw.githubusercontent.com/dayanch96/YTLite/refs/heads/main/Resources/scr9.jpg"
+      ],
       "versions": [
         {
           "version": "20.42.3",
@@ -4632,7 +4642,14 @@
       "iconURL": "https://raw.githubusercontent.com/dayanch96/OrwellVK/refs/heads/main/Sileo/icon.png",
       "tintColor": "#B5DAFC",
       "category": null,
-      "screenshots": null,
+      "screenshots": [
+        "https://raw.githubusercontent.com/dayanch96/OrwellVK/refs/heads/main/Sileo/screenshot1.png",
+        "https://raw.githubusercontent.com/dayanch96/OrwellVK/refs/heads/main/Sileo/screenshot2.png",
+        "https://raw.githubusercontent.com/dayanch96/OrwellVK/refs/heads/main/Sileo/screenshot3.png",
+        "https://raw.githubusercontent.com/dayanch96/OrwellVK/refs/heads/main/Sileo/screenshot4.png",
+        "https://raw.githubusercontent.com/dayanch96/OrwellVK/refs/heads/main/Sileo/screenshot5.png",
+        "https://raw.githubusercontent.com/dayanch96/OrwellVK/refs/heads/main/Sileo/screenshot6.png"
+      ],
       "versions": [
         {
           "version": "8.144.1",
@@ -4794,7 +4811,14 @@
       "iconURL": "https://raw.githubusercontent.com/dayanch96/InfusePlus/refs/heads/main/Resources/icon.png",
       "tintColor": "#FF8800",
       "category": null,
-      "screenshots": null,
+      "screenshots": [
+        "https://raw.githubusercontent.com/dayanch96/InfusePlus/refs/heads/main/Resources/screenshot1.png",
+        "https://raw.githubusercontent.com/dayanch96/InfusePlus/refs/heads/main/Resources/screenshot2.png",
+        "https://raw.githubusercontent.com/dayanch96/InfusePlus/refs/heads/main/Resources/screenshot3.png",
+        "https://raw.githubusercontent.com/dayanch96/InfusePlus/refs/heads/main/Resources/screenshot4.png",
+        "https://raw.githubusercontent.com/dayanch96/InfusePlus/refs/heads/main/Resources/screenshot5.png",
+        "https://raw.githubusercontent.com/dayanch96/InfusePlus/refs/heads/main/Resources/screenshot6.png"
+      ],
       "versions": [
         {
           "version": "8.2.4",
@@ -5378,6 +5402,39 @@
       "patreon": null
     },
     {
+      "name": "Amethyst_1.0",
+      "bundleIdentifier": "org.angelauramc.amethyst",
+      "marketplaceID": null,
+      "developerName": "Amethyst_1.0 x CyPwn",
+      "subtitle": null,
+      "localizedDescription": "Minecraft: Java Edition Launcher",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/Amethyst_1.0.png",
+      "tintColor": "FFC300",
+      "category": null,
+      "screenshots": [
+        "https://ipa.cypwn.xyz/serve/screenshots/Amethyst_1.0/Amethyst_1.0-0.png"
+      ],
+      "versions": [
+        {
+          "version": "1.0",
+          "buildVersion": null,
+          "marketingVersion": null,
+          "date": "2025-07-14T00:00:00-04:00",
+          "localizedDescription": null,
+          "downloadURL": "https://ipa.cypwn.xyz/serve/get.php?md5=b615cf0575e42dda26bc810902bbedab",
+          "size": 30125588,
+          "assetURLs": null,
+          "minOSVersion": null,
+          "maxOSVersion": null
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "patreon": null
+    },
+    {
       "name": "AmethystTS_1.0",
       "bundleIdentifier": "org.angelauramc.amethystTS",
       "marketplaceID": null,
@@ -5411,27 +5468,28 @@
       "patreon": null
     },
     {
-      "name": "Amethyst_1.0",
-      "bundleIdentifier": "org.angelauramc.amethyst",
+      "name": "Bitchat",
+      "bundleIdentifier": "chat.bitchat",
       "marketplaceID": null,
-      "developerName": "Amethyst_1.0 x CyPwn",
+      "developerName": "Bitchat x CyPwn",
       "subtitle": null,
-      "localizedDescription": "Minecraft: Java Edition Launcher",
-      "iconURL": "https://ipa.cypwn.xyz/serve/icons/Amethyst_1.0.png",
+      "localizedDescription": "Decentralized Bluetooth mesh chat.",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/bitchat_1.0.0_1752444072.png",
       "tintColor": "FFC300",
       "category": null,
       "screenshots": [
-        "https://ipa.cypwn.xyz/serve/screenshots/Amethyst_1.0/Amethyst_1.0-0.png"
+        "https://ipa.cypwn.xyz/serve/screenshots/Bitchat/bitchat_1.0.0_1752444072-0.png",
+        "https://ipa.cypwn.xyz/serve/screenshots/Bitchat/bitchat_1.0.0_1752444072-1.png"
       ],
       "versions": [
         {
-          "version": "1.0",
+          "version": "1.0.0",
           "buildVersion": null,
           "marketingVersion": null,
-          "date": "2025-07-14T00:00:00-04:00",
+          "date": "2025-07-13T00:00:00-04:00",
           "localizedDescription": null,
-          "downloadURL": "https://ipa.cypwn.xyz/serve/get.php?md5=b615cf0575e42dda26bc810902bbedab",
-          "size": 30125588,
+          "downloadURL": "https://ipa.cypwn.xyz/serve/get.php?md5=9a7e8226de89dfa7a6a24e184f84a9cd",
+          "size": 563496,
           "assetURLs": null,
           "minOSVersion": null,
           "maxOSVersion": null
@@ -5477,40 +5535,6 @@
           "localizedDescription": null,
           "downloadURL": "https://ipa.cypwn.xyz/serve/get.php?md5=7b8aa6a7e896b7a63bb76f506ede24ae",
           "size": 96808,
-          "assetURLs": null,
-          "minOSVersion": null,
-          "maxOSVersion": null
-        }
-      ],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      },
-      "patreon": null
-    },
-    {
-      "name": "Bitchat",
-      "bundleIdentifier": "chat.bitchat",
-      "marketplaceID": null,
-      "developerName": "Bitchat x CyPwn",
-      "subtitle": null,
-      "localizedDescription": "Decentralized Bluetooth mesh chat.",
-      "iconURL": "https://ipa.cypwn.xyz/serve/icons/bitchat_1.0.0_1752444072.png",
-      "tintColor": "FFC300",
-      "category": null,
-      "screenshots": [
-        "https://ipa.cypwn.xyz/serve/screenshots/Bitchat/bitchat_1.0.0_1752444072-0.png",
-        "https://ipa.cypwn.xyz/serve/screenshots/Bitchat/bitchat_1.0.0_1752444072-1.png"
-      ],
-      "versions": [
-        {
-          "version": "1.0.0",
-          "buildVersion": null,
-          "marketingVersion": null,
-          "date": "2025-07-13T00:00:00-04:00",
-          "localizedDescription": null,
-          "downloadURL": "https://ipa.cypwn.xyz/serve/get.php?md5=9a7e8226de89dfa7a6a24e184f84a9cd",
-          "size": 563496,
           "assetURLs": null,
           "minOSVersion": null,
           "maxOSVersion": null
@@ -5631,7 +5655,14 @@
       "iconURL": "https://raw.githubusercontent.com/dayanch96/Glow/refs/heads/main/Sileo/icon.png",
       "tintColor": "#B5DAFC",
       "category": null,
-      "screenshots": null,
+      "screenshots": [
+        "https://raw.githubusercontent.com/dayanch96/Glow/refs/heads/main/Sileo/screenshot1.jpg",
+        "https://raw.githubusercontent.com/dayanch96/Glow/refs/heads/main/Sileo/screenshot2.jpg",
+        "https://raw.githubusercontent.com/dayanch96/Glow/refs/heads/main/Sileo/screenshot3.jpg",
+        "https://raw.githubusercontent.com/dayanch96/Glow/refs/heads/main/Sileo/screenshot4.jpg",
+        "https://raw.githubusercontent.com/dayanch96/Glow/refs/heads/main/Sileo/screenshot5.jpg",
+        "https://raw.githubusercontent.com/dayanch96/Glow/refs/heads/main/Sileo/screenshot6.jpg"
+      ],
       "versions": [
         {
           "version": "519.0.0",
@@ -5812,7 +5843,11 @@
       "iconURL": "https://raw.githubusercontent.com/dayanch96/Flow/refs/heads/main/Sileo/icon.png",
       "tintColor": "#AF38EB",
       "category": null,
-      "screenshots": null,
+      "screenshots": [
+        "https://raw.githubusercontent.com/dayanch96/Flow/refs/heads/main/Sileo/screenshot1.jpg",
+        "https://raw.githubusercontent.com/dayanch96/Flow/refs/heads/main/Sileo/screenshot2.jpg",
+        "https://raw.githubusercontent.com/dayanch96/Flow/refs/heads/main/Sileo/screenshot3.jpg"
+      ],
       "versions": [
         {
           "version": "511.0.0",
@@ -6409,6 +6444,72 @@
       "patreon": null
     },
     {
+      "name": "UniversalPaperclips",
+      "bundleIdentifier": "com.everybodyhouse.paperclipsuniquetest",
+      "marketplaceID": null,
+      "developerName": "UniversalPaperclips x CyPwn",
+      "subtitle": null,
+      "localizedDescription": "Classic clicker",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/UniversalPaperclips.png",
+      "tintColor": "FFC300",
+      "category": null,
+      "screenshots": [
+        "https://ipa.cypwn.xyz/serve/screenshots/UniversalPaperclips/UniversalPaperclips-0.png"
+      ],
+      "versions": [
+        {
+          "version": "2.1.0",
+          "buildVersion": null,
+          "marketingVersion": null,
+          "date": "2025-05-17T00:00:00-04:00",
+          "localizedDescription": null,
+          "downloadURL": "https://ipa.cypwn.xyz/serve/get.php?md5=f861315a2b92341e9cee6d0668ed2849",
+          "size": 16850616,
+          "assetURLs": null,
+          "minOSVersion": null,
+          "maxOSVersion": null
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "patreon": null
+    },
+    {
+      "name": "Pokecut_4.4.2",
+      "bundleIdentifier": "com.seawardhyacinth.pokecut",
+      "marketplaceID": null,
+      "developerName": "Pokecut_4.4.2 x CyPwn",
+      "subtitle": null,
+      "localizedDescription": "Pokecut Max for free.",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/Pokecut_4.4.2.png",
+      "tintColor": "FFC300",
+      "category": null,
+      "screenshots": [
+        "https://ipa.cypwn.xyz/serve/screenshots/Pokecut_4.4.2/Pokecut_4.4.2-0.png"
+      ],
+      "versions": [
+        {
+          "version": "4.4.2",
+          "buildVersion": null,
+          "marketingVersion": null,
+          "date": "2025-05-17T00:00:00-04:00",
+          "localizedDescription": null,
+          "downloadURL": "https://ipa.cypwn.xyz/serve/get.php?md5=514d155142728488fb01dda8270d4181",
+          "size": 184538890,
+          "assetURLs": null,
+          "minOSVersion": null,
+          "maxOSVersion": null
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "patreon": null
+    },
+    {
       "name": "TrollBackgrounder_1.5",
       "bundleIdentifier": "cn.bswbw.TrollBackgrounder",
       "marketplaceID": null,
@@ -6499,72 +6600,6 @@
       "patreon": null
     },
     {
-      "name": "UniversalPaperclips",
-      "bundleIdentifier": "com.everybodyhouse.paperclipsuniquetest",
-      "marketplaceID": null,
-      "developerName": "UniversalPaperclips x CyPwn",
-      "subtitle": null,
-      "localizedDescription": "Classic clicker",
-      "iconURL": "https://ipa.cypwn.xyz/serve/icons/UniversalPaperclips.png",
-      "tintColor": "FFC300",
-      "category": null,
-      "screenshots": [
-        "https://ipa.cypwn.xyz/serve/screenshots/UniversalPaperclips/UniversalPaperclips-0.png"
-      ],
-      "versions": [
-        {
-          "version": "2.1.0",
-          "buildVersion": null,
-          "marketingVersion": null,
-          "date": "2025-05-17T00:00:00-04:00",
-          "localizedDescription": null,
-          "downloadURL": "https://ipa.cypwn.xyz/serve/get.php?md5=f861315a2b92341e9cee6d0668ed2849",
-          "size": 16850616,
-          "assetURLs": null,
-          "minOSVersion": null,
-          "maxOSVersion": null
-        }
-      ],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      },
-      "patreon": null
-    },
-    {
-      "name": "Pokecut_4.4.2",
-      "bundleIdentifier": "com.seawardhyacinth.pokecut",
-      "marketplaceID": null,
-      "developerName": "Pokecut_4.4.2 x CyPwn",
-      "subtitle": null,
-      "localizedDescription": "Pokecut Max for free.",
-      "iconURL": "https://ipa.cypwn.xyz/serve/icons/Pokecut_4.4.2.png",
-      "tintColor": "FFC300",
-      "category": null,
-      "screenshots": [
-        "https://ipa.cypwn.xyz/serve/screenshots/Pokecut_4.4.2/Pokecut_4.4.2-0.png"
-      ],
-      "versions": [
-        {
-          "version": "4.4.2",
-          "buildVersion": null,
-          "marketingVersion": null,
-          "date": "2025-05-17T00:00:00-04:00",
-          "localizedDescription": null,
-          "downloadURL": "https://ipa.cypwn.xyz/serve/get.php?md5=514d155142728488fb01dda8270d4181",
-          "size": 184538890,
-          "assetURLs": null,
-          "minOSVersion": null,
-          "maxOSVersion": null
-        }
-      ],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      },
-      "patreon": null
-    },
-    {
       "name": "ProCam_14.7.3",
       "bundleIdentifier": "gemini.ProCam-2",
       "marketplaceID": null,
@@ -6606,8 +6641,15 @@
       "localizedDescription": "AltStore is an alternative app store for non-jailbroken devices. \n\nThis version of AltStore allows you to install Delta, an all-in-one emulator for iOS, as well as sideload other .ipa files from the Files app.",
       "iconURL": "https://user-images.githubusercontent.com/705880/65270980-1eb96f80-dad1-11e9-9367-78ccd25ceb02.png",
       "tintColor": "018084",
-      "category": null,
-      "screenshots": null,
+      "category": "utilities",
+      "screenshots": [
+        "https://user-images.githubusercontent.com/705880/277757391-76c02f48-be2a-485a-ba75-277480c99356.jpeg",
+        "https://user-images.githubusercontent.com/705880/277757303-ee0b7695-0e7d-4a93-8b25-4fbbbd3cb745.PNG",
+        "https://user-images.githubusercontent.com/705880/277757263-ef612879-0314-4464-a8f4-103e1f22fbb1.png",
+        "https://user-images.githubusercontent.com/705880/277757445-450618d1-6005-445e-bfd4-7c75387e990b.PNG",
+        "https://user-images.githubusercontent.com/705880/277757220-ebbf42dc-5153-4e2d-9ff4-4c25ad367941.PNG",
+        "https://user-images.githubusercontent.com/705880/277757419-f8067301-61f3-4eae-bbd1-be1bf2a1c05c.PNG"
+      ],
       "versions": [
         {
           "version": "2.2.1",
@@ -6622,6 +6664,18 @@
           "maxOSVersion": null
         },
         {
+          "version": "2.2",
+          "buildVersion": null,
+          "marketingVersion": null,
+          "date": "2025-04-16T18:00:00-04:00",
+          "localizedDescription": "NEW\n\u2022 Supports sideloading apps with \u201cIncreased Memory Limit\u201d entitlement\n\u2022 Supports localized titles, subtitles, and descriptions in sources\n\u2022 Added `altstore-classic://` URL scheme\n\u2022 Added Bluesky social media button to Settings\n\nIMPROVED\n\u2022 Hides \u201cSee All\u201d button in Browse tab for sources with just 1 app\n\u2022 Changed icon back to Classic icon by default\n\nFIXED\n\u2022 Fixed choosing alternate app icon on iPad\n\u2022 Fixed \u201cJoin Patreon\u201d sheet appearance in dark mode\n\u2022 Fixed installing apps before adding source via deep link\n\u2022 Fixed handling source deep link when already viewing source details\n\u2022 Fixed redundant app update appearing after resigning expired app\n\u2022 Fixed not immediately showing updates for some installed apps \n\u2022 Fixed not showing OPEN for installed apps when previewing source via deep link\n\u2022 Fixed not showing OPEN for installed apps when previewing already-added Recommended Source",
+          "downloadURL": "https://cdn.altstore.io/file/altstore/apps/altstore/2_2.ipa",
+          "size": 32809274,
+          "assetURLs": null,
+          "minOSVersion": "14.0",
+          "maxOSVersion": null
+        },
+        {
           "version": "2.0.2",
           "buildVersion": null,
           "marketingVersion": null,
@@ -6631,18 +6685,6 @@
           "size": 33093570,
           "assetURLs": null,
           "minOSVersion": "14.0",
-          "maxOSVersion": null
-        },
-        {
-          "version": "2.0.1",
-          "buildVersion": null,
-          "marketingVersion": null,
-          "date": "2024-11-13T12:00:00-05:00",
-          "localizedDescription": "NEW\n\u2022 Added dark mode & tinted app icons\n\u2022 Added Home Screen quick actions with support info\n\nFIXED\n\u2022 Fixed crash when fetching source containing app larger than 2GB\n\u2022 Fixed handling Patreon rate limit errors\n\u2022 Fixed crash updating apps if more than 1 update is available\n\u2022 Fixed crash installing apps if internet connection drops",
-          "downloadURL": "https://cdn.altstore.io/file/altstore/apps/altstore/2_0_1.ipa",
-          "size": 33044833,
-          "assetURLs": null,
-          "minOSVersion": "17.4",
           "maxOSVersion": null
         },
         {
@@ -6666,7 +6708,7 @@
           "downloadURL": "https://cdn.altstore.io/file/altstore/apps/altstore/1_7.ipa",
           "size": 5809750,
           "assetURLs": null,
-          "minOSVersion": null,
+          "minOSVersion": "15.0",
           "maxOSVersion": null
         },
         {
@@ -6686,7 +6728,7 @@
           "buildVersion": null,
           "marketingVersion": null,
           "date": "2023-03-22T13:00:00-04:00",
-          "localizedDescription": "This update fixes the \"no provisioning profile with the requested identifier\u2026\" error when sideloading or refreshing apps.\n\n\u26a0\ufe0f You must manually install this update by re-installing AltStore with AltServer. You do NOT need to delete AltStore first.",
+          "localizedDescription": "\u26a0\ufe0f You must manually install this update by re-installing AltStore with AltServer. You do NOT need to delete AltStore first.\n\nThis update fixes the \"no provisioning profile with the requested identifier\u2026\" error when sideloading or refreshing apps.",
           "downloadURL": "https://cdn.altstore.io/file/altstore/apps/altstore/1_6_2.ipa",
           "size": 5624498,
           "assetURLs": null,
@@ -6716,22 +6758,23 @@
           "assetURLs": null,
           "minOSVersion": null,
           "maxOSVersion": null
-        },
-        {
-          "version": "1.5.1",
-          "buildVersion": null,
-          "marketingVersion": null,
-          "date": "2022-07-14T13:00:00-04:00",
-          "localizedDescription": "This update fixes the following issues:\n\n\u2022 Using Apple IDs that contain capital letters\n\u2022 Using Apple IDs with 2FA enabled without any trusted devices\n\u2022 Repeatedly asking some users to sign in every refresh\n\u2022 \"Incorrect Apple ID or password\" error after changing Apple ID email address\n\u2022 \u201cApplication is missing application-identifier\u201d error when sideloading or (de-)activating certain apps\n\u2022 Potential crash when receiving unknown error codes from AltServer",
-          "downloadURL": "https://cdn.altstore.io/file/altstore/apps/altstore/1_5_1.ipa",
-          "size": 5465976,
-          "assetURLs": null,
-          "minOSVersion": null,
-          "maxOSVersion": null
         }
       ],
       "appPermissions": {
-        "entitlements": [],
+        "entitlements": [
+          {
+            "name": "get-task-allow"
+          },
+          {
+            "name": "com.apple.security.application-groups"
+          },
+          {
+            "name": "aps-environment"
+          },
+          {
+            "name": "com.apple.developer.siri"
+          }
+        ],
         "privacy": [
           {
             "name": "LocalNetwork",
@@ -7649,6 +7692,39 @@
       "patreon": null
     },
     {
+      "name": "Balatro_1.0.1o",
+      "bundleIdentifier": "org.htf65jud.balatro",
+      "marketplaceID": null,
+      "developerName": "Balatro_1.0.1o x CyPwn",
+      "subtitle": null,
+      "localizedDescription": "Balatro_1.0.1o",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/Balatro_1.0.1o.png",
+      "tintColor": "FFC300",
+      "category": null,
+      "screenshots": [
+        "https://ipa.cypwn.xyz/serve/screenshots/Balatro_1.0.1o/Balatro_1.0.1o-0.png"
+      ],
+      "versions": [
+        {
+          "version": "1.0.1o",
+          "buildVersion": null,
+          "marketingVersion": null,
+          "date": "2025-04-24T00:00:00-04:00",
+          "localizedDescription": null,
+          "downloadURL": "https://ipa.cypwn.xyz/serve/get.php?md5=28b23b5bc9b3c142eb81fa7157c4eb5c",
+          "size": 61708697,
+          "assetURLs": null,
+          "minOSVersion": null,
+          "maxOSVersion": null
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "patreon": null
+    },
+    {
       "name": "TrollFools_3.7-42",
       "bundleIdentifier": "wiki.qaq.TrollFools",
       "marketplaceID": null,
@@ -7682,39 +7758,6 @@
           "localizedDescription": null,
           "downloadURL": "https://ipa.cypwn.xyz/serve/get.php?md5=ad2a17c1078719126d4d438c1ec36b57",
           "size": 5746196,
-          "assetURLs": null,
-          "minOSVersion": null,
-          "maxOSVersion": null
-        }
-      ],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      },
-      "patreon": null
-    },
-    {
-      "name": "Balatro_1.0.1o",
-      "bundleIdentifier": "org.htf65jud.balatro",
-      "marketplaceID": null,
-      "developerName": "Balatro_1.0.1o x CyPwn",
-      "subtitle": null,
-      "localizedDescription": "Balatro_1.0.1o",
-      "iconURL": "https://ipa.cypwn.xyz/serve/icons/Balatro_1.0.1o.png",
-      "tintColor": "FFC300",
-      "category": null,
-      "screenshots": [
-        "https://ipa.cypwn.xyz/serve/screenshots/Balatro_1.0.1o/Balatro_1.0.1o-0.png"
-      ],
-      "versions": [
-        {
-          "version": "1.0.1o",
-          "buildVersion": null,
-          "marketingVersion": null,
-          "date": "2025-04-24T00:00:00-04:00",
-          "localizedDescription": null,
-          "downloadURL": "https://ipa.cypwn.xyz/serve/get.php?md5=28b23b5bc9b3c142eb81fa7157c4eb5c",
-          "size": 61708697,
           "assetURLs": null,
           "minOSVersion": null,
           "maxOSVersion": null
@@ -7805,7 +7848,7 @@
       "patreon": null
     },
     {
-      "name": "AltStore (Beta)",
+      "name": "AltStore",
       "bundleIdentifier": "com.rileytestut.AltStore.Beta",
       "marketplaceID": null,
       "developerName": "Riley Testut",
@@ -7813,8 +7856,15 @@
       "localizedDescription": "AltStore is an alternative app store for non-jailbroken devices. \n\nThis beta release of AltStore adds support for 3rd party sources, allowing you to download apps from other developers directly through AltStore.",
       "iconURL": "https://user-images.githubusercontent.com/705880/65270980-1eb96f80-dad1-11e9-9367-78ccd25ceb02.png",
       "tintColor": "018084",
-      "category": null,
-      "screenshots": null,
+      "category": "utilities",
+      "screenshots": [
+        "https://user-images.githubusercontent.com/705880/277757361-da7fcafa-6fc7-4b2b-90c9-debaddf80954.PNG",
+        "https://user-images.githubusercontent.com/705880/277757303-ee0b7695-0e7d-4a93-8b25-4fbbbd3cb745.PNG",
+        "https://user-images.githubusercontent.com/705880/277757263-ef612879-0314-4464-a8f4-103e1f22fbb1.png",
+        "https://user-images.githubusercontent.com/705880/277757445-450618d1-6005-445e-bfd4-7c75387e990b.PNG",
+        "https://user-images.githubusercontent.com/705880/277757220-ebbf42dc-5153-4e2d-9ff4-4c25ad367941.PNG",
+        "https://user-images.githubusercontent.com/705880/277757419-f8067301-61f3-4eae-bbd1-be1bf2a1c05c.PNG"
+      ],
       "versions": [
         {
           "version": "2.2b",
@@ -8043,46 +8093,23 @@
           "assetURLs": null,
           "minOSVersion": null,
           "maxOSVersion": null
-        },
-        {
-          "version": "1.6b3",
-          "buildVersion": null,
-          "marketingVersion": null,
-          "date": "2022-11-08T13:00:00-05:00",
-          "localizedDescription": "NEW\n\u2022 Completely revamped error handling to make debugging issues as easy as possible\n\u2022 Revised error messages to be more descriptive and provide more suggestions\n\u2022 \u201cView More Details\u201d button in Error Log to view detailed error information\n\nFIXED\n\u2022 Fixed incorrect Error Log appearance in Dark Mode\n\u2022\u00a0Fixed widgets sometimes not updating\n\nPREVIOUS VERSIONS\n\nLock Screen Widget (iOS 16+)\n\u2022 Counts down days until AltStore expires\n\u2022 Comes in 2 different styles: \u201cicon\u201d and \u201ctext\u201d\n\nError Log\n\u2022 View past errors in more detail\n\u2022 Tap an error to copy the error message or error code\n\u2022 Search for error code directly in AltStore FAQ",
-          "downloadURL": "https://cdn.altstore.io/file/altstore/apps/altstore/1_6_b3.ipa",
-          "size": 5531843,
-          "assetURLs": null,
-          "minOSVersion": null,
-          "maxOSVersion": null
-        },
-        {
-          "version": "1.6b2",
-          "buildVersion": null,
-          "marketingVersion": null,
-          "date": "2022-09-21T14:00:00-04:00",
-          "localizedDescription": "\u2022 Fixed \u201cerror migrating persistent store\u201d issue on launch\n\nPREVIOUS VERSION\n\nLock Screen Widget (iOS 16+)\n\u2022 Counts down days until AltStore expires\n\u2022 Comes in 2 different styles: \u201cicon\u201d and \u201ctext\u201d\n\nError Log\n\u2022 View past errors in more detail\n\u2022 Tap an error to copy the error message or error code\n\u2022 Search for error code directly in AltStore FAQ",
-          "downloadURL": "https://cdn.altstore.io/file/altstore/apps/altstore/1_6_b2.ipa",
-          "size": 5465933,
-          "assetURLs": null,
-          "minOSVersion": null,
-          "maxOSVersion": null
-        },
-        {
-          "version": "1.6b1",
-          "buildVersion": null,
-          "marketingVersion": null,
-          "date": "2022-09-16T11:00:00-04:00",
-          "localizedDescription": "Lock Screen Widget (iOS 16+)\n\u2022 Counts down days until AltStore expires\n\u2022 Comes in 2 different styles: \u201cicon\u201d and \u201ctext\u201d\n\nError Log\n\u2022 View past errors in more detail\n\u2022 Tap an error to copy the error message or error code\n\u2022 Search for error code directly in AltStore FAQ\n\nFIXED\n\u2022 Fixed \u201cmore\u201d button not appearing in app detail page",
-          "downloadURL": "https://cdn.altstore.io/file/altstore/apps/altstore/1_6_b1.ipa",
-          "size": 5465476,
-          "assetURLs": null,
-          "minOSVersion": null,
-          "maxOSVersion": null
         }
       ],
       "appPermissions": {
-        "entitlements": [],
+        "entitlements": [
+          {
+            "name": "get-task-allow"
+          },
+          {
+            "name": "com.apple.security.application-groups"
+          },
+          {
+            "name": "aps-environment"
+          },
+          {
+            "name": "com.apple.developer.siri"
+          }
+        ],
         "privacy": [
           {
             "name": "LocalNetwork",
@@ -8090,7 +8117,11 @@
           }
         ]
       },
-      "patreon": null
+      "patreon": {
+        "pledge": 3,
+        "benefit": "1186336",
+        "hidden": true
+      }
     },
     {
       "name": "Delta",
@@ -8099,10 +8130,21 @@
       "developerName": "Riley Testut",
       "subtitle": "Classic games in your pocket.",
       "localizedDescription": "Delta is an all-in-one emulator for iOS. Delta builds upon the strengths of its predecessor, GBA4iOS, while expanding to include support for more game systems such as NES, SNES, and N64.\n\nFEATURES\n\nSupported Game Systems\n\u2022 Nintendo Entertainment System\n\u2022 Super Nintendo Entertainment System\n\u2022 Nintendo 64\n\u2022 Game Boy (Color)\n\u2022 Game Boy Advance\n\u2022 Nintendo DS\n\u2022 And plenty more to come!\n\nController Support\n\u2022 Supports PS4, PS5, Xbox One S, Xbox Series X, and MFi game controllers.\n\u2022 Supports bluetooth (and wired) keyboards, as well as the Apple Smart Keyboard.\n\u2022 Completely customize button mappings on a per-system, per-controller basis.\n\u2022 Map buttons to special \u201cQuick Save\u201d, \u201cQuick Load,\u201d and \u201cFast Forward\u201d actions.\n\nSave States\n\u2022 Save and load save states for any game from the pause menu.\n\u2022 Lock save states to prevent them from being accidentally overwritten.\n\u2022 Automatically makes backup save states to ensure you never lose your progress.\n\u2022 Support for \u201cQuick Saves,\u201d save states that can be quickly saved/loaded with a single button press (requires external controller).\n\nCheats\n\u2022 Supports various types of cheat codes for each supported system:\n\u2022 NES: Game Genie\n\u2022 SNES: Game Genie, Pro Action Replay\n\u2022 N64: GameShark\n\u2022 GBC: Game Genie, GameShark\n\u2022 GBA: Action Replay, Code Breaker, GameShark\n\u2022 DS: Action Replay\n\nDelta Sync\n\u2022 Sync your games, game saves, save states, cheats, controller skins, and controller mappings between devices.\n\u2022 View version histories of everything you sync and optionally restore them to earlier versions.\n\u2022 Supports both Google Drive and Dropbox.\n\nCustom Controller Skins\n\u2022 Beautiful built-in controller skins for all systems.\n\u2022 Import controller skins made by others, or even make your own to share with the world!\n\nHold Button\n\u2022 Choose buttons for Delta to hold down on your behalf, freeing up your thumbs to press other buttons instead.\n\u2022 Perfect for games that typically require one button be held down constantly (ex: run button in Mario games, or the A button in Mario Kart).\n\nFast Forward\n\u2022 Speed through slower parts of games by running the game much faster than normal.\n\u2022 Easily enable or disable from the pause menu, or optionally with a mapped button on an external controller.\n\n3D/Haptic Touch\n\u2022 Use 3D or Haptic Touch to \u201cpeek\u201d at games, save states, and cheat codes.\n\u2022 App icon shortcuts allow quick access to your most recently played games, or optionally customize the shortcuts to always include certain games.\n\nGame Artwork\n\u2022 Automatically displays appropriate box art for imported games.\n\u2022 Change a game\u2019s artwork to anything you want, or select from the built-in game artwork database.\n\nMisc.\n\u2022 Gyroscope support (WarioWare: Twisted! only)\n\u2022 Microphone support (DS only)\n\u2022 Support for delta:// URL scheme to jump directly into a specific game.\n\n**Delta and AltStore LLC are in no way affiliated with Nintendo. The name \"Nintendo\" and all associated game console names are registered trademarks of Nintendo Co., Ltd.**",
-      "iconURL": "https://user-images.githubusercontent.com/705880/63391976-4d311700-c37a-11e9-91a8-4fb0c454413d.png",
+      "iconURL": "https://cdn.altstore.io/file/altstore/images/delta/Delta4.png",
       "tintColor": "8A28F7",
-      "category": null,
-      "screenshots": null,
+      "category": "games",
+      "screenshots": [
+        "https://user-images.githubusercontent.com/705880/277049094-8458028c-92e0-4e73-99de-5dd865b76487.PNG",
+        "https://user-images.githubusercontent.com/705880/277049686-975b9d37-140a-481e-8668-765acdd1dedb.PNG",
+        {
+          "imageURL": "https://user-images.githubusercontent.com/705880/277049716-5d043eac-4cf2-46c9-8dfe-daefc40d0325.PNG",
+          "width": 2556,
+          "height": 1179
+        },
+        "https://user-images.githubusercontent.com/705880/277049074-15aabbaf-58f3-4609-b578-60ac7539ced0.PNG",
+        "https://user-images.githubusercontent.com/705880/277049050-e0d90f06-1f38-4736-8c1b-d41ec45d201b.PNG",
+        "https://user-images.githubusercontent.com/705880/277049040-a4dcc9d0-561d-4f1e-87cb-ff03e542a6d7.png"
+      ],
       "versions": [
         {
           "version": "1.7.1",
@@ -8112,6 +8154,18 @@
           "localizedDescription": "This update fixes compatibility with certain N64 games.\n\nPREVIOUS UPDATE\n\nNEW\n\nOnline Multiplayer\n\u2022 Play online-compatible Nintendo DS games with friends around the world!\n\u2022 Connect via community Nintendo WFC servers\n\u2022 Choose one of the default servers (Wiimmfi, WiiLink WFC, or AltWFC), or provide a custom DNS\n\nUpdated N64 Core\n\u2022 Uses OpenGL ES 3.0 to render games\n\u2022 Fixes many graphical issues (e.g. black textures)\n\u2022 Optionally switch back to OpenGL ES 2.0 on per-game basis\n\u2022 Custom resolutions by editing `mupen64plus.cfg` file\n\u2022 Custom texture packs via Mupen64Plus `hires_texture` directory\n\nGame Screenshots (thanks Chris Rittenhouse!)\n\u2022 New pause menu option to take game screenshots\n\u2022 Map game controller buttons to take screenshots\n\u2022 New `screenshot` input for controller skins\n\nGame Controller Skins\n\u2022 Choose a skin to use when a game controller is connected\n\u2022 Choose system-wide or per-game\n\nController Case Support\n\u2022 Controller skins can adjust position of pause menu via new `menuInsets` property\n\u2022 Allows using pause menu with cases such as GAMEBABY and PlayCase\n\nGame Settings\n\u2022 New context-menu option for per-game settings\n\u2022 Includes \u201cPreferred Game Skin\u201d, \u201cOpenGL ES 3.0\u201d (N64) and \u201cInserted GBA Game\u201d (DS)\n\nMisc.\n\u2022 \u201cResume\u201d button to easily resume games\n\u2022 Additional \u201cButton Pack\u201d icons designed by Louie Mantia\n\u2022 Adds dark + tinted variants of primary app icon\n\nFIXED\n\n\u2022 Fixed using analog sticks as discrete inputs for controllers with poor calibration (thanks Ian Clawson!)\n\u2022 Fixed black/missing/incorrect textures in various N64 games\n\u2022 Fixed white screen after (un-)locking device while AirPlaying DS games\n\u2022 Fixed no audio for game previews in silent mode when Respect Silent Mode is OFF\n\u2022 Fixed showing all save states as incompatible for non-DS systems\n\u2022 Fixed crash when viewing save states for unsupported system\n\u2022 Fixed missing accessibility label for Settings button\n\u2022 Fixed not showing \u201cReset\u201d button when choosing landscape skin\n\u2022 Fixed not showing \u201cReset\u201d button when choosing per-game Game Controller or AirPlay skins\n\u2022 Fixed \u201cHold Button\u201d description layout after orientation change\n\u2022 [Delta Sync] Fixed misleading \u201cfile does not exist\u201d errors when previous version is missing\n\u2022 [iPad] Fixed quitting all games when using multiple scenes",
           "downloadURL": "https://cdn.altstore.io/file/altstore/apps/delta/1_7_1.ipa",
           "size": 196023694,
+          "assetURLs": null,
+          "minOSVersion": "14.0",
+          "maxOSVersion": null
+        },
+        {
+          "version": "1.7",
+          "buildVersion": "137",
+          "marketingVersion": null,
+          "date": "2025-03-31T13:00:00-04:00",
+          "localizedDescription": "NEW\n\nOnline Multiplayer\n\u2022 Play online-compatible Nintendo DS games with friends around the world!\n\u2022 Connect via community Nintendo WFC servers\n\u2022 Choose one of the default servers (Wiimmfi, WiiLink WFC, or AltWFC), or provide a custom DNS\n\nUpdated N64 Core\n\u2022 Uses OpenGL ES 3.0 to render games\n\u2022 Fixes many graphical issues (e.g. black textures)\n\u2022 Optionally switch back to OpenGL ES 2.0 on per-game basis\n\u2022 Custom resolutions by editing `mupen64plus.cfg` file\n\u2022 Custom texture packs via Mupen64Plus `hires_texture` directory\n\nGame Screenshots (thanks Chris Rittenhouse!)\n\u2022 New pause menu option to take game screenshots\n\u2022 Map game controller buttons to take screenshots\n\u2022 New `screenshot` input for controller skins\n\nGame Controller Skins\n\u2022 Choose a skin to use when a game controller is connected\n\u2022 Choose system-wide or per-game\n\nController Case Support\n\u2022 Controller skins can adjust position of pause menu via new `menuInsets` property\n\u2022 Allows using pause menu with cases such as GAMEBABY and PlayCase\n\nGame Settings\n\u2022 New context-menu option for per-game settings\n\u2022 Includes \u201cPreferred Game Skin\u201d, \u201cOpenGL ES 3.0\u201d (N64) and \u201cInserted GBA Game\u201d (DS)\n\nMisc.\n\u2022 \u201cResume\u201d button to easily resume games\n\u2022 Additional \u201cButton Pack\u201d icons designed by Louie Mantia\n\u2022 Adds dark + tinted variants of primary app icon\n\nFIXED\n\n\u2022 Fixed using analog sticks as discrete inputs for controllers with poor calibration (thanks Ian Clawson!)\n\u2022 Fixed black/missing/incorrect textures in various N64 games\n\u2022 Fixed white screen after (un-)locking device while AirPlaying DS games\n\u2022 Fixed no audio for game previews in silent mode when Respect Silent Mode is OFF\n\u2022 Fixed showing all save states as incompatible for non-DS systems\n\u2022 Fixed crash when viewing save states for unsupported system\n\u2022 Fixed missing accessibility label for Settings button\n\u2022 Fixed not showing \u201cReset\u201d button when choosing landscape skin\n\u2022 Fixed not showing \u201cReset\u201d button when choosing per-game Game Controller or AirPlay skins\n\u2022 Fixed \u201cHold Button\u201d description layout after orientation change\n\u2022 [Delta Sync] Fixed misleading \u201cfile does not exist\u201d errors when previous version is missing\n\u2022 [iPad] Fixed quitting all games when using multiple scenes",
+          "downloadURL": "https://cdn.altstore.io/file/altstore/apps/delta/1_7.ipa",
+          "size": 196022883,
           "assetURLs": null,
           "minOSVersion": "14.0",
           "maxOSVersion": null
@@ -8235,50 +8289,29 @@
           "assetURLs": null,
           "minOSVersion": null,
           "maxOSVersion": null
-        },
-        {
-          "version": "1.3.2",
-          "buildVersion": null,
-          "marketingVersion": null,
-          "date": "2022-10-18T13:00:00-04:00",
-          "localizedDescription": "\u2022 Fixes external keyboard support\n\u2022 Fixes invisible system name when remapping game controllers on iOS 16\n\u2022 Fixes previous game controller remaining selected after changing controller",
-          "downloadURL": "https://cdn.altstore.io/file/altstore/apps/delta/1_3_2.ipa",
-          "size": 19742740,
-          "assetURLs": null,
-          "minOSVersion": null,
-          "maxOSVersion": null
-        },
-        {
-          "version": "1.3.1",
-          "buildVersion": null,
-          "marketingVersion": null,
-          "date": "2021-12-02T16:30:00-05:00",
-          "localizedDescription": "\u2022 Fixes game artwork not loading\n\u2022 Fixes using deprecated DeSmuME core over melonDS core for some users",
-          "downloadURL": "https://cdn.altstore.io/file/altstore/apps/delta/1_3_1.ipa",
-          "size": 19739373,
-          "assetURLs": null,
-          "minOSVersion": null,
-          "maxOSVersion": null
         }
       ],
       "appPermissions": {
-        "entitlements": [],
-        "privacy": [
+        "entitlements": [
           {
-            "name": "LocalNetwork",
-            "usageDescription": "Delta uses the local network to communicate with AltServer and enable JIT."
+            "name": "get-task-allow"
           },
+          {
+            "name": "com.apple.developer.game-center"
+          }
+        ],
+        "privacy": [
           {
             "name": "Microphone",
             "usageDescription": "Delta uses your microphone to emulate the Nintendo DS microphone."
           },
           {
-            "name": "PhotoLibraryAdd",
-            "usageDescription": "Please allow Delta to save screenshots to your Photo Library."
+            "name": "LocalNetwork",
+            "usageDescription": "Delta uses the local network to communicate with AltServer and enable JIT."
           },
           {
             "name": "PhotoLibrary",
-            "usageDescription": "Press \u201cOK\u201d to allow Delta to use images from your Photo Library as game artwork."
+            "usageDescription": "Allows Delta to use images from your Photo Library as game artwork."
           }
         ]
       },
@@ -9031,49 +9064,6 @@
       "patreon": null
     },
     {
-      "name": "TikTok++",
-      "bundleIdentifier": "com.zhiliaoapp.musically",
-      "marketplaceID": null,
-      "developerName": "aJBbo",
-      "subtitle": "TikTok with added features.",
-      "localizedDescription": "AC - An awesome tweak for TikTok!\n\nFeatures:\n\n\u2022 No Ads\n\u2022 Download Videos\n\u2022 Download Musics\n\u2022 Show/Hide UI button\n\u2022 Copy video decription\n\u2022 Copy video link\n\u2022 Copy Music link\n\u2022 Auto Play Next Video\n\u2022 Show progress bar\n\u2022 Confirm like\n\u2022 Confirm comment like\n\u2022 Confirm comment dislike\n\u2022 Confirm follow\n\u2022 Save profile image\n\u2022 Copy profile information\n\u2022 Extend bio\n\u2022 Extend comment\n\u2022 Always open in Safari\n\u2022 Changing region\n\u2022 Fake verify blue mark\n\u2022 Fake Follower count\n\u2022 Fake Following count\n\u2022 Padlock",
-      "iconURL": "https://img.ipa4fun.com/06/ac/ac/835599320-logo.webp",
-      "tintColor": "0b0b0b",
-      "category": "Social",
-      "screenshots": null,
-      "versions": [
-        {
-          "version": "38.7.0",
-          "buildVersion": null,
-          "marketingVersion": null,
-          "date": "2025-03-04T00:00:00-05:00",
-          "localizedDescription": "\u2022 Updated TikTok to v38.7.0\n\u2022 Replaced BHTikTok with AC",
-          "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/TikTok.v38.7.0.+.AC.v2.0.ipa",
-          "size": 226000000,
-          "assetURLs": null,
-          "minOSVersion": null,
-          "maxOSVersion": null
-        },
-        {
-          "version": "32.2.0",
-          "buildVersion": null,
-          "marketingVersion": null,
-          "date": "2024-04-30T00:00:00-04:00",
-          "localizedDescription": "\u2022 Updated TikTok to v32.2.0\n\u2022 Replaced TikTokLRD with BHTikTok",
-          "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/TikTok.v32.2.0.+.BH+.v2.3.ipa",
-          "size": 226000000,
-          "assetURLs": null,
-          "minOSVersion": null,
-          "maxOSVersion": null
-        }
-      ],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      },
-      "patreon": null
-    },
-    {
       "name": "SoundCloud++",
       "bundleIdentifier": "com.soundcloud.TouchApp",
       "marketplaceID": null,
@@ -9117,6 +9107,49 @@
           "localizedDescription": "\u2022 Updated SoundCloud to v7.2.0",
           "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/SoundCloud.v7.2.0.+.SCMusicPlus.v2.2.1.ipa",
           "size": 47600000,
+          "assetURLs": null,
+          "minOSVersion": null,
+          "maxOSVersion": null
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "patreon": null
+    },
+    {
+      "name": "TikTok++",
+      "bundleIdentifier": "com.zhiliaoapp.musically",
+      "marketplaceID": null,
+      "developerName": "aJBbo",
+      "subtitle": "TikTok with added features.",
+      "localizedDescription": "AC - An awesome tweak for TikTok!\n\nFeatures:\n\n\u2022 No Ads\n\u2022 Download Videos\n\u2022 Download Musics\n\u2022 Show/Hide UI button\n\u2022 Copy video decription\n\u2022 Copy video link\n\u2022 Copy Music link\n\u2022 Auto Play Next Video\n\u2022 Show progress bar\n\u2022 Confirm like\n\u2022 Confirm comment like\n\u2022 Confirm comment dislike\n\u2022 Confirm follow\n\u2022 Save profile image\n\u2022 Copy profile information\n\u2022 Extend bio\n\u2022 Extend comment\n\u2022 Always open in Safari\n\u2022 Changing region\n\u2022 Fake verify blue mark\n\u2022 Fake Follower count\n\u2022 Fake Following count\n\u2022 Padlock",
+      "iconURL": "https://img.ipa4fun.com/06/ac/ac/835599320-logo.webp",
+      "tintColor": "0b0b0b",
+      "category": "Social",
+      "screenshots": null,
+      "versions": [
+        {
+          "version": "38.7.0",
+          "buildVersion": null,
+          "marketingVersion": null,
+          "date": "2025-03-04T00:00:00-05:00",
+          "localizedDescription": "\u2022 Updated TikTok to v38.7.0\n\u2022 Replaced BHTikTok with AC",
+          "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/TikTok.v38.7.0.+.AC.v2.0.ipa",
+          "size": 226000000,
+          "assetURLs": null,
+          "minOSVersion": null,
+          "maxOSVersion": null
+        },
+        {
+          "version": "32.2.0",
+          "buildVersion": null,
+          "marketingVersion": null,
+          "date": "2024-04-30T00:00:00-04:00",
+          "localizedDescription": "\u2022 Updated TikTok to v32.2.0\n\u2022 Replaced TikTokLRD with BHTikTok",
+          "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/TikTok.v32.2.0.+.BH+.v2.3.ipa",
+          "size": 226000000,
           "assetURLs": null,
           "minOSVersion": null,
           "maxOSVersion": null
@@ -9672,7 +9705,13 @@
       "iconURL": "https://raw.githubusercontent.com/dayanch96/YTMusicUltimate/refs/heads/main/Resources/icon.png",
       "tintColor": "#FF0033",
       "category": null,
-      "screenshots": null,
+      "screenshots": [
+        "https://raw.githubusercontent.com/dayanch96/YTMusicUltimate/refs/heads/main/Resources/scrn1.png",
+        "https://raw.githubusercontent.com/dayanch96/YTMusicUltimate/refs/heads/main/Resources/scrn2.png",
+        "https://raw.githubusercontent.com/dayanch96/YTMusicUltimate/refs/heads/main/Resources/scrn3.png",
+        "https://raw.githubusercontent.com/dayanch96/YTMusicUltimate/refs/heads/main/Resources/scrn4.png",
+        "https://raw.githubusercontent.com/dayanch96/YTMusicUltimate/refs/heads/main/Resources/scrn5.png"
+      ],
       "versions": [
         {
           "version": "7.33.2",
@@ -9711,133 +9750,6 @@
           "NSContactsUsageDescription": "This will allow you to invite your family into your membership plan.",
           "NSPhotoLibraryUsageDescription": "To choose a profile picture, allow YouTube Music to access your photos."
         }
-      },
-      "patreon": null
-    },
-    {
-      "name": "iTorrent",
-      "bundleIdentifier": "ru.nonamedude.iTorrent",
-      "marketplaceID": null,
-      "developerName": "XITRIX",
-      "subtitle": null,
-      "localizedDescription": "iTorrent",
-      "iconURL": "https://raw.githubusercontent.com/Neoncat-OG/TrollStore-IPAs/main/icons/ru.nonamedude.iTorrent.png",
-      "tintColor": null,
-      "category": null,
-      "screenshots": null,
-      "versions": [
-        {
-          "version": "2.0.14-1",
-          "buildVersion": null,
-          "marketingVersion": null,
-          "date": "2025-01-08T00:00:00-05:00",
-          "localizedDescription": "Probably the best Torrent client for iOS 9.3 and up.\nLast updated: 07-30-2024\nStatus: \u2705 \ud83d\udc4d \u2b50",
-          "downloadURL": "https://github.com/Neoncat-OG/TrollStore-IPAs/releases/download/01-08-2025/iTorrent-2.0.14-1.ipa",
-          "size": 7027297,
-          "assetURLs": null,
-          "minOSVersion": null,
-          "maxOSVersion": null
-        },
-        {
-          "version": "2.0.13-2",
-          "buildVersion": null,
-          "marketingVersion": null,
-          "date": "2024-11-28T00:00:00-05:00",
-          "localizedDescription": "Probably the best Torrent client for iOS 9.3 and up.\nLast updated: 07-30-2024\nStatus: \u2705 \ud83d\udc4d \u2b50",
-          "downloadURL": "https://github.com/Neoncat-OG/TrollStore-IPAs/releases/download/11-28-2024/iTorrent-2.0.13-2.ipa",
-          "size": 7025619,
-          "assetURLs": null,
-          "minOSVersion": null,
-          "maxOSVersion": null
-        },
-        {
-          "version": "2.0.12-1",
-          "buildVersion": null,
-          "marketingVersion": null,
-          "date": "2024-11-12T00:00:00-05:00",
-          "localizedDescription": "Probably the best Torrent client for iOS 9.3 and up.\nLast updated: 07-30-2024\nStatus: \u2705 \ud83d\udc4d \u2b50",
-          "downloadURL": "https://github.com/Neoncat-OG/TrollStore-IPAs/releases/download/iTorrent/iTorrent-2.0.12-1.ipa",
-          "size": 7002771,
-          "assetURLs": null,
-          "minOSVersion": null,
-          "maxOSVersion": null
-        },
-        {
-          "version": "1.9-25",
-          "buildVersion": null,
-          "marketingVersion": null,
-          "date": "2024-10-17T00:00:00-04:00",
-          "localizedDescription": "Probably the best Torrent client for iOS 9.3 and up.\nLast updated: 07-30-2024\nStatus: \u2705 \ud83d\udc4d \u2b50",
-          "downloadURL": "https://github.com/Neoncat-OG/TrollStore-IPAs/releases/download/iTorrent/iTorrent-1.9-25.ipa",
-          "size": 17095980,
-          "assetURLs": null,
-          "minOSVersion": null,
-          "maxOSVersion": null
-        },
-        {
-          "version": "2.0.10-1",
-          "buildVersion": null,
-          "marketingVersion": null,
-          "date": "2024-10-17T00:00:00-04:00",
-          "localizedDescription": "Probably the best Torrent client for iOS 9.3 and up.\nLast updated: 07-30-2024\nStatus: \u2705 \ud83d\udc4d \u2b50",
-          "downloadURL": "https://github.com/Neoncat-OG/TrollStore-IPAs/releases/download/iTorrent/iTorrent-2.0.10-1.ipa",
-          "size": 6581661,
-          "assetURLs": null,
-          "minOSVersion": null,
-          "maxOSVersion": null
-        },
-        {
-          "version": "2.0.7-2",
-          "buildVersion": null,
-          "marketingVersion": null,
-          "date": "2024-10-17T00:00:00-04:00",
-          "localizedDescription": "Probably the best Torrent client for iOS 9.3 and up.\nLast updated: 07-30-2024\nStatus: \u2705 \ud83d\udc4d \u2b50",
-          "downloadURL": "https://github.com/Neoncat-OG/TrollStore-IPAs/releases/download/iTorrent/iTorrent-2.0.7-2.ipa",
-          "size": 6755521,
-          "assetURLs": null,
-          "minOSVersion": null,
-          "maxOSVersion": null
-        },
-        {
-          "version": "2.0.7-5",
-          "buildVersion": null,
-          "marketingVersion": null,
-          "date": "2024-10-17T00:00:00-04:00",
-          "localizedDescription": "Probably the best Torrent client for iOS 9.3 and up.\nLast updated: 07-30-2024\nStatus: \u2705 \ud83d\udc4d \u2b50",
-          "downloadURL": "https://github.com/Neoncat-OG/TrollStore-IPAs/releases/download/iTorrent/iTorrent-2.0.7-5.ipa",
-          "size": 6917642,
-          "assetURLs": null,
-          "minOSVersion": null,
-          "maxOSVersion": null
-        },
-        {
-          "version": "2.0.8-1",
-          "buildVersion": null,
-          "marketingVersion": null,
-          "date": "2024-10-17T00:00:00-04:00",
-          "localizedDescription": "Probably the best Torrent client for iOS 9.3 and up.\nLast updated: 07-30-2024\nStatus: \u2705 \ud83d\udc4d \u2b50",
-          "downloadURL": "https://github.com/Neoncat-OG/TrollStore-IPAs/releases/download/iTorrent/iTorrent-2.0.8-1.ipa",
-          "size": 6917810,
-          "assetURLs": null,
-          "minOSVersion": null,
-          "maxOSVersion": null
-        },
-        {
-          "version": "2.0.9-1",
-          "buildVersion": null,
-          "marketingVersion": null,
-          "date": "2024-10-17T00:00:00-04:00",
-          "localizedDescription": "Probably the best Torrent client for iOS 9.3 and up.\nLast updated: 07-30-2024\nStatus: \u2705 \ud83d\udc4d \u2b50",
-          "downloadURL": "https://github.com/Neoncat-OG/TrollStore-IPAs/releases/download/iTorrent/iTorrent-2.0.9-1.ipa",
-          "size": 6555495,
-          "assetURLs": null,
-          "minOSVersion": null,
-          "maxOSVersion": null
-        }
-      ],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
       },
       "patreon": null
     },
@@ -10665,6 +10577,133 @@
       "patreon": null
     },
     {
+      "name": "iTorrent",
+      "bundleIdentifier": "ru.nonamedude.iTorrent",
+      "marketplaceID": null,
+      "developerName": "XITRIX",
+      "subtitle": null,
+      "localizedDescription": "iTorrent",
+      "iconURL": "https://raw.githubusercontent.com/Neoncat-OG/TrollStore-IPAs/main/icons/ru.nonamedude.iTorrent.png",
+      "tintColor": null,
+      "category": null,
+      "screenshots": null,
+      "versions": [
+        {
+          "version": "2.0.14-1",
+          "buildVersion": null,
+          "marketingVersion": null,
+          "date": "2025-01-08T00:00:00-05:00",
+          "localizedDescription": "Probably the best Torrent client for iOS 9.3 and up.\nLast updated: 07-30-2024\nStatus: \u2705 \ud83d\udc4d \u2b50",
+          "downloadURL": "https://github.com/Neoncat-OG/TrollStore-IPAs/releases/download/01-08-2025/iTorrent-2.0.14-1.ipa",
+          "size": 7027297,
+          "assetURLs": null,
+          "minOSVersion": null,
+          "maxOSVersion": null
+        },
+        {
+          "version": "2.0.13-2",
+          "buildVersion": null,
+          "marketingVersion": null,
+          "date": "2024-11-28T00:00:00-05:00",
+          "localizedDescription": "Probably the best Torrent client for iOS 9.3 and up.\nLast updated: 07-30-2024\nStatus: \u2705 \ud83d\udc4d \u2b50",
+          "downloadURL": "https://github.com/Neoncat-OG/TrollStore-IPAs/releases/download/11-28-2024/iTorrent-2.0.13-2.ipa",
+          "size": 7025619,
+          "assetURLs": null,
+          "minOSVersion": null,
+          "maxOSVersion": null
+        },
+        {
+          "version": "2.0.12-1",
+          "buildVersion": null,
+          "marketingVersion": null,
+          "date": "2024-11-12T00:00:00-05:00",
+          "localizedDescription": "Probably the best Torrent client for iOS 9.3 and up.\nLast updated: 07-30-2024\nStatus: \u2705 \ud83d\udc4d \u2b50",
+          "downloadURL": "https://github.com/Neoncat-OG/TrollStore-IPAs/releases/download/iTorrent/iTorrent-2.0.12-1.ipa",
+          "size": 7002771,
+          "assetURLs": null,
+          "minOSVersion": null,
+          "maxOSVersion": null
+        },
+        {
+          "version": "1.9-25",
+          "buildVersion": null,
+          "marketingVersion": null,
+          "date": "2024-10-17T00:00:00-04:00",
+          "localizedDescription": "Probably the best Torrent client for iOS 9.3 and up.\nLast updated: 07-30-2024\nStatus: \u2705 \ud83d\udc4d \u2b50",
+          "downloadURL": "https://github.com/Neoncat-OG/TrollStore-IPAs/releases/download/iTorrent/iTorrent-1.9-25.ipa",
+          "size": 17095980,
+          "assetURLs": null,
+          "minOSVersion": null,
+          "maxOSVersion": null
+        },
+        {
+          "version": "2.0.10-1",
+          "buildVersion": null,
+          "marketingVersion": null,
+          "date": "2024-10-17T00:00:00-04:00",
+          "localizedDescription": "Probably the best Torrent client for iOS 9.3 and up.\nLast updated: 07-30-2024\nStatus: \u2705 \ud83d\udc4d \u2b50",
+          "downloadURL": "https://github.com/Neoncat-OG/TrollStore-IPAs/releases/download/iTorrent/iTorrent-2.0.10-1.ipa",
+          "size": 6581661,
+          "assetURLs": null,
+          "minOSVersion": null,
+          "maxOSVersion": null
+        },
+        {
+          "version": "2.0.7-2",
+          "buildVersion": null,
+          "marketingVersion": null,
+          "date": "2024-10-17T00:00:00-04:00",
+          "localizedDescription": "Probably the best Torrent client for iOS 9.3 and up.\nLast updated: 07-30-2024\nStatus: \u2705 \ud83d\udc4d \u2b50",
+          "downloadURL": "https://github.com/Neoncat-OG/TrollStore-IPAs/releases/download/iTorrent/iTorrent-2.0.7-2.ipa",
+          "size": 6755521,
+          "assetURLs": null,
+          "minOSVersion": null,
+          "maxOSVersion": null
+        },
+        {
+          "version": "2.0.7-5",
+          "buildVersion": null,
+          "marketingVersion": null,
+          "date": "2024-10-17T00:00:00-04:00",
+          "localizedDescription": "Probably the best Torrent client for iOS 9.3 and up.\nLast updated: 07-30-2024\nStatus: \u2705 \ud83d\udc4d \u2b50",
+          "downloadURL": "https://github.com/Neoncat-OG/TrollStore-IPAs/releases/download/iTorrent/iTorrent-2.0.7-5.ipa",
+          "size": 6917642,
+          "assetURLs": null,
+          "minOSVersion": null,
+          "maxOSVersion": null
+        },
+        {
+          "version": "2.0.8-1",
+          "buildVersion": null,
+          "marketingVersion": null,
+          "date": "2024-10-17T00:00:00-04:00",
+          "localizedDescription": "Probably the best Torrent client for iOS 9.3 and up.\nLast updated: 07-30-2024\nStatus: \u2705 \ud83d\udc4d \u2b50",
+          "downloadURL": "https://github.com/Neoncat-OG/TrollStore-IPAs/releases/download/iTorrent/iTorrent-2.0.8-1.ipa",
+          "size": 6917810,
+          "assetURLs": null,
+          "minOSVersion": null,
+          "maxOSVersion": null
+        },
+        {
+          "version": "2.0.9-1",
+          "buildVersion": null,
+          "marketingVersion": null,
+          "date": "2024-10-17T00:00:00-04:00",
+          "localizedDescription": "Probably the best Torrent client for iOS 9.3 and up.\nLast updated: 07-30-2024\nStatus: \u2705 \ud83d\udc4d \u2b50",
+          "downloadURL": "https://github.com/Neoncat-OG/TrollStore-IPAs/releases/download/iTorrent/iTorrent-2.0.9-1.ipa",
+          "size": 6555495,
+          "assetURLs": null,
+          "minOSVersion": null,
+          "maxOSVersion": null
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "patreon": null
+    },
+    {
       "name": "Picsew_3.11.4_Pro",
       "bundleIdentifier": "com.sugarmo.ScrollClip",
       "marketplaceID": null,
@@ -11477,25 +11516,25 @@
       "patreon": null
     },
     {
-      "name": "appdb",
-      "bundleIdentifier": "it.ned.appdb-ios",
+      "name": "ZiniTeviPlusPlus",
+      "bundleIdentifier": "jb.zini.tevi",
       "marketplaceID": null,
-      "developerName": "n3d1117",
+      "developerName": "AppDB",
       "subtitle": null,
-      "localizedDescription": "appdb",
-      "iconURL": "https://raw.githubusercontent.com/Neoncat-OG/TrollStore-IPAs/main/icons/it.ned.appdb-ios.png",
+      "localizedDescription": "ZiniTeviPlusPlus",
+      "iconURL": "https://raw.githubusercontent.com/Neoncat-OG/TrollStore-IPAs/main/icons/jb.zini.tevi.png",
       "tintColor": null,
       "category": null,
       "screenshots": null,
       "versions": [
         {
-          "version": "1.1.6",
+          "version": "1.5.0",
           "buildVersion": null,
           "marketingVersion": null,
           "date": "2024-10-17T00:00:00-04:00",
-          "localizedDescription": "Comprehensive iOS client for AppDB, compatible with iOS 10 and up.\nLast updated: 12-12-2023\nStatus: \u2705",
-          "downloadURL": "https://github.com/Neoncat-OG/TrollStore-IPAs/releases/download/appdb/appdb-1.1.6.ipa",
-          "size": 23229778,
+          "localizedDescription": "Another movie app, modded to remove ads and tracking. No need to toggle the disable tracking options\nLast updated: 02-09-2023\nStatus: \u26a0\ufe0f",
+          "downloadURL": "https://github.com/Neoncat-OG/TrollStore-IPAs/releases/download/ZiniTeviPlusPlus/ZiniTeviPlusPlus-1.5.0.ipa",
+          "size": 7948926,
           "assetURLs": null,
           "minOSVersion": null,
           "maxOSVersion": null
@@ -11551,25 +11590,25 @@
       "patreon": null
     },
     {
-      "name": "ZiniTeviPlusPlus",
-      "bundleIdentifier": "jb.zini.tevi",
+      "name": "appdb",
+      "bundleIdentifier": "it.ned.appdb-ios",
       "marketplaceID": null,
-      "developerName": "AppDB",
+      "developerName": "n3d1117",
       "subtitle": null,
-      "localizedDescription": "ZiniTeviPlusPlus",
-      "iconURL": "https://raw.githubusercontent.com/Neoncat-OG/TrollStore-IPAs/main/icons/jb.zini.tevi.png",
+      "localizedDescription": "appdb",
+      "iconURL": "https://raw.githubusercontent.com/Neoncat-OG/TrollStore-IPAs/main/icons/it.ned.appdb-ios.png",
       "tintColor": null,
       "category": null,
       "screenshots": null,
       "versions": [
         {
-          "version": "1.5.0",
+          "version": "1.1.6",
           "buildVersion": null,
           "marketingVersion": null,
           "date": "2024-10-17T00:00:00-04:00",
-          "localizedDescription": "Another movie app, modded to remove ads and tracking. No need to toggle the disable tracking options\nLast updated: 02-09-2023\nStatus: \u26a0\ufe0f",
-          "downloadURL": "https://github.com/Neoncat-OG/TrollStore-IPAs/releases/download/ZiniTeviPlusPlus/ZiniTeviPlusPlus-1.5.0.ipa",
-          "size": 7948926,
+          "localizedDescription": "Comprehensive iOS client for AppDB, compatible with iOS 10 and up.\nLast updated: 12-12-2023\nStatus: \u2705",
+          "downloadURL": "https://github.com/Neoncat-OG/TrollStore-IPAs/releases/download/appdb/appdb-1.1.6.ipa",
+          "size": 23229778,
           "assetURLs": null,
           "minOSVersion": null,
           "maxOSVersion": null
@@ -11955,6 +11994,49 @@
       "patreon": null
     },
     {
+      "name": "WazePlus",
+      "bundleIdentifier": "com.waze.iphone",
+      "marketplaceID": null,
+      "developerName": "CyPwn IPA Library",
+      "subtitle": null,
+      "localizedDescription": "WazePlus",
+      "iconURL": "https://raw.githubusercontent.com/Neoncat-OG/TrollStore-IPAs/main/icons/com.waze.iphone.png",
+      "tintColor": null,
+      "category": null,
+      "screenshots": null,
+      "versions": [
+        {
+          "version": "4.100.0",
+          "buildVersion": null,
+          "marketingVersion": null,
+          "date": "2024-10-16T00:00:00-04:00",
+          "localizedDescription": "Waze / Plus. A navigation app that assists drivers in reaching their destinations by providing real-time road alerts, ensuring up-to-date information.\nLast updated: 12-23-2023\nStatus: \u26a0\ufe0f",
+          "downloadURL": "https://github.com/Neoncat-OG/TrollStore-IPAs/releases/download/WazePlus/WazePlus-4.100.0.ipa",
+          "size": 58293096,
+          "assetURLs": null,
+          "minOSVersion": null,
+          "maxOSVersion": null
+        },
+        {
+          "version": "4.108.0",
+          "buildVersion": null,
+          "marketingVersion": null,
+          "date": "2024-10-16T00:00:00-04:00",
+          "localizedDescription": "Waze / Plus. A navigation app that assists drivers in reaching their destinations by providing real-time road alerts, ensuring up-to-date information.\nLast updated: 12-23-2023\nStatus: \u26a0\ufe0f",
+          "downloadURL": "https://github.com/Neoncat-OG/TrollStore-IPAs/releases/download/WazePlus/WazePlus-4.108.0.ipa",
+          "size": 90782814,
+          "assetURLs": null,
+          "minOSVersion": null,
+          "maxOSVersion": null
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "patreon": null
+    },
+    {
       "name": "WindyappPro",
       "bundleIdentifier": "co.windyapp.Windy.watchkitapp",
       "marketplaceID": null,
@@ -12328,37 +12410,37 @@
       "patreon": null
     },
     {
-      "name": "WazePlus",
-      "bundleIdentifier": "com.waze.iphone",
+      "name": "TrollInstallerX",
+      "bundleIdentifier": "com.Alfie.TrollInstallerX",
       "marketplaceID": null,
-      "developerName": "CyPwn IPA Library",
+      "developerName": "alfiecg24",
       "subtitle": null,
-      "localizedDescription": "WazePlus",
-      "iconURL": "https://raw.githubusercontent.com/Neoncat-OG/TrollStore-IPAs/main/icons/com.waze.iphone.png",
+      "localizedDescription": "TrollInstallerX",
+      "iconURL": "https://raw.githubusercontent.com/Neoncat-OG/TrollStore-IPAs/main/icons/com.Alfie.TrollInstallerX.png",
       "tintColor": null,
       "category": null,
       "screenshots": null,
       "versions": [
         {
-          "version": "4.100.0",
+          "version": "1.0.3",
           "buildVersion": null,
           "marketingVersion": null,
-          "date": "2024-10-16T00:00:00-04:00",
-          "localizedDescription": "Waze / Plus. A navigation app that assists drivers in reaching their destinations by providing real-time road alerts, ensuring up-to-date information.\nLast updated: 12-23-2023\nStatus: \u26a0\ufe0f",
-          "downloadURL": "https://github.com/Neoncat-OG/TrollStore-IPAs/releases/download/WazePlus/WazePlus-4.100.0.ipa",
-          "size": 58293096,
+          "date": "2024-10-15T00:00:00-04:00",
+          "localizedDescription": "TrollStore installer for iOS 14.0 to 16.6.1\nLast updated: 04-09-2024\nStatus: \u2705",
+          "downloadURL": "https://github.com/Neoncat-OG/TrollStore-IPAs/releases/download/TrollInstallerX/TrollInstallerX-1.0.3.ipa",
+          "size": 6889214,
           "assetURLs": null,
           "minOSVersion": null,
           "maxOSVersion": null
         },
         {
-          "version": "4.108.0",
+          "version": "1.0.2",
           "buildVersion": null,
           "marketingVersion": null,
-          "date": "2024-10-16T00:00:00-04:00",
-          "localizedDescription": "Waze / Plus. A navigation app that assists drivers in reaching their destinations by providing real-time road alerts, ensuring up-to-date information.\nLast updated: 12-23-2023\nStatus: \u26a0\ufe0f",
-          "downloadURL": "https://github.com/Neoncat-OG/TrollStore-IPAs/releases/download/WazePlus/WazePlus-4.108.0.ipa",
-          "size": 90782814,
+          "date": "2024-10-14T00:00:00-04:00",
+          "localizedDescription": "TrollStore installer for iOS 14.0 to 16.6.1\nLast updated: 04-09-2024\nStatus: \u2705",
+          "downloadURL": "https://github.com/Neoncat-OG/TrollStore-IPAs/releases/download/TrollInstallerX/TrollInstallerX-1.0.2.ipa",
+          "size": 6888282,
           "assetURLs": null,
           "minOSVersion": null,
           "maxOSVersion": null
@@ -12697,37 +12779,61 @@
       "patreon": null
     },
     {
-      "name": "TrollInstallerX",
-      "bundleIdentifier": "com.Alfie.TrollInstallerX",
+      "name": "WallcraftPro",
+      "bundleIdentifier": "com.wallpaperscraft.wallpapers",
       "marketplaceID": null,
-      "developerName": "alfiecg24",
+      "developerName": "DPixel",
       "subtitle": null,
-      "localizedDescription": "TrollInstallerX",
-      "iconURL": "https://raw.githubusercontent.com/Neoncat-OG/TrollStore-IPAs/main/icons/com.Alfie.TrollInstallerX.png",
+      "localizedDescription": "WallcraftPro",
+      "iconURL": "https://raw.githubusercontent.com/Neoncat-OG/TrollStore-IPAs/main/icons/com.wallpaperscraft.wallpapers.png",
       "tintColor": null,
       "category": null,
       "screenshots": null,
       "versions": [
         {
-          "version": "1.0.3",
+          "version": "3.12",
           "buildVersion": null,
           "marketingVersion": null,
           "date": "2024-10-15T00:00:00-04:00",
-          "localizedDescription": "TrollStore installer for iOS 14.0 to 16.6.1\nLast updated: 04-09-2024\nStatus: \u2705",
-          "downloadURL": "https://github.com/Neoncat-OG/TrollStore-IPAs/releases/download/TrollInstallerX/TrollInstallerX-1.0.3.ipa",
-          "size": 6889214,
+          "localizedDescription": "High-quality wallpapers for iPhone, unlocked with Pro. A user requested it so here it is.\nLast updated: 08-01-2024\nStatus: \u2705",
+          "downloadURL": "https://github.com/Neoncat-OG/TrollStore-IPAs/releases/download/WallcraftPro/WallcraftPro-3.12.ipa",
+          "size": 92047124,
           "assetURLs": null,
           "minOSVersion": null,
           "maxOSVersion": null
         },
         {
-          "version": "1.0.2",
+          "version": "3.14",
           "buildVersion": null,
           "marketingVersion": null,
-          "date": "2024-10-14T00:00:00-04:00",
-          "localizedDescription": "TrollStore installer for iOS 14.0 to 16.6.1\nLast updated: 04-09-2024\nStatus: \u2705",
-          "downloadURL": "https://github.com/Neoncat-OG/TrollStore-IPAs/releases/download/TrollInstallerX/TrollInstallerX-1.0.2.ipa",
-          "size": 6888282,
+          "date": "2024-10-15T00:00:00-04:00",
+          "localizedDescription": "High-quality wallpapers for iPhone, unlocked with Pro. A user requested it so here it is.\nLast updated: 08-01-2024\nStatus: \u2705",
+          "downloadURL": "https://github.com/Neoncat-OG/TrollStore-IPAs/releases/download/WallcraftPro/WallcraftPro-3.14.ipa",
+          "size": 91839901,
+          "assetURLs": null,
+          "minOSVersion": null,
+          "maxOSVersion": null
+        },
+        {
+          "version": "3.17",
+          "buildVersion": null,
+          "marketingVersion": null,
+          "date": "2024-10-15T00:00:00-04:00",
+          "localizedDescription": "High-quality wallpapers for iPhone, unlocked with Pro. A user requested it so here it is.\nLast updated: 08-01-2024\nStatus: \u2705",
+          "downloadURL": "https://github.com/Neoncat-OG/TrollStore-IPAs/releases/download/WallcraftPro/WallcraftPro-3.17.ipa",
+          "size": 107411971,
+          "assetURLs": null,
+          "minOSVersion": null,
+          "maxOSVersion": null
+        },
+        {
+          "version": "3.19",
+          "buildVersion": null,
+          "marketingVersion": null,
+          "date": "2024-10-15T00:00:00-04:00",
+          "localizedDescription": "High-quality wallpapers for iPhone, unlocked with Pro. A user requested it so here it is.\nLast updated: 08-01-2024\nStatus: \u2705",
+          "downloadURL": "https://github.com/Neoncat-OG/TrollStore-IPAs/releases/download/WallcraftPro/WallcraftPro-3.19.ipa",
+          "size": 111668351,
           "assetURLs": null,
           "minOSVersion": null,
           "maxOSVersion": null
@@ -12948,73 +13054,6 @@
           "localizedDescription": "",
           "downloadURL": "https://github.com/Neoncat-OG/TrollStore-IPAs/releases/download/WallpapersforDynamicIsland/WallpapersforDynamicIsland-1.9.1.ipa",
           "size": 34490423,
-          "assetURLs": null,
-          "minOSVersion": null,
-          "maxOSVersion": null
-        }
-      ],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      },
-      "patreon": null
-    },
-    {
-      "name": "WallcraftPro",
-      "bundleIdentifier": "com.wallpaperscraft.wallpapers",
-      "marketplaceID": null,
-      "developerName": "DPixel",
-      "subtitle": null,
-      "localizedDescription": "WallcraftPro",
-      "iconURL": "https://raw.githubusercontent.com/Neoncat-OG/TrollStore-IPAs/main/icons/com.wallpaperscraft.wallpapers.png",
-      "tintColor": null,
-      "category": null,
-      "screenshots": null,
-      "versions": [
-        {
-          "version": "3.12",
-          "buildVersion": null,
-          "marketingVersion": null,
-          "date": "2024-10-15T00:00:00-04:00",
-          "localizedDescription": "High-quality wallpapers for iPhone, unlocked with Pro. A user requested it so here it is.\nLast updated: 08-01-2024\nStatus: \u2705",
-          "downloadURL": "https://github.com/Neoncat-OG/TrollStore-IPAs/releases/download/WallcraftPro/WallcraftPro-3.12.ipa",
-          "size": 92047124,
-          "assetURLs": null,
-          "minOSVersion": null,
-          "maxOSVersion": null
-        },
-        {
-          "version": "3.14",
-          "buildVersion": null,
-          "marketingVersion": null,
-          "date": "2024-10-15T00:00:00-04:00",
-          "localizedDescription": "High-quality wallpapers for iPhone, unlocked with Pro. A user requested it so here it is.\nLast updated: 08-01-2024\nStatus: \u2705",
-          "downloadURL": "https://github.com/Neoncat-OG/TrollStore-IPAs/releases/download/WallcraftPro/WallcraftPro-3.14.ipa",
-          "size": 91839901,
-          "assetURLs": null,
-          "minOSVersion": null,
-          "maxOSVersion": null
-        },
-        {
-          "version": "3.17",
-          "buildVersion": null,
-          "marketingVersion": null,
-          "date": "2024-10-15T00:00:00-04:00",
-          "localizedDescription": "High-quality wallpapers for iPhone, unlocked with Pro. A user requested it so here it is.\nLast updated: 08-01-2024\nStatus: \u2705",
-          "downloadURL": "https://github.com/Neoncat-OG/TrollStore-IPAs/releases/download/WallcraftPro/WallcraftPro-3.17.ipa",
-          "size": 107411971,
-          "assetURLs": null,
-          "minOSVersion": null,
-          "maxOSVersion": null
-        },
-        {
-          "version": "3.19",
-          "buildVersion": null,
-          "marketingVersion": null,
-          "date": "2024-10-15T00:00:00-04:00",
-          "localizedDescription": "High-quality wallpapers for iPhone, unlocked with Pro. A user requested it so here it is.\nLast updated: 08-01-2024\nStatus: \u2705",
-          "downloadURL": "https://github.com/Neoncat-OG/TrollStore-IPAs/releases/download/WallcraftPro/WallcraftPro-3.19.ipa",
-          "size": 111668351,
           "assetURLs": null,
           "minOSVersion": null,
           "maxOSVersion": null
@@ -14722,37 +14761,85 @@
       "patreon": null
     },
     {
-      "name": "SuperIcons",
-      "bundleIdentifier": "com.huami.SuperIcons",
+      "name": "SparkPremium",
+      "bundleIdentifier": "com.readdle.smartemail",
       "marketplaceID": null,
-      "developerName": "huami1314",
+      "developerName": "zxcvbn's tweaked IPAs",
       "subtitle": null,
-      "localizedDescription": "SuperIcons",
-      "iconURL": "https://raw.githubusercontent.com/Neoncat-OG/TrollStore-IPAs/main/icons/com.huami.SuperIcons.png",
+      "localizedDescription": "SparkPremium",
+      "iconURL": "https://raw.githubusercontent.com/Neoncat-OG/TrollStore-IPAs/main/icons/com.readdle.smartemail.png",
       "tintColor": null,
       "category": null,
       "screenshots": null,
       "versions": [
         {
-          "version": "2.1-3",
+          "version": "3.6.2",
           "buildVersion": null,
           "marketingVersion": null,
           "date": "2024-10-13T00:00:00-04:00",
-          "localizedDescription": "App for replacing TrollStore's app icons.\nLast updated: 08-05-2024\nStatus: \u2705",
-          "downloadURL": "https://github.com/Neoncat-OG/TrollStore-IPAs/releases/download/SuperIcons/SuperIcons-2.1-3.ipa",
-          "size": 2349879,
+          "localizedDescription": "Spark, with premium features (except AI) and built-in a feature to hide update notifications. Note: To obtain the latest version, first install it through TrollStore then reinstall it via the AppStore. For some reason, this process keeps the tweak working.\nLast updated: 07-07-2024\nStatus: \u2705 \ud83d\udc4d \u2b50",
+          "downloadURL": "https://github.com/Neoncat-OG/TrollStore-IPAs/releases/download/SparkPremium/SparkPremium-3.6.2.ipa",
+          "size": 184885684,
           "assetURLs": null,
           "minOSVersion": null,
           "maxOSVersion": null
         },
         {
-          "version": "2.1-4",
+          "version": "3.9.10",
           "buildVersion": null,
           "marketingVersion": null,
           "date": "2024-10-13T00:00:00-04:00",
-          "localizedDescription": "App for replacing TrollStore's app icons.\nLast updated: 08-05-2024\nStatus: \u2705",
-          "downloadURL": "https://github.com/Neoncat-OG/TrollStore-IPAs/releases/download/SuperIcons/SuperIcons-2.1-4.ipa",
-          "size": 2357851,
+          "localizedDescription": "Spark, with premium features (except AI) and built-in a feature to hide update notifications. Note: To obtain the latest version, first install it through TrollStore then reinstall it via the AppStore. For some reason, this process keeps the tweak working.\nLast updated: 07-07-2024\nStatus: \u2705 \ud83d\udc4d \u2b50",
+          "downloadURL": "https://github.com/Neoncat-OG/TrollStore-IPAs/releases/download/SparkPremium/SparkPremium-3.9.10.ipa",
+          "size": 189076792,
+          "assetURLs": null,
+          "minOSVersion": null,
+          "maxOSVersion": null
+        },
+        {
+          "version": "3.9.11",
+          "buildVersion": null,
+          "marketingVersion": null,
+          "date": "2024-10-13T00:00:00-04:00",
+          "localizedDescription": "Spark, with premium features (except AI) and built-in a feature to hide update notifications. Note: To obtain the latest version, first install it through TrollStore then reinstall it via the AppStore. For some reason, this process keeps the tweak working.\nLast updated: 07-07-2024\nStatus: \u2705 \ud83d\udc4d \u2b50",
+          "downloadURL": "https://github.com/Neoncat-OG/TrollStore-IPAs/releases/download/SparkPremium/SparkPremium-3.9.11.ipa",
+          "size": 189060767,
+          "assetURLs": null,
+          "minOSVersion": null,
+          "maxOSVersion": null
+        },
+        {
+          "version": "3.9.12",
+          "buildVersion": null,
+          "marketingVersion": null,
+          "date": "2024-10-13T00:00:00-04:00",
+          "localizedDescription": "Spark, with premium features (except AI) and built-in a feature to hide update notifications. Note: To obtain the latest version, first install it through TrollStore then reinstall it via the AppStore. For some reason, this process keeps the tweak working.\nLast updated: 07-07-2024\nStatus: \u2705 \ud83d\udc4d \u2b50",
+          "downloadURL": "https://github.com/Neoncat-OG/TrollStore-IPAs/releases/download/SparkPremium/SparkPremium-3.9.12.ipa",
+          "size": 189078673,
+          "assetURLs": null,
+          "minOSVersion": null,
+          "maxOSVersion": null
+        },
+        {
+          "version": "3.9.13",
+          "buildVersion": null,
+          "marketingVersion": null,
+          "date": "2024-10-13T00:00:00-04:00",
+          "localizedDescription": "Spark, with premium features (except AI) and built-in a feature to hide update notifications. Note: To obtain the latest version, first install it through TrollStore then reinstall it via the AppStore. For some reason, this process keeps the tweak working.\nLast updated: 07-07-2024\nStatus: \u2705 \ud83d\udc4d \u2b50",
+          "downloadURL": "https://github.com/Neoncat-OG/TrollStore-IPAs/releases/download/SparkPremium/SparkPremium-3.9.13.ipa",
+          "size": 199502342,
+          "assetURLs": null,
+          "minOSVersion": null,
+          "maxOSVersion": null
+        },
+        {
+          "version": "3.9.6",
+          "buildVersion": null,
+          "marketingVersion": null,
+          "date": "2024-10-13T00:00:00-04:00",
+          "localizedDescription": "Spark, with premium features (except AI) and built-in a feature to hide update notifications. Note: To obtain the latest version, first install it through TrollStore then reinstall it via the AppStore. For some reason, this process keeps the tweak working.\nLast updated: 07-07-2024\nStatus: \u2705 \ud83d\udc4d \u2b50",
+          "downloadURL": "https://github.com/Neoncat-OG/TrollStore-IPAs/releases/download/SparkPremium/SparkPremium-3.9.6.ipa",
+          "size": 121485106,
           "assetURLs": null,
           "minOSVersion": null,
           "maxOSVersion": null
@@ -14870,6 +14957,49 @@
           "localizedDescription": "App that offers a simple and enjoyable method for cleaning up your camera roll and photos, making the task effortless and pleasant.\nLast updated: 03-21-2024\nStatus: \u2705 \u2b50",
           "downloadURL": "https://github.com/Neoncat-OG/TrollStore-IPAs/releases/download/SwipewipePremium/SwipewipePremium-2.08.02.ipa",
           "size": 67489176,
+          "assetURLs": null,
+          "minOSVersion": null,
+          "maxOSVersion": null
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "patreon": null
+    },
+    {
+      "name": "SuperIcons",
+      "bundleIdentifier": "com.huami.SuperIcons",
+      "marketplaceID": null,
+      "developerName": "huami1314",
+      "subtitle": null,
+      "localizedDescription": "SuperIcons",
+      "iconURL": "https://raw.githubusercontent.com/Neoncat-OG/TrollStore-IPAs/main/icons/com.huami.SuperIcons.png",
+      "tintColor": null,
+      "category": null,
+      "screenshots": null,
+      "versions": [
+        {
+          "version": "2.1-3",
+          "buildVersion": null,
+          "marketingVersion": null,
+          "date": "2024-10-13T00:00:00-04:00",
+          "localizedDescription": "App for replacing TrollStore's app icons.\nLast updated: 08-05-2024\nStatus: \u2705",
+          "downloadURL": "https://github.com/Neoncat-OG/TrollStore-IPAs/releases/download/SuperIcons/SuperIcons-2.1-3.ipa",
+          "size": 2349879,
+          "assetURLs": null,
+          "minOSVersion": null,
+          "maxOSVersion": null
+        },
+        {
+          "version": "2.1-4",
+          "buildVersion": null,
+          "marketingVersion": null,
+          "date": "2024-10-13T00:00:00-04:00",
+          "localizedDescription": "App for replacing TrollStore's app icons.\nLast updated: 08-05-2024\nStatus: \u2705",
+          "downloadURL": "https://github.com/Neoncat-OG/TrollStore-IPAs/releases/download/SuperIcons/SuperIcons-2.1-4.ipa",
+          "size": 2357851,
           "assetURLs": null,
           "minOSVersion": null,
           "maxOSVersion": null
@@ -15425,97 +15555,6 @@
           "localizedDescription": "AI app for Musicians that could be used as an alternative to Moises. A user requested it so here it is.\nLast updated: 07-31-2024\nStatus: \u2705",
           "downloadURL": "https://github.com/Neoncat-OG/TrollStore-IPAs/releases/download/StemzMax/StemzMax-4.01.04.ipa",
           "size": 134569972,
-          "assetURLs": null,
-          "minOSVersion": null,
-          "maxOSVersion": null
-        }
-      ],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      },
-      "patreon": null
-    },
-    {
-      "name": "SparkPremium",
-      "bundleIdentifier": "com.readdle.smartemail",
-      "marketplaceID": null,
-      "developerName": "zxcvbn's tweaked IPAs",
-      "subtitle": null,
-      "localizedDescription": "SparkPremium",
-      "iconURL": "https://raw.githubusercontent.com/Neoncat-OG/TrollStore-IPAs/main/icons/com.readdle.smartemail.png",
-      "tintColor": null,
-      "category": null,
-      "screenshots": null,
-      "versions": [
-        {
-          "version": "3.6.2",
-          "buildVersion": null,
-          "marketingVersion": null,
-          "date": "2024-10-13T00:00:00-04:00",
-          "localizedDescription": "Spark, with premium features (except AI) and built-in a feature to hide update notifications. Note: To obtain the latest version, first install it through TrollStore then reinstall it via the AppStore. For some reason, this process keeps the tweak working.\nLast updated: 07-07-2024\nStatus: \u2705 \ud83d\udc4d \u2b50",
-          "downloadURL": "https://github.com/Neoncat-OG/TrollStore-IPAs/releases/download/SparkPremium/SparkPremium-3.6.2.ipa",
-          "size": 184885684,
-          "assetURLs": null,
-          "minOSVersion": null,
-          "maxOSVersion": null
-        },
-        {
-          "version": "3.9.10",
-          "buildVersion": null,
-          "marketingVersion": null,
-          "date": "2024-10-13T00:00:00-04:00",
-          "localizedDescription": "Spark, with premium features (except AI) and built-in a feature to hide update notifications. Note: To obtain the latest version, first install it through TrollStore then reinstall it via the AppStore. For some reason, this process keeps the tweak working.\nLast updated: 07-07-2024\nStatus: \u2705 \ud83d\udc4d \u2b50",
-          "downloadURL": "https://github.com/Neoncat-OG/TrollStore-IPAs/releases/download/SparkPremium/SparkPremium-3.9.10.ipa",
-          "size": 189076792,
-          "assetURLs": null,
-          "minOSVersion": null,
-          "maxOSVersion": null
-        },
-        {
-          "version": "3.9.11",
-          "buildVersion": null,
-          "marketingVersion": null,
-          "date": "2024-10-13T00:00:00-04:00",
-          "localizedDescription": "Spark, with premium features (except AI) and built-in a feature to hide update notifications. Note: To obtain the latest version, first install it through TrollStore then reinstall it via the AppStore. For some reason, this process keeps the tweak working.\nLast updated: 07-07-2024\nStatus: \u2705 \ud83d\udc4d \u2b50",
-          "downloadURL": "https://github.com/Neoncat-OG/TrollStore-IPAs/releases/download/SparkPremium/SparkPremium-3.9.11.ipa",
-          "size": 189060767,
-          "assetURLs": null,
-          "minOSVersion": null,
-          "maxOSVersion": null
-        },
-        {
-          "version": "3.9.12",
-          "buildVersion": null,
-          "marketingVersion": null,
-          "date": "2024-10-13T00:00:00-04:00",
-          "localizedDescription": "Spark, with premium features (except AI) and built-in a feature to hide update notifications. Note: To obtain the latest version, first install it through TrollStore then reinstall it via the AppStore. For some reason, this process keeps the tweak working.\nLast updated: 07-07-2024\nStatus: \u2705 \ud83d\udc4d \u2b50",
-          "downloadURL": "https://github.com/Neoncat-OG/TrollStore-IPAs/releases/download/SparkPremium/SparkPremium-3.9.12.ipa",
-          "size": 189078673,
-          "assetURLs": null,
-          "minOSVersion": null,
-          "maxOSVersion": null
-        },
-        {
-          "version": "3.9.13",
-          "buildVersion": null,
-          "marketingVersion": null,
-          "date": "2024-10-13T00:00:00-04:00",
-          "localizedDescription": "Spark, with premium features (except AI) and built-in a feature to hide update notifications. Note: To obtain the latest version, first install it through TrollStore then reinstall it via the AppStore. For some reason, this process keeps the tweak working.\nLast updated: 07-07-2024\nStatus: \u2705 \ud83d\udc4d \u2b50",
-          "downloadURL": "https://github.com/Neoncat-OG/TrollStore-IPAs/releases/download/SparkPremium/SparkPremium-3.9.13.ipa",
-          "size": 199502342,
-          "assetURLs": null,
-          "minOSVersion": null,
-          "maxOSVersion": null
-        },
-        {
-          "version": "3.9.6",
-          "buildVersion": null,
-          "marketingVersion": null,
-          "date": "2024-10-13T00:00:00-04:00",
-          "localizedDescription": "Spark, with premium features (except AI) and built-in a feature to hide update notifications. Note: To obtain the latest version, first install it through TrollStore then reinstall it via the AppStore. For some reason, this process keeps the tweak working.\nLast updated: 07-07-2024\nStatus: \u2705 \ud83d\udc4d \u2b50",
-          "downloadURL": "https://github.com/Neoncat-OG/TrollStore-IPAs/releases/download/SparkPremium/SparkPremium-3.9.6.ipa",
-          "size": 121485106,
           "assetURLs": null,
           "minOSVersion": null,
           "maxOSVersion": null
@@ -18703,37 +18742,6 @@
       "patreon": null
     },
     {
-      "name": "MuffinStore",
-      "bundleIdentifier": "dev.mineek.muffinstore",
-      "marketplaceID": null,
-      "developerName": "",
-      "subtitle": null,
-      "localizedDescription": "MuffinStore",
-      "iconURL": "https://raw.githubusercontent.com/Neoncat-OG/TrollStore-IPAs/main/icons/dev.mineek.muffinstore.png",
-      "tintColor": null,
-      "category": null,
-      "screenshots": null,
-      "versions": [
-        {
-          "version": "1.1",
-          "buildVersion": null,
-          "marketingVersion": null,
-          "date": "2024-10-11T00:00:00-04:00",
-          "localizedDescription": "",
-          "downloadURL": "https://github.com/Neoncat-OG/TrollStore-IPAs/releases/download/MuffinStore/MuffinStore-1.1.ipa",
-          "size": 29281,
-          "assetURLs": null,
-          "minOSVersion": null,
-          "maxOSVersion": null
-        }
-      ],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      },
-      "patreon": null
-    },
-    {
       "name": "PhotoroomPro",
       "bundleIdentifier": "com.dr1ven.eraser",
       "marketplaceID": null,
@@ -19929,6 +19937,37 @@
       "patreon": null
     },
     {
+      "name": "MuffinStore",
+      "bundleIdentifier": "dev.mineek.muffinstore",
+      "marketplaceID": null,
+      "developerName": "",
+      "subtitle": null,
+      "localizedDescription": "MuffinStore",
+      "iconURL": "https://raw.githubusercontent.com/Neoncat-OG/TrollStore-IPAs/main/icons/dev.mineek.muffinstore.png",
+      "tintColor": null,
+      "category": null,
+      "screenshots": null,
+      "versions": [
+        {
+          "version": "1.1",
+          "buildVersion": null,
+          "marketingVersion": null,
+          "date": "2024-10-11T00:00:00-04:00",
+          "localizedDescription": "",
+          "downloadURL": "https://github.com/Neoncat-OG/TrollStore-IPAs/releases/download/MuffinStore/MuffinStore-1.1.ipa",
+          "size": 29281,
+          "assetURLs": null,
+          "minOSVersion": null,
+          "maxOSVersion": null
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "patreon": null
+    },
+    {
       "name": "MotionleapPro",
       "bundleIdentifier": "com.lightricks.Enlight-Phoenix",
       "marketplaceID": null,
@@ -20705,37 +20744,6 @@
       "patreon": null
     },
     {
-      "name": "LokLok",
-      "bundleIdentifier": "com.xoumb.mp3.video.player",
-      "marketplaceID": null,
-      "developerName": "N/A",
-      "subtitle": null,
-      "localizedDescription": "LokLok",
-      "iconURL": "https://raw.githubusercontent.com/Neoncat-OG/TrollStore-IPAs/main/icons/com.xoumb.mp3.video.player.png",
-      "tintColor": null,
-      "category": null,
-      "screenshots": null,
-      "versions": [
-        {
-          "version": "5.0",
-          "buildVersion": null,
-          "marketingVersion": null,
-          "date": "2024-10-09T00:00:00-04:00",
-          "localizedDescription": "HDO Box clone. see original app description for more info\nLast updated: 07-17-2023\nStatus: \u26a0\ufe0f \u2754",
-          "downloadURL": "https://github.com/Neoncat-OG/TrollStore-IPAs/releases/download/LokLok/LokLok-5.0.ipa",
-          "size": 22035388,
-          "assetURLs": null,
-          "minOSVersion": null,
-          "maxOSVersion": null
-        }
-      ],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      },
-      "patreon": null
-    },
-    {
       "name": "BeReal++",
       "bundleIdentifier": "AlexisBarreyat.BeReal",
       "marketplaceID": null,
@@ -20779,6 +20787,37 @@
           "localizedDescription": "\u2022 Updated BeReal to v1.15.0\n\u2022 Updated Bea to v1.3.2",
           "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/BeReal.v1.15.0.+.Bea.v1.3.2.ipa",
           "size": 29200000,
+          "assetURLs": null,
+          "minOSVersion": null,
+          "maxOSVersion": null
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "patreon": null
+    },
+    {
+      "name": "LokLok",
+      "bundleIdentifier": "com.xoumb.mp3.video.player",
+      "marketplaceID": null,
+      "developerName": "N/A",
+      "subtitle": null,
+      "localizedDescription": "LokLok",
+      "iconURL": "https://raw.githubusercontent.com/Neoncat-OG/TrollStore-IPAs/main/icons/com.xoumb.mp3.video.player.png",
+      "tintColor": null,
+      "category": null,
+      "screenshots": null,
+      "versions": [
+        {
+          "version": "5.0",
+          "buildVersion": null,
+          "marketingVersion": null,
+          "date": "2024-10-09T00:00:00-04:00",
+          "localizedDescription": "HDO Box clone. see original app description for more info\nLast updated: 07-17-2023\nStatus: \u26a0\ufe0f \u2754",
+          "downloadURL": "https://github.com/Neoncat-OG/TrollStore-IPAs/releases/download/LokLok/LokLok-5.0.ipa",
+          "size": 22035388,
           "assetURLs": null,
           "minOSVersion": null,
           "maxOSVersion": null
@@ -22116,37 +22155,6 @@
       "patreon": null
     },
     {
-      "name": "Antoine",
-      "bundleIdentifier": "com.serena.Antoine",
-      "marketplaceID": null,
-      "developerName": "SerenaKit",
-      "subtitle": null,
-      "localizedDescription": "Antoine",
-      "iconURL": "https://raw.githubusercontent.com/Neoncat-OG/TrollStore-IPAs/main/icons/com.serena.Antoine.png",
-      "tintColor": null,
-      "category": null,
-      "screenshots": null,
-      "versions": [
-        {
-          "version": "1.3.tipa.ipa.",
-          "buildVersion": null,
-          "marketingVersion": null,
-          "date": "2024-10-03T00:00:00-04:00",
-          "localizedDescription": "This app is TrollStore-only. An OSLog UI for iOS & iPadOS devices, Antoine allows you to view System Logs in real time, with the ability to filter logs by process, message, type, etc, as well additional stream options\nLast updated: 09-19-2023\nStatus: \u2705",
-          "downloadURL": "https://github.com/Neoncat-OG/TrollStore-IPAs/releases/download/Antoine/Antoine-1.3.tipa.ipa.tipa",
-          "size": 1623275,
-          "assetURLs": null,
-          "minOSVersion": null,
-          "maxOSVersion": null
-        }
-      ],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      },
-      "patreon": null
-    },
-    {
       "name": "AnimeNow",
       "bundleIdentifier": "com.errorerrorerror.animenow",
       "marketplaceID": null,
@@ -22166,6 +22174,37 @@
           "localizedDescription": "",
           "downloadURL": "https://github.com/Neoncat-OG/TrollStore-IPAs/releases/download/AnimeNow/AnimeNow-1.0.0b1.ipa",
           "size": 6691352,
+          "assetURLs": null,
+          "minOSVersion": null,
+          "maxOSVersion": null
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "patreon": null
+    },
+    {
+      "name": "Antoine",
+      "bundleIdentifier": "com.serena.Antoine",
+      "marketplaceID": null,
+      "developerName": "SerenaKit",
+      "subtitle": null,
+      "localizedDescription": "Antoine",
+      "iconURL": "https://raw.githubusercontent.com/Neoncat-OG/TrollStore-IPAs/main/icons/com.serena.Antoine.png",
+      "tintColor": null,
+      "category": null,
+      "screenshots": null,
+      "versions": [
+        {
+          "version": "1.3.tipa.ipa.",
+          "buildVersion": null,
+          "marketingVersion": null,
+          "date": "2024-10-03T00:00:00-04:00",
+          "localizedDescription": "This app is TrollStore-only. An OSLog UI for iOS & iPadOS devices, Antoine allows you to view System Logs in real time, with the ability to filter logs by process, message, type, etc, as well additional stream options\nLast updated: 09-19-2023\nStatus: \u2705",
+          "downloadURL": "https://github.com/Neoncat-OG/TrollStore-IPAs/releases/download/Antoine/Antoine-1.3.tipa.ipa.tipa",
+          "size": 1623275,
           "assetURLs": null,
           "minOSVersion": null,
           "maxOSVersion": null
@@ -23004,6 +23043,49 @@
       "patreon": null
     },
     {
+      "name": "GameSeagullTS",
+      "bundleIdentifier": "com.gamerdelights.gamepigeon",
+      "marketplaceID": null,
+      "developerName": "donato-fiore",
+      "subtitle": null,
+      "localizedDescription": "GameSeagullTS",
+      "iconURL": "https://raw.githubusercontent.com/Neoncat-OG/TrollStore-IPAs/main/icons/com.gamerdelights.gamepigeon.png",
+      "tintColor": null,
+      "category": null,
+      "screenshots": null,
+      "versions": [
+        {
+          "version": "2.1",
+          "buildVersion": null,
+          "marketingVersion": null,
+          "date": "2024-10-01T00:00:00-04:00",
+          "localizedDescription": "A updated Tweak for GamerDelights GamePigeon, now for TrollStore. Note: Install then go into gamepigeon settings inside iMessage and gameseagull should work from there!\nLast updated: 02-03-2024\nStatus: \u2705",
+          "downloadURL": "https://github.com/Neoncat-OG/TrollStore-IPAs/releases/download/GameSeagullTS/GameSeagullTS-2.1.ipa",
+          "size": 90278934,
+          "assetURLs": null,
+          "minOSVersion": null,
+          "maxOSVersion": null
+        },
+        {
+          "version": "1.0",
+          "buildVersion": null,
+          "marketingVersion": null,
+          "date": "2024-10-01T00:00:00-04:00",
+          "localizedDescription": "A updated Tweak for GamerDelights GamePigeon, now for TrollStore. Note: Install then go into gamepigeon settings inside iMessage and gameseagull should work from there!\nLast updated: 02-03-2024\nStatus: \u2705",
+          "downloadURL": "https://github.com/Neoncat-OG/TrollStore-IPAs/releases/download/GameSeagullTS/GameSeagullTS.ipa",
+          "size": 90271704,
+          "assetURLs": null,
+          "minOSVersion": null,
+          "maxOSVersion": null
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "patreon": null
+    },
+    {
       "name": "IPTVPro",
       "bundleIdentifier": "com.courtois.PerfectIPTVn",
       "marketplaceID": null,
@@ -23257,49 +23339,6 @@
           "localizedDescription": "Another health and fitness tracker app. A user requested it so here it is\nLast updated: 07-14-2024\nStatus: \u2705 \u2b50",
           "downloadURL": "https://github.com/Neoncat-OG/TrollStore-IPAs/releases/download/GentlerPremium/GentlerPremium-4.7.4.ipa",
           "size": 98045999,
-          "assetURLs": null,
-          "minOSVersion": null,
-          "maxOSVersion": null
-        }
-      ],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      },
-      "patreon": null
-    },
-    {
-      "name": "GameSeagullTS",
-      "bundleIdentifier": "com.gamerdelights.gamepigeon",
-      "marketplaceID": null,
-      "developerName": "donato-fiore",
-      "subtitle": null,
-      "localizedDescription": "GameSeagullTS",
-      "iconURL": "https://raw.githubusercontent.com/Neoncat-OG/TrollStore-IPAs/main/icons/com.gamerdelights.gamepigeon.png",
-      "tintColor": null,
-      "category": null,
-      "screenshots": null,
-      "versions": [
-        {
-          "version": "2.1",
-          "buildVersion": null,
-          "marketingVersion": null,
-          "date": "2024-10-01T00:00:00-04:00",
-          "localizedDescription": "A updated Tweak for GamerDelights GamePigeon, now for TrollStore. Note: Install then go into gamepigeon settings inside iMessage and gameseagull should work from there!\nLast updated: 02-03-2024\nStatus: \u2705",
-          "downloadURL": "https://github.com/Neoncat-OG/TrollStore-IPAs/releases/download/GameSeagullTS/GameSeagullTS-2.1.ipa",
-          "size": 90278934,
-          "assetURLs": null,
-          "minOSVersion": null,
-          "maxOSVersion": null
-        },
-        {
-          "version": "1.0",
-          "buildVersion": null,
-          "marketingVersion": null,
-          "date": "2024-10-01T00:00:00-04:00",
-          "localizedDescription": "A updated Tweak for GamerDelights GamePigeon, now for TrollStore. Note: Install then go into gamepigeon settings inside iMessage and gameseagull should work from there!\nLast updated: 02-03-2024\nStatus: \u2705",
-          "downloadURL": "https://github.com/Neoncat-OG/TrollStore-IPAs/releases/download/GameSeagullTS/GameSeagullTS.ipa",
-          "size": 90271704,
           "assetURLs": null,
           "minOSVersion": null,
           "maxOSVersion": null
@@ -26049,80 +26088,6 @@
       "patreon": null
     },
     {
-      "name": "AddonsPro",
-      "bundleIdentifier": "com.qingbin.Addons",
-      "marketplaceID": null,
-      "developerName": "Paisseon",
-      "subtitle": null,
-      "localizedDescription": "AddonsPro",
-      "iconURL": "https://raw.githubusercontent.com/Neoncat-OG/TrollStore-IPAs/main/icons/com.qingbin.Addons.png",
-      "tintColor": null,
-      "category": null,
-      "screenshots": null,
-      "versions": [
-        {
-          "version": "3.6",
-          "buildVersion": null,
-          "marketingVersion": null,
-          "date": "2024-09-27T00:00:00-04:00",
-          "localizedDescription": "Robust Safari browser extension that offers a variety of features, including support for Tampermonkey scripts, ad blocking, intelligent search, and much more. A user requested it so here it is. Note: Install the TrollStore version, activate the Pro version and then re-install the app from the App Store over it. + app seems to gathers a lot of data.. Consider this before deciding to use it.\nLast updated: 07-11-2024\nStatus: \u2705",
-          "downloadURL": "https://github.com/Neoncat-OG/TrollStore-IPAs/releases/download/AddonsPro/AddonsPro-3.6.ipa",
-          "size": 29020552,
-          "assetURLs": null,
-          "minOSVersion": null,
-          "maxOSVersion": null
-        },
-        {
-          "version": "3.8",
-          "buildVersion": null,
-          "marketingVersion": null,
-          "date": "2024-09-27T00:00:00-04:00",
-          "localizedDescription": "Robust Safari browser extension that offers a variety of features, including support for Tampermonkey scripts, ad blocking, intelligent search, and much more. A user requested it so here it is. Note: Install the TrollStore version, activate the Pro version and then re-install the app from the App Store over it. + app seems to gathers a lot of data.. Consider this before deciding to use it.\nLast updated: 07-11-2024\nStatus: \u2705",
-          "downloadURL": "https://github.com/Neoncat-OG/TrollStore-IPAs/releases/download/AddonsPro/AddonsPro-3.8.ipa",
-          "size": 29133138,
-          "assetURLs": null,
-          "minOSVersion": null,
-          "maxOSVersion": null
-        }
-      ],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      },
-      "patreon": null
-    },
-    {
-      "name": "AudioRecorderTS",
-      "bundleIdentifier": "net.limneos.AudioRecorder",
-      "marketplaceID": null,
-      "developerName": "CyPwn IPA Library",
-      "subtitle": null,
-      "localizedDescription": "AudioRecorderTS",
-      "iconURL": "https://raw.githubusercontent.com/Neoncat-OG/TrollStore-IPAs/main/icons/net.limneos.AudioRecorder.png",
-      "tintColor": null,
-      "category": null,
-      "screenshots": null,
-      "versions": [
-        {
-          "version": "6.0.3",
-          "buildVersion": null,
-          "marketingVersion": null,
-          "date": "2024-09-27T00:00:00-04:00",
-          "localizedDescription": "Cracked by CBZ. Provides extensive customization options similar to its jailbroken version, including toggling the recorder, biometric authentication, sync settings, server management, backups, cloud linking, notification customization, and sound settings, all while requiring legal compliance and consent for recording in many areas.\nLast updated: 02-23-2024\nStatus: \u2705",
-          "downloadURL": "https://github.com/Neoncat-OG/TrollStore-IPAs/releases/download/AudioRecorderTS/AudioRecorderTS-6.0.3.ipa",
-          "size": 4814295,
-          "assetURLs": null,
-          "minOSVersion": null,
-          "maxOSVersion": null
-        }
-      ],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      },
-      "patreon": null
-    },
-    {
       "name": "BenkyoPro",
       "bundleIdentifier": "app.benkyo.Benkyo",
       "marketplaceID": null,
@@ -26197,6 +26162,37 @@
           "localizedDescription": "Audiomack is a worldwide music streaming and discovery application that enables you to download and access the latest songs, albums, mixtapes, and playlists offline. Enjoy entire tracks without the need for data, as well as local MP3 files. Note: Very laggy.\nLast updated: 07-12-2024\nStatus: \u2705 \u2b50",
           "downloadURL": "https://github.com/Neoncat-OG/TrollStore-IPAs/releases/download/AudiomackPremium/AudiomackPremium-7.3.0.ipa",
           "size": 149492689,
+          "assetURLs": null,
+          "minOSVersion": null,
+          "maxOSVersion": null
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "patreon": null
+    },
+    {
+      "name": "AudioRecorderTS",
+      "bundleIdentifier": "net.limneos.AudioRecorder",
+      "marketplaceID": null,
+      "developerName": "CyPwn IPA Library",
+      "subtitle": null,
+      "localizedDescription": "AudioRecorderTS",
+      "iconURL": "https://raw.githubusercontent.com/Neoncat-OG/TrollStore-IPAs/main/icons/net.limneos.AudioRecorder.png",
+      "tintColor": null,
+      "category": null,
+      "screenshots": null,
+      "versions": [
+        {
+          "version": "6.0.3",
+          "buildVersion": null,
+          "marketingVersion": null,
+          "date": "2024-09-27T00:00:00-04:00",
+          "localizedDescription": "Cracked by CBZ. Provides extensive customization options similar to its jailbroken version, including toggling the recorder, biometric authentication, sync settings, server management, backups, cloud linking, notification customization, and sound settings, all while requiring legal compliance and consent for recording in many areas.\nLast updated: 02-23-2024\nStatus: \u2705",
+          "downloadURL": "https://github.com/Neoncat-OG/TrollStore-IPAs/releases/download/AudioRecorderTS/AudioRecorderTS-6.0.3.ipa",
+          "size": 4814295,
           "assetURLs": null,
           "minOSVersion": null,
           "maxOSVersion": null
@@ -26929,6 +26925,49 @@
           "localizedDescription": "App to see, share, annotate, comment on, and sign PDF files. A user requested it so here it is.\nLast updated: 07-13-2024\nStatus: \u2705 \ud83d\udc4d",
           "downloadURL": "https://github.com/Neoncat-OG/TrollStore-IPAs/releases/download/AdobeAcrobatReaderPremium/AdobeAcrobatReaderPremium-24.09.00.ipa",
           "size": 194349897,
+          "assetURLs": null,
+          "minOSVersion": null,
+          "maxOSVersion": null
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "patreon": null
+    },
+    {
+      "name": "AddonsPro",
+      "bundleIdentifier": "com.qingbin.Addons",
+      "marketplaceID": null,
+      "developerName": "Paisseon",
+      "subtitle": null,
+      "localizedDescription": "AddonsPro",
+      "iconURL": "https://raw.githubusercontent.com/Neoncat-OG/TrollStore-IPAs/main/icons/com.qingbin.Addons.png",
+      "tintColor": null,
+      "category": null,
+      "screenshots": null,
+      "versions": [
+        {
+          "version": "3.6",
+          "buildVersion": null,
+          "marketingVersion": null,
+          "date": "2024-09-27T00:00:00-04:00",
+          "localizedDescription": "Robust Safari browser extension that offers a variety of features, including support for Tampermonkey scripts, ad blocking, intelligent search, and much more. A user requested it so here it is. Note: Install the TrollStore version, activate the Pro version and then re-install the app from the App Store over it. + app seems to gathers a lot of data.. Consider this before deciding to use it.\nLast updated: 07-11-2024\nStatus: \u2705",
+          "downloadURL": "https://github.com/Neoncat-OG/TrollStore-IPAs/releases/download/AddonsPro/AddonsPro-3.6.ipa",
+          "size": 29020552,
+          "assetURLs": null,
+          "minOSVersion": null,
+          "maxOSVersion": null
+        },
+        {
+          "version": "3.8",
+          "buildVersion": null,
+          "marketingVersion": null,
+          "date": "2024-09-27T00:00:00-04:00",
+          "localizedDescription": "Robust Safari browser extension that offers a variety of features, including support for Tampermonkey scripts, ad blocking, intelligent search, and much more. A user requested it so here it is. Note: Install the TrollStore version, activate the Pro version and then re-install the app from the App Store over it. + app seems to gathers a lot of data.. Consider this before deciding to use it.\nLast updated: 07-11-2024\nStatus: \u2705",
+          "downloadURL": "https://github.com/Neoncat-OG/TrollStore-IPAs/releases/download/AddonsPro/AddonsPro-3.8.ipa",
+          "size": 29133138,
           "assetURLs": null,
           "minOSVersion": null,
           "maxOSVersion": null
@@ -29820,37 +29859,6 @@
       "patreon": null
     },
     {
-      "name": "PPSSPP",
-      "bundleIdentifier": "org.ppsspp.ppsspp",
-      "marketplaceID": null,
-      "developerName": "Henrik Rydg\u00e5rd",
-      "subtitle": "A fast and portable PSP emulator for IOS",
-      "localizedDescription": "PPSSPP is the best and only PSP emulator for iOS written in C++. It is capable of running a lot of original games but, depending on the power of your device, not all may run at full speed due to restrictions on non-jailbroken devices.\n\nThe app was originally created by Henrik Rydg\u00e5rd in November 2012; however, iOS builds are mostly managed by talented developer, Karen Tsai (aka @angelxwind) and a large group of contributors that submit issue reports and fixes. Several versions of PPSSPP can be played on numerous devices such as Android, Windows, Mac, Linux and Blackberry 10. The iOS version can be found on both Jailbreak and non-Jailbreak devices.\n\nPPSSPP supports all versions of iPad, iPhone, iPod touch running iOS 5 and above; this includes iPhone 5 and other retina-enabled devices. The emulator does not require bios to play, PPSSPP is - in many ways - a \u201cHLE\u201d emulator. PPSSPP requires ROM images, specifically .ISO or .CSO files, to play. No ROMs are included in this copy of the emulator. If you own any games, add them through iTunes Sharing or other programs like 'iExplorer.' Keep in mind these files are extremely big, sometimes taking several gigs in size.\n\nThe emulator is built to use JIT decompilers (dynarecs) which can only be accessed on a jailbroken device due to the codesigining requirement. Therefore, most games will run very slow on non-jailbroken devices; however, there are a few older PSP games that will run just fine and up to speed depending on your iOS device.",
-      "iconURL": "https://i.imgur.com/JP0Fncv.png",
-      "tintColor": "21486b",
-      "category": "Games",
-      "screenshots": null,
-      "versions": [
-        {
-          "version": "1.15.3",
-          "buildVersion": null,
-          "marketingVersion": null,
-          "date": "2023-05-14T00:00:00-04:00",
-          "localizedDescription": "1.15.3",
-          "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/PPSSPP.v1.15.3.ipa",
-          "size": 27700000,
-          "assetURLs": null,
-          "minOSVersion": null,
-          "maxOSVersion": null
-        }
-      ],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      },
-      "patreon": null
-    },
-    {
       "name": "PostBox",
       "bundleIdentifier": "com.simplycode.PostBox",
       "marketplaceID": null,
@@ -29870,6 +29878,37 @@
           "localizedDescription": "\u2022 Added PostBox v0.8.1",
           "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/PostBox.v0.8.1.ipa",
           "size": 8080000,
+          "assetURLs": null,
+          "minOSVersion": null,
+          "maxOSVersion": null
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "patreon": null
+    },
+    {
+      "name": "PPSSPP",
+      "bundleIdentifier": "org.ppsspp.ppsspp",
+      "marketplaceID": null,
+      "developerName": "Henrik Rydg\u00e5rd",
+      "subtitle": "A fast and portable PSP emulator for IOS",
+      "localizedDescription": "PPSSPP is the best and only PSP emulator for iOS written in C++. It is capable of running a lot of original games but, depending on the power of your device, not all may run at full speed due to restrictions on non-jailbroken devices.\n\nThe app was originally created by Henrik Rydg\u00e5rd in November 2012; however, iOS builds are mostly managed by talented developer, Karen Tsai (aka @angelxwind) and a large group of contributors that submit issue reports and fixes. Several versions of PPSSPP can be played on numerous devices such as Android, Windows, Mac, Linux and Blackberry 10. The iOS version can be found on both Jailbreak and non-Jailbreak devices.\n\nPPSSPP supports all versions of iPad, iPhone, iPod touch running iOS 5 and above; this includes iPhone 5 and other retina-enabled devices. The emulator does not require bios to play, PPSSPP is - in many ways - a \u201cHLE\u201d emulator. PPSSPP requires ROM images, specifically .ISO or .CSO files, to play. No ROMs are included in this copy of the emulator. If you own any games, add them through iTunes Sharing or other programs like 'iExplorer.' Keep in mind these files are extremely big, sometimes taking several gigs in size.\n\nThe emulator is built to use JIT decompilers (dynarecs) which can only be accessed on a jailbroken device due to the codesigining requirement. Therefore, most games will run very slow on non-jailbroken devices; however, there are a few older PSP games that will run just fine and up to speed depending on your iOS device.",
+      "iconURL": "https://i.imgur.com/JP0Fncv.png",
+      "tintColor": "21486b",
+      "category": "Games",
+      "screenshots": null,
+      "versions": [
+        {
+          "version": "1.15.3",
+          "buildVersion": null,
+          "marketingVersion": null,
+          "date": "2023-05-14T00:00:00-04:00",
+          "localizedDescription": "1.15.3",
+          "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/PPSSPP.v1.15.3.ipa",
+          "size": 27700000,
           "assetURLs": null,
           "minOSVersion": null,
           "maxOSVersion": null
@@ -30247,10 +30286,10 @@
       "marketplaceID": null,
       "developerName": "Odyssey Team",
       "subtitle": "A new jailbreak for a new era.",
-      "localizedDescription": "Supporting iOS Versions: 13.0 - 13.7.\nOdyssey is the first jailbreak to be written almost entirely in Swift. Completely open source and welcomes community contributions and pull requests, as a tribute to the dearly departed s0uthwes and his continued optimism and faith in the project. Comes with the open source Procursus bootstrap, designed from the ground up with openness and compatiblity in mind. Along with a new tweak injection platform, libhooker.",
+      "localizedDescription": "Supporting iOS Versions: 13.0 - 13.7.\n\nOdyssey is the first jailbreak to be written almost entirely in Swift. Completely open source and welcomes community contributions and pull requests, as a tribute to the dearly departed s0uthwes and his continued optimism and faith in the project. Comes with the open source Procursus bootstrap, designed from the ground up with openness and compatiblity in mind. Along with a new tweak injection platform, libhooker.",
       "iconURL": "https://theodyssey.dev/assets/images/icon.png",
-      "tintColor": "D287F4",
-      "category": null,
+      "tintColor": "9766a7",
+      "category": "utilities",
       "screenshots": null,
       "versions": [
         {
@@ -30258,20 +30297,8 @@
           "buildVersion": null,
           "marketingVersion": null,
           "date": "2023-04-03T00:00:00-04:00",
-          "localizedDescription": "- Update Sileo to 2.3-1",
-          "downloadURL": "https://github.com/Odyssey-Team/Odyssey/releases/download/1.4.3/Odyssey-1.4.3.ipa",
-          "size": 27200000,
-          "assetURLs": null,
-          "minOSVersion": "13.0",
-          "maxOSVersion": "13.7"
-        },
-        {
-          "version": "1.4.2",
-          "buildVersion": null,
-          "marketingVersion": null,
-          "date": "2022-02-18T00:00:00-05:00",
-          "localizedDescription": "- Update Sileo to 2.3\n- Replace Packix with Havoc as default repo",
-          "downloadURL": "https://github.com/Odyssey-Team/Odyssey/releases/download/1.4.2/Odyssey-1.4.2.ipa",
+          "localizedDescription": "\u2022 Update Sileo to 2.3-1",
+          "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/Odyssey.Jailbreak.v1.4.3.ipa",
           "size": 27200000,
           "assetURLs": null,
           "minOSVersion": null,
@@ -30988,39 +31015,6 @@
       "patreon": null
     },
     {
-      "name": "Opener_1.11.9_TS",
-      "bundleIdentifier": "cypwn.Opener_1.11.9_TS.1.11.9",
-      "marketplaceID": null,
-      "developerName": "Opener_1.11.9_TS x CyPwn",
-      "subtitle": null,
-      "localizedDescription": "Open links in apps",
-      "iconURL": "https://ipa.cypwn.xyz/serve/icons/Opener_1.11.9_TS.png",
-      "tintColor": "FFC300",
-      "category": null,
-      "screenshots": [
-        "https://ipa.cypwn.xyz/assets/images/ipalibrary.png"
-      ],
-      "versions": [
-        {
-          "version": "1.11.9",
-          "buildVersion": null,
-          "marketingVersion": null,
-          "date": "2023-02-10T00:00:00-05:00",
-          "localizedDescription": null,
-          "downloadURL": "https://ipa.cypwn.xyz/serve/get.php?md5=30f5c542ebabd6956d30f94e5466c0e7",
-          "size": 1300234,
-          "assetURLs": null,
-          "minOSVersion": null,
-          "maxOSVersion": null
-        }
-      ],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      },
-      "patreon": null
-    },
-    {
       "name": "Santander (MDC)",
       "bundleIdentifier": "org.haxi0.santander",
       "marketplaceID": null,
@@ -31073,6 +31067,39 @@
           "localizedDescription": null,
           "downloadURL": "https://ipa.cypwn.xyz/serve/get.php?md5=e3a7009c63eaa3484a61b0c92e5ebd91",
           "size": 56025415,
+          "assetURLs": null,
+          "minOSVersion": null,
+          "maxOSVersion": null
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "patreon": null
+    },
+    {
+      "name": "Opener_1.11.9_TS",
+      "bundleIdentifier": "cypwn.Opener_1.11.9_TS.1.11.9",
+      "marketplaceID": null,
+      "developerName": "Opener_1.11.9_TS x CyPwn",
+      "subtitle": null,
+      "localizedDescription": "Open links in apps",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/Opener_1.11.9_TS.png",
+      "tintColor": "FFC300",
+      "category": null,
+      "screenshots": [
+        "https://ipa.cypwn.xyz/assets/images/ipalibrary.png"
+      ],
+      "versions": [
+        {
+          "version": "1.11.9",
+          "buildVersion": null,
+          "marketingVersion": null,
+          "date": "2023-02-10T00:00:00-05:00",
+          "localizedDescription": null,
+          "downloadURL": "https://ipa.cypwn.xyz/serve/get.php?md5=30f5c542ebabd6956d30f94e5466c0e7",
+          "size": 1300234,
           "assetURLs": null,
           "minOSVersion": null,
           "maxOSVersion": null
@@ -31335,6 +31362,34 @@
       "patreon": null
     },
     {
+      "name": "KillMyOTA",
+      "bundleIdentifier": "org.haxi0.KillMyOTA",
+      "marketplaceID": null,
+      "developerName": "haxi0",
+      "subtitle": "Disable OTA updates on iOS 15.0-16.1.2 using the MDC exploit.",
+      "localizedDescription": "Disable OTA updates on iOS 15.0-16.1.2 using the MDC exploit.",
+      "iconURL": "https://raw.githubusercontent.com/haxi0/KillMyOTA/master/KillMyOTA/Assets.xcassets/AppIcon.appiconset/ios-marketing.png",
+      "tintColor": "#FF8B29",
+      "category": null,
+      "screenshots": null,
+      "versions": [
+        {
+          "version": "1.1",
+          "buildVersion": null,
+          "marketingVersion": null,
+          "date": "2023-01-30T00:00:00-05:00",
+          "localizedDescription": "Disable OTA updates on iOS 15.0-16.1.2 using the MDC exploit.",
+          "downloadURL": "https://github.com/haxi0/KillMyOTA/releases/download/1.1/KillMyOTA-1.1.ipa",
+          "size": 331000,
+          "assetURLs": null,
+          "minOSVersion": "15.0",
+          "maxOSVersion": "16.1.2"
+        }
+      ],
+      "appPermissions": {},
+      "patreon": null
+    },
+    {
       "name": "KillMyOTA-1.1",
       "bundleIdentifier": "cypwn.KillMyOTA-1.1.1.1",
       "marketplaceID": null,
@@ -31398,34 +31453,6 @@
         "entitlements": [],
         "privacy": {}
       },
-      "patreon": null
-    },
-    {
-      "name": "KillMyOTA",
-      "bundleIdentifier": "org.haxi0.KillMyOTA",
-      "marketplaceID": null,
-      "developerName": "haxi0",
-      "subtitle": "Disable OTA updates on iOS 15.0-16.1.2 using the MDC exploit.",
-      "localizedDescription": "Disable OTA updates on iOS 15.0-16.1.2 using the MDC exploit.",
-      "iconURL": "https://raw.githubusercontent.com/haxi0/KillMyOTA/master/KillMyOTA/Assets.xcassets/AppIcon.appiconset/ios-marketing.png",
-      "tintColor": "#FF8B29",
-      "category": null,
-      "screenshots": null,
-      "versions": [
-        {
-          "version": "1.1",
-          "buildVersion": null,
-          "marketingVersion": null,
-          "date": "2023-01-30T00:00:00-05:00",
-          "localizedDescription": "Disable OTA updates on iOS 15.0-16.1.2 using the MDC exploit.",
-          "downloadURL": "https://github.com/haxi0/KillMyOTA/releases/download/1.1/KillMyOTA-1.1.ipa",
-          "size": 331000,
-          "assetURLs": null,
-          "minOSVersion": "15.0",
-          "maxOSVersion": "16.1.2"
-        }
-      ],
-      "appPermissions": {},
       "patreon": null
     },
     {
@@ -32023,61 +32050,6 @@
       "patreon": null
     },
     {
-      "name": "blurt.blog",
-      "bundleIdentifier": "blog.blurt.blurt",
-      "marketplaceID": null,
-      "developerName": "sagarkothari88",
-      "subtitle": "A fair world of social liberty",
-      "localizedDescription": "The build which was also submitted to the Apple for AppStore review",
-      "iconURL": "https://gitlab.com/blurt/openblurt/blurt-mobile-app/-/raw/main/appstore-screenshots/512x512.png",
-      "tintColor": "8A28F7",
-      "category": null,
-      "screenshots": null,
-      "versions": [
-        {
-          "version": "1.0.7",
-          "buildVersion": null,
-          "marketingVersion": null,
-          "date": "2023-01-01T00:00:00-05:00",
-          "localizedDescription": "https://blurt.blog/blurt/@sagarkothari88/h350a80ssgii-ct0j-9x",
-          "downloadURL": "https://github.com/sag333ar/blurt-releases/releases/download/1.0.7(36)/Runner.ipa",
-          "size": 857669,
-          "assetURLs": null,
-          "minOSVersion": null,
-          "maxOSVersion": null
-        },
-        {
-          "version": "1.0.6",
-          "buildVersion": null,
-          "marketingVersion": null,
-          "date": "2020-11-20T00:00:00-05:00",
-          "localizedDescription": "https://blurt.blog/blurt/@sagarkothari88/we-are-ready-to-submit-to-appstore-and-curation-report-18th-and-19th-nov-2022",
-          "downloadURL": "https://github.com/sag333ar/blurt-releases/releases/download/1.0.6(35)/Runner.ipa",
-          "size": 857669,
-          "assetURLs": null,
-          "minOSVersion": null,
-          "maxOSVersion": null
-        },
-        {
-          "version": "1.0.3",
-          "buildVersion": null,
-          "marketingVersion": null,
-          "date": "2020-11-20T00:00:00-05:00",
-          "localizedDescription": "https://blurt.blog/blurt/@sagarkothari88/we-are-ready-to-submit-to-appstore-and-curation-report-18th-and-19th-nov-2022",
-          "downloadURL": "https://gitlab.com/blurt/openblurt/blurt-mobile-app/-/raw/main/ios/releases/1.0.3/app.ipa",
-          "size": 857669,
-          "assetURLs": null,
-          "minOSVersion": null,
-          "maxOSVersion": null
-        }
-      ],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      },
-      "patreon": null
-    },
-    {
       "name": "SpotilifeC",
       "bundleIdentifier": "com.yodaluca23.SpotilifeC",
       "marketplaceID": null,
@@ -32171,6 +32143,61 @@
           "NSFaceidUsageDescription": "This lets you set access restrictions using Face ID.",
           "NSMotionUsageDescription": "Used to control your tempo for Spotify Running."
         }
+      },
+      "patreon": null
+    },
+    {
+      "name": "blurt.blog",
+      "bundleIdentifier": "blog.blurt.blurt",
+      "marketplaceID": null,
+      "developerName": "sagarkothari88",
+      "subtitle": "A fair world of social liberty",
+      "localizedDescription": "The build which was also submitted to the Apple for AppStore review",
+      "iconURL": "https://gitlab.com/blurt/openblurt/blurt-mobile-app/-/raw/main/appstore-screenshots/512x512.png",
+      "tintColor": "8A28F7",
+      "category": null,
+      "screenshots": null,
+      "versions": [
+        {
+          "version": "1.0.7",
+          "buildVersion": null,
+          "marketingVersion": null,
+          "date": "2023-01-01T00:00:00-05:00",
+          "localizedDescription": "https://blurt.blog/blurt/@sagarkothari88/h350a80ssgii-ct0j-9x",
+          "downloadURL": "https://github.com/sag333ar/blurt-releases/releases/download/1.0.7(36)/Runner.ipa",
+          "size": 857669,
+          "assetURLs": null,
+          "minOSVersion": null,
+          "maxOSVersion": null
+        },
+        {
+          "version": "1.0.6",
+          "buildVersion": null,
+          "marketingVersion": null,
+          "date": "2020-11-20T00:00:00-05:00",
+          "localizedDescription": "https://blurt.blog/blurt/@sagarkothari88/we-are-ready-to-submit-to-appstore-and-curation-report-18th-and-19th-nov-2022",
+          "downloadURL": "https://github.com/sag333ar/blurt-releases/releases/download/1.0.6(35)/Runner.ipa",
+          "size": 857669,
+          "assetURLs": null,
+          "minOSVersion": null,
+          "maxOSVersion": null
+        },
+        {
+          "version": "1.0.3",
+          "buildVersion": null,
+          "marketingVersion": null,
+          "date": "2020-11-20T00:00:00-05:00",
+          "localizedDescription": "https://blurt.blog/blurt/@sagarkothari88/we-are-ready-to-submit-to-appstore-and-curation-report-18th-and-19th-nov-2022",
+          "downloadURL": "https://gitlab.com/blurt/openblurt/blurt-mobile-app/-/raw/main/ios/releases/1.0.3/app.ipa",
+          "size": 857669,
+          "assetURLs": null,
+          "minOSVersion": null,
+          "maxOSVersion": null
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
       },
       "patreon": null
     },
@@ -32680,6 +32707,72 @@
       "patreon": null
     },
     {
+      "name": "SharkMessenger_388.0",
+      "bundleIdentifier": "cypwn.SharkMessenger_388.0.388.0",
+      "marketplaceID": null,
+      "developerName": "SharkMessenger_388.0 x CyPwn",
+      "subtitle": null,
+      "localizedDescription": "Shark 2.2.1 + Facebook Messenger 388.0",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/SharkMessenger_388.0.png",
+      "tintColor": "FFC300",
+      "category": null,
+      "screenshots": [
+        "https://ipa.cypwn.xyz/assets/images/ipalibrary.png"
+      ],
+      "versions": [
+        {
+          "version": "388.0",
+          "buildVersion": null,
+          "marketingVersion": null,
+          "date": "2022-11-30T00:00:00-05:00",
+          "localizedDescription": null,
+          "downloadURL": "https://ipa.cypwn.xyz/serve/get.php?md5=56a7a303b0c0ccc021605dda668b90fc",
+          "size": 61865984,
+          "assetURLs": null,
+          "minOSVersion": null,
+          "maxOSVersion": null
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "patreon": null
+    },
+    {
+      "name": "Sonic_3.5",
+      "bundleIdentifier": "cypwn.Sonic_3.5.3.5",
+      "marketplaceID": null,
+      "developerName": "Sonic_3.5 x CyPwn",
+      "subtitle": null,
+      "localizedDescription": "Sonic Tone Generator cracked. Eject water from your speakers and more!",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/Sonic_3.5.png",
+      "tintColor": "FFC300",
+      "category": null,
+      "screenshots": [
+        "https://ipa.cypwn.xyz/assets/images/ipalibrary.png"
+      ],
+      "versions": [
+        {
+          "version": "3.5",
+          "buildVersion": null,
+          "marketingVersion": null,
+          "date": "2022-11-30T00:00:00-05:00",
+          "localizedDescription": null,
+          "downloadURL": "https://ipa.cypwn.xyz/serve/get.php?md5=8b0a75c8b1808167e00443b9ccb59a0f",
+          "size": 20950548,
+          "assetURLs": null,
+          "minOSVersion": null,
+          "maxOSVersion": null
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "patreon": null
+    },
+    {
       "name": "Filza-NoURL_3.9.8_TS",
       "bundleIdentifier": "cypwn.Filza-NoURL_3.9.8_TS.3.9",
       "marketplaceID": null,
@@ -32779,72 +32872,6 @@
       "patreon": null
     },
     {
-      "name": "SharkMessenger_388.0",
-      "bundleIdentifier": "cypwn.SharkMessenger_388.0.388.0",
-      "marketplaceID": null,
-      "developerName": "SharkMessenger_388.0 x CyPwn",
-      "subtitle": null,
-      "localizedDescription": "Shark 2.2.1 + Facebook Messenger 388.0",
-      "iconURL": "https://ipa.cypwn.xyz/serve/icons/SharkMessenger_388.0.png",
-      "tintColor": "FFC300",
-      "category": null,
-      "screenshots": [
-        "https://ipa.cypwn.xyz/assets/images/ipalibrary.png"
-      ],
-      "versions": [
-        {
-          "version": "388.0",
-          "buildVersion": null,
-          "marketingVersion": null,
-          "date": "2022-11-30T00:00:00-05:00",
-          "localizedDescription": null,
-          "downloadURL": "https://ipa.cypwn.xyz/serve/get.php?md5=56a7a303b0c0ccc021605dda668b90fc",
-          "size": 61865984,
-          "assetURLs": null,
-          "minOSVersion": null,
-          "maxOSVersion": null
-        }
-      ],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      },
-      "patreon": null
-    },
-    {
-      "name": "Sonic_3.5",
-      "bundleIdentifier": "cypwn.Sonic_3.5.3.5",
-      "marketplaceID": null,
-      "developerName": "Sonic_3.5 x CyPwn",
-      "subtitle": null,
-      "localizedDescription": "Sonic Tone Generator cracked. Eject water from your speakers and more!",
-      "iconURL": "https://ipa.cypwn.xyz/serve/icons/Sonic_3.5.png",
-      "tintColor": "FFC300",
-      "category": null,
-      "screenshots": [
-        "https://ipa.cypwn.xyz/assets/images/ipalibrary.png"
-      ],
-      "versions": [
-        {
-          "version": "3.5",
-          "buildVersion": null,
-          "marketingVersion": null,
-          "date": "2022-11-30T00:00:00-05:00",
-          "localizedDescription": null,
-          "downloadURL": "https://ipa.cypwn.xyz/serve/get.php?md5=8b0a75c8b1808167e00443b9ccb59a0f",
-          "size": 20950548,
-          "assetURLs": null,
-          "minOSVersion": null,
-          "maxOSVersion": null
-        }
-      ],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      },
-      "patreon": null
-    },
-    {
       "name": "AirTroller-1.1.1_TS",
       "bundleIdentifier": "cypwn.AirTroller-1.1.1_TS.1.1.1",
       "marketplaceID": null,
@@ -32911,39 +32938,6 @@
       "patreon": null
     },
     {
-      "name": "BackupAZ4_Crack_TS",
-      "bundleIdentifier": "cypwn.BackupAZ4_Crack_TS.1.3.1",
-      "marketplaceID": null,
-      "developerName": "BackupAZ4_Crack_TS x CyPwn",
-      "subtitle": null,
-      "localizedDescription": "BackupAZ4 - this may be useful for a select few with TS and jailbroken. Cracked by Anna",
-      "iconURL": "https://ipa.cypwn.xyz/serve/icons/BackupAZ4_Crack_TS.png",
-      "tintColor": "FFC300",
-      "category": null,
-      "screenshots": [
-        "https://ipa.cypwn.xyz/assets/images/ipalibrary.png"
-      ],
-      "versions": [
-        {
-          "version": "1.3.1",
-          "buildVersion": null,
-          "marketingVersion": null,
-          "date": "2022-11-26T00:00:00-05:00",
-          "localizedDescription": null,
-          "downloadURL": "https://ipa.cypwn.xyz/serve/get.php?md5=a0afe33b5a4a9573e585ae8c81ef2ae8",
-          "size": 13191086,
-          "assetURLs": null,
-          "minOSVersion": null,
-          "maxOSVersion": null
-        }
-      ],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      },
-      "patreon": null
-    },
-    {
       "name": "Vinegar_2.4.2",
       "bundleIdentifier": "cypwn.Vinegar_2.4.2.2.4.2",
       "marketplaceID": null,
@@ -32965,6 +32959,39 @@
           "localizedDescription": null,
           "downloadURL": "https://ipa.cypwn.xyz/serve/get.php?md5=2a5f22f4823dc92aa1922b050507c898",
           "size": 215521,
+          "assetURLs": null,
+          "minOSVersion": null,
+          "maxOSVersion": null
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "patreon": null
+    },
+    {
+      "name": "BackupAZ4_Crack_TS",
+      "bundleIdentifier": "cypwn.BackupAZ4_Crack_TS.1.3.1",
+      "marketplaceID": null,
+      "developerName": "BackupAZ4_Crack_TS x CyPwn",
+      "subtitle": null,
+      "localizedDescription": "BackupAZ4 - this may be useful for a select few with TS and jailbroken. Cracked by Anna",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/BackupAZ4_Crack_TS.png",
+      "tintColor": "FFC300",
+      "category": null,
+      "screenshots": [
+        "https://ipa.cypwn.xyz/assets/images/ipalibrary.png"
+      ],
+      "versions": [
+        {
+          "version": "1.3.1",
+          "buildVersion": null,
+          "marketingVersion": null,
+          "date": "2022-11-26T00:00:00-05:00",
+          "localizedDescription": null,
+          "downloadURL": "https://ipa.cypwn.xyz/serve/get.php?md5=a0afe33b5a4a9573e585ae8c81ef2ae8",
+          "size": 13191086,
           "assetURLs": null,
           "minOSVersion": null,
           "maxOSVersion": null
@@ -33140,13 +33167,13 @@
       "patreon": null
     },
     {
-      "name": "Pandolife_TS",
-      "bundleIdentifier": "cypwn.Pandolife_TS.2211.1",
+      "name": "Pandolife1.1a_2211.1",
+      "bundleIdentifier": "cypwn.Pandolife1.1a_2211.1.2211.1",
       "marketplaceID": null,
-      "developerName": "Pandolife_TS x CyPwn",
+      "developerName": "Pandolife1.1a_2211.1 x CyPwn",
       "subtitle": null,
-      "localizedDescription": "Pandora v2211.1 with Pandolife 1.1a tweak. For complete Pandolife experience, you should also install the PandolifeApp v1.6 standalone app. By Julio Verne.",
-      "iconURL": "https://ipa.cypwn.xyz/serve/icons/Pandolife_TS.png",
+      "localizedDescription": "Pandora v2211.1 with Pandolife v1.1a by Julio Verne.",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/Pandolife1.1a_2211.1.png",
       "tintColor": "FFC300",
       "category": null,
       "screenshots": [
@@ -33173,13 +33200,13 @@
       "patreon": null
     },
     {
-      "name": "Pandolife1.1a_2211.1",
-      "bundleIdentifier": "cypwn.Pandolife1.1a_2211.1.2211.1",
+      "name": "Pandolife_TS",
+      "bundleIdentifier": "cypwn.Pandolife_TS.2211.1",
       "marketplaceID": null,
-      "developerName": "Pandolife1.1a_2211.1 x CyPwn",
+      "developerName": "Pandolife_TS x CyPwn",
       "subtitle": null,
-      "localizedDescription": "Pandora v2211.1 with Pandolife v1.1a by Julio Verne.",
-      "iconURL": "https://ipa.cypwn.xyz/serve/icons/Pandolife1.1a_2211.1.png",
+      "localizedDescription": "Pandora v2211.1 with Pandolife 1.1a tweak. For complete Pandolife experience, you should also install the PandolifeApp v1.6 standalone app. By Julio Verne.",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/Pandolife_TS.png",
       "tintColor": "FFC300",
       "category": null,
       "screenshots": [
@@ -33431,6 +33458,34 @@
       "patreon": null
     },
     {
+      "name": "Jaility",
+      "bundleIdentifier": "org.haxi0.Jaility",
+      "marketplaceID": null,
+      "developerName": "haxi0",
+      "subtitle": "iOS supercharger for TrollStore.",
+      "localizedDescription": "iOS supercharger for TrollStore.",
+      "iconURL": "https://media.discordapp.net/attachments/969879614379921418/1042855197803827250/Icon-83_52x.png",
+      "tintColor": "#0096F0",
+      "category": null,
+      "screenshots": null,
+      "versions": [
+        {
+          "version": "3.1.1",
+          "buildVersion": null,
+          "marketingVersion": null,
+          "date": "2022-11-12T00:00:00-05:00",
+          "localizedDescription": "iOS supercharger for TrollStore.",
+          "downloadURL": "https://github.com/haxi0/Jaility/releases/download/3.1.1/Jaility-3.1.1.ipa",
+          "size": 106000,
+          "assetURLs": null,
+          "minOSVersion": "14.0",
+          "maxOSVersion": "17.0"
+        }
+      ],
+      "appPermissions": {},
+      "patreon": null
+    },
+    {
       "name": "VidList_0.5.1",
       "bundleIdentifier": "cypwn.VidList_0.5.1.0.5.1",
       "marketplaceID": null,
@@ -33461,34 +33516,6 @@
         "entitlements": [],
         "privacy": {}
       },
-      "patreon": null
-    },
-    {
-      "name": "Jaility",
-      "bundleIdentifier": "org.haxi0.Jaility",
-      "marketplaceID": null,
-      "developerName": "haxi0",
-      "subtitle": "iOS supercharger for TrollStore.",
-      "localizedDescription": "iOS supercharger for TrollStore.",
-      "iconURL": "https://media.discordapp.net/attachments/969879614379921418/1042855197803827250/Icon-83_52x.png",
-      "tintColor": "#0096F0",
-      "category": null,
-      "screenshots": null,
-      "versions": [
-        {
-          "version": "3.1.1",
-          "buildVersion": null,
-          "marketingVersion": null,
-          "date": "2022-11-12T00:00:00-05:00",
-          "localizedDescription": "iOS supercharger for TrollStore.",
-          "downloadURL": "https://github.com/haxi0/Jaility/releases/download/3.1.1/Jaility-3.1.1.ipa",
-          "size": 106000,
-          "assetURLs": null,
-          "minOSVersion": "14.0",
-          "maxOSVersion": "17.0"
-        }
-      ],
-      "appPermissions": {},
       "patreon": null
     },
     {
@@ -33880,39 +33907,6 @@
       "patreon": null
     },
     {
-      "name": "NetworkManager1.1-2_TS",
-      "bundleIdentifier": "cypwn.NetworkManager1.1-2_TS.1.1-2",
-      "marketplaceID": null,
-      "developerName": "NetworkManager1.1-2_TS x CyPwn",
-      "subtitle": null,
-      "localizedDescription": "Control Network access on an app-by-app basis.",
-      "iconURL": "https://ipa.cypwn.xyz/serve/icons/NetworkManager1.1-2_TS.png",
-      "tintColor": "FFC300",
-      "category": null,
-      "screenshots": [
-        "https://ipa.cypwn.xyz/assets/images/ipalibrary.png"
-      ],
-      "versions": [
-        {
-          "version": "1.1-2",
-          "buildVersion": null,
-          "marketingVersion": null,
-          "date": "2022-11-07T00:00:00-05:00",
-          "localizedDescription": null,
-          "downloadURL": "https://ipa.cypwn.xyz/serve/get.php?md5=8c625c10d545a3ac23bc2553fff4f9b8",
-          "size": 385177,
-          "assetURLs": null,
-          "minOSVersion": null,
-          "maxOSVersion": null
-        }
-      ],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      },
-      "patreon": null
-    },
-    {
       "name": "cl1m4x",
       "bundleIdentifier": "cypwn.cl1m4x.1.3",
       "marketplaceID": null,
@@ -33967,6 +33961,39 @@
           "localizedDescription": null,
           "downloadURL": "https://ipa.cypwn.xyz/serve/get.php?md5=af5f0af22dda53d982aff6b98f665550",
           "size": 2936012,
+          "assetURLs": null,
+          "minOSVersion": null,
+          "maxOSVersion": null
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "patreon": null
+    },
+    {
+      "name": "NetworkManager1.1-2_TS",
+      "bundleIdentifier": "cypwn.NetworkManager1.1-2_TS.1.1-2",
+      "marketplaceID": null,
+      "developerName": "NetworkManager1.1-2_TS x CyPwn",
+      "subtitle": null,
+      "localizedDescription": "Control Network access on an app-by-app basis.",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/NetworkManager1.1-2_TS.png",
+      "tintColor": "FFC300",
+      "category": null,
+      "screenshots": [
+        "https://ipa.cypwn.xyz/assets/images/ipalibrary.png"
+      ],
+      "versions": [
+        {
+          "version": "1.1-2",
+          "buildVersion": null,
+          "marketingVersion": null,
+          "date": "2022-11-07T00:00:00-05:00",
+          "localizedDescription": null,
+          "downloadURL": "https://ipa.cypwn.xyz/serve/get.php?md5=8c625c10d545a3ac23bc2553fff4f9b8",
+          "size": 385177,
           "assetURLs": null,
           "minOSVersion": null,
           "maxOSVersion": null
@@ -34058,39 +34085,6 @@
       "patreon": null
     },
     {
-      "name": "TrollSign_TS",
-      "bundleIdentifier": "cypwn.TrollSign_TS.1.0",
-      "marketplaceID": null,
-      "developerName": "TrollSign_TS x CyPwn",
-      "subtitle": null,
-      "localizedDescription": "v1.0 - Modify app entitlements.",
-      "iconURL": "https://ipa.cypwn.xyz/serve/icons/TrollSign_TS.png",
-      "tintColor": "FFC300",
-      "category": null,
-      "screenshots": [
-        "https://ipa.cypwn.xyz/assets/images/ipalibrary.png"
-      ],
-      "versions": [
-        {
-          "version": "1.0",
-          "buildVersion": null,
-          "marketingVersion": null,
-          "date": "2022-11-06T00:00:00-04:00",
-          "localizedDescription": null,
-          "downloadURL": "https://ipa.cypwn.xyz/serve/get.php?md5=40cd9f0538ab447697e1bad96a96d32f",
-          "size": 2485125,
-          "assetURLs": null,
-          "minOSVersion": null,
-          "maxOSVersion": null
-        }
-      ],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      },
-      "patreon": null
-    },
-    {
       "name": "Ulysses_27.3k",
       "bundleIdentifier": "cypwn.Ulysses_27.3k.27.3",
       "marketplaceID": null,
@@ -34112,6 +34106,39 @@
           "localizedDescription": null,
           "downloadURL": "https://ipa.cypwn.xyz/serve/get.php?md5=96ee7a55d0b2bac8137ae9e06dfaf4e7",
           "size": 21359493,
+          "assetURLs": null,
+          "minOSVersion": null,
+          "maxOSVersion": null
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "patreon": null
+    },
+    {
+      "name": "TrollSign_TS",
+      "bundleIdentifier": "cypwn.TrollSign_TS.1.0",
+      "marketplaceID": null,
+      "developerName": "TrollSign_TS x CyPwn",
+      "subtitle": null,
+      "localizedDescription": "v1.0 - Modify app entitlements.",
+      "iconURL": "https://ipa.cypwn.xyz/serve/icons/TrollSign_TS.png",
+      "tintColor": "FFC300",
+      "category": null,
+      "screenshots": [
+        "https://ipa.cypwn.xyz/assets/images/ipalibrary.png"
+      ],
+      "versions": [
+        {
+          "version": "1.0",
+          "buildVersion": null,
+          "marketingVersion": null,
+          "date": "2022-11-06T00:00:00-04:00",
+          "localizedDescription": null,
+          "downloadURL": "https://ipa.cypwn.xyz/serve/get.php?md5=40cd9f0538ab447697e1bad96a96d32f",
+          "size": 2485125,
           "assetURLs": null,
           "minOSVersion": null,
           "maxOSVersion": null

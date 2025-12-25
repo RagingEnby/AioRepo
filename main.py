@@ -20,7 +20,7 @@ async def get_source(url: str) -> repoparser.Source | None:
     try:
         source = await repoparser.get_source(url)
         # await write(f"output/{source.name}.json", source.to_dict())  # type: ignore
-        print(source.name)
+        print("GOT SOURCE:", source.name, "APPS:", len(source.apps))
         return source
     except (
         curl_exceptions.DNSError,
@@ -31,6 +31,7 @@ async def get_source(url: str) -> repoparser.Source | None:
         curl_exceptions.InvalidURL,
         curl_exceptions.CertificateVerifyError,
         curl_exceptions.ConnectionError,
+        UnicodeDecodeError,
     ) as e:
         print("Error processing", url, e)
         return None
@@ -75,13 +76,9 @@ async def write_source(
 
 
 def is_spam(app: repoparser.App) -> bool:
-    if not app.subtitle:
-        return False
-    if app.subtitle.startswith("Injected with "):
+    if app.subtitle and app.subtitle.startswith("Injected with "):
         return True
-    if app.developer_name == "Holloway":
-        return True
-    if app.developer_name == "lscs3":
+    if app.developer_name in {"Holloway", "lscs3", "polo"}:
         return True
     if "nabzclan" in app.icon_url:
         return True
@@ -91,11 +88,15 @@ def is_spam(app: repoparser.App) -> bool:
 async def main():
     try:
         repo_urls = await reposources.all()
-        print(len(repo_urls))
+        print("REPO URLS:", len(repo_urls))
         sources = await get_sources(*repo_urls)
         apps: list[repoparser.App] = []
         for source in sources:
+            before = len(apps)
             apps.extend(source.apps)
+            if source.name == "Nabzclan - App Store":
+                after = len(apps)
+                print("Nabzclan - App Store:", before, "->", after)
         # await write("output/apps.json", [app.to_dict() for app in apps])
         no_duplicates: dict[str, repoparser.App] = {}
         for app in apps:

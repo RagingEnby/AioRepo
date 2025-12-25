@@ -35,7 +35,12 @@ def format_timestamp(timestamp: str) -> datetime:
         with suppress(ValueError):
             dt = datetime.fromisoformat(s)
         if dt is None:
-            dt = datetime.strptime(date_part, "%Y-%m-%d")
+            for fmt in ("%Y-%m-%d", "%Y-%d-%m", "%d-%m-%Y", "%m-%d-%Y"):
+                with suppress(ValueError):
+                    dt = datetime.strptime(date_part, fmt)
+                    break
+            if dt is None:
+                raise ValueError(f"Unsupported date format: {timestamp}")
 
     if dt.tzinfo is None:
         dt = dt.replace(tzinfo=LOCAL_TZ)

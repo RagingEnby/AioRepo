@@ -1,11 +1,10 @@
+import re
 from contextlib import suppress
-from typing import cast
 from datetime import datetime
 from zoneinfo import ZoneInfo
-import re
 
-from modules import typings, asyncreqs
 import constants
+from modules import asyncreqs, typings
 
 LOCAL_TZ = ZoneInfo("America/New_York")
 
@@ -196,7 +195,7 @@ class App:
     def from_dict(cls, data: typings.App) -> "App":
         if not data.get("bundleIdentifier"):
             raise InvalidBundleIdentifierError(
-                f"Invalid bundle identifier for {data['name']}: {data.get('bundleIdentifier')}"
+                f"Invalid bundle identifier for {data.get('name', 'Unknown')}: {data.get('bundleIdentifier')}"
             )
         return cls(
             name=data["name"],

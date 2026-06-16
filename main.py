@@ -1,11 +1,12 @@
 import asyncio
-import json
-import aiofiles
 import datetime
+import json
+
+import aiofiles
 from curl_cffi.requests import exceptions as curl_exceptions
 
-from modules import asyncreqs, reposources, repoparser
 import constants
+from modules import asyncreqs, repoparser, reposources
 
 
 async def write(file_path: str, data: dict | list | str):
@@ -81,6 +82,8 @@ def is_spam(app: repoparser.App) -> bool:
     if app.developer_name in {"Holloway", "lscs3", "polo"}:
         return True
     if "nabzclan" in app.icon_url:
+        return True
+    if "CyPwn" in app.developer_name:
         return True
     return False
 

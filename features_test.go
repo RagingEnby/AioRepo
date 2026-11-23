@@ -377,6 +377,50 @@ func TestParseChocoPage(t *testing.T) {
 	}
 }
 
+func TestCandidateQueue(t *testing.T) {
+	path := filepath.Join(t.TempDir(), "candidates.json")
+	recent := testNow.Add(-24 * time.Hour).Format(time.RFC3339)
+	stale := testNow.AddDate(-2, 0, 0).Format(time.RFC3339)
+	add := []candidate{
+		{URL: "https://raw.githubusercontent.com/a/popular/HEAD/s.json", Repo: "a/popular", Stars: 500, PushedAt: recent},
+		{URL: "https://raw.githubusercontent.com/b/fork/HEAD/s.json", Repo: "b/fork", Stars: 500, Fork: true, PushedAt: recent},
+		{URL: "https://raw.githubusercontent.com/c/old/HEAD/s.json", Repo: "c/old", Stars: 500, PushedAt: stale},
+		{URL: "https://example.com/source.json", Origin: "link"},
+		{URL: "https://done.example/source.json"},
+	}
+	known := map[string]bool{normalizeURL("https://done.example/source.json"): true}
+	n, err := mergeCandidates(path, add, known, testNow)
+	if err != nil || n != 4 {
+		t.Fatalf("added %d, %v", n, err)
+	}
+	cs, _ := loadCandidates(path)
+	var order []string
+	for _, c := range cs {
+		order = append(order, c.Repo)
+	}
+	if !reflect.DeepEqual(order, []string{"a/popular", "c/old", "b/fork", ""}) {
+		t.Errorf("order = %v", order)
+	}
+
+	// Once audited, a source leaves the queue on the next merge.
+	known[normalizeURL(add[0].URL)] = true
+	if _, err := mergeCandidates(path, nil, known, testNow); err != nil {
+		t.Fatal(err)
+	}
+	if cs, _ := loadCandidates(path); len(cs) != 3 || cs[0].Repo != "c/old" {
+		t.Errorf("audited source still queued: %+v", cs)
+	}
+}
+
+func TestLinkedSourcesSkipScraped(t *testing.T) {
+	r := result(0, "s")
+	r.Parsed.Links = []string{"https://s/", "https://other.com/x.json"}
+	got := linkedSources([]*sourceResult{r}, []sourceURL{{URL: "https://s"}})
+	if len(got) != 1 || got[0].URL != "https://other.com/x.json" || got[0].Origin != "link" {
+		t.Errorf("links = %+v", got)
+	}
+}
+
 func TestAppendURLFile(t *testing.T) {
 	path := filepath.Join(t.TempDir(), "d.txt")
 	if err := os.WriteFile(path, []byte("https://a.com/x.json\n"), 0o644); err != nil {

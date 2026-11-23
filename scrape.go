@@ -17,8 +17,8 @@ const (
 	statusDuplicate = "duplicate" // same content as another URL in this run
 )
 
-// maxCrawl caps how many new links found inside sources are tried per run.
-const maxCrawl = 200
+// maxLinks caps how many links found inside sources are queued per run.
+const maxLinks = 200
 
 type sourceResult struct {
 	sourceURL
@@ -44,35 +44,36 @@ func newScraper(f *fetcher, cache *diskCache, p *parser, now time.Time) *scraper
 	return &scraper{f: f, cache: cache, p: p, now: now}
 }
 
-// scrapeAll fetches every source, then follows links to sources found inside
-// them once. It returns one result per URL, in input order.
+// scrapeAll fetches every source and returns one result per URL, in input
+// order.
 func (s *scraper) scrapeAll(ctx context.Context, urls []sourceURL) []*sourceResult {
 	results := s.scrapeBatch(ctx, urls)
+	// Results are in input order, so the same URL wins a duplicate every run.
+	resolveDuplicates(results)
+	return results
+}
 
+// linkedSources returns the source URLs mentioned inside the scraped sources
+// that are not scraped themselves. They go to the audit queue, never
+// straight into the scrape.
+func linkedSources(results []*sourceResult, scraped []sourceURL) []candidate {
 	known := map[string]bool{}
-	for _, u := range urls {
+	for _, u := range scraped {
 		known[normalizeURL(u.URL)] = true
 	}
-	var crawl []sourceURL
+	var out []candidate
 	for _, r := range results {
 		if !r.usable() {
 			continue
 		}
 		for _, link := range r.Parsed.Links {
-			if k := normalizeURL(link); !known[k] && len(crawl) < maxCrawl {
+			if k := normalizeURL(link); !known[k] && len(out) < maxLinks {
 				known[k] = true
-				crawl = append(crawl, sourceURL{URL: link, Origin: "crawl", Tier: tierFound})
+				out = append(out, candidate{URL: link, Origin: "link"})
 			}
 		}
 	}
-	if len(crawl) > 0 {
-		sortSourceURLs(crawl)
-		fmt.Println("CRAWLING", len(crawl), "linked sources")
-		results = append(results, s.scrapeBatch(ctx, crawl)...)
-	}
-	// Results are in input order, so the same URL wins a duplicate every run.
-	resolveDuplicates(results)
-	return results
+	return out
 }
 
 func (s *scraper) scrapeBatch(ctx context.Context, urls []sourceURL) []*sourceResult {

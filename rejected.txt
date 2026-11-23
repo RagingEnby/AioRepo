@@ -1,3 +1,3 @@
 # Sources the find-altstore-sources audit turned down. Each line is a URL
 # with a "# reason" comment above it. They are never added to urls.txt, and
-# later searches skip them. appdb or discovery may still list some of them.
+# later searches and the audit queue skip them. appdb may still list some.

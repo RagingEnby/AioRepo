@@ -36,11 +36,11 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add discovered.txt
+          git add candidates.json
           if git diff --cached --quiet; then
-            echo "No new sources"
+            echo "No new candidates"
             exit 0
           fi
-          git commit -m "chore: add sources found by github search"
+          git commit -m "chore: queue sources found by github search for audit"
           git pull --rebase
           git push

@@ -213,3 +213,13 @@ https://raw.githubusercontent.com/loial/loial.github.io/refs/heads/main/altstore
 https://raw.githubusercontent.com/yodaluca23/Random-Crap/refs/heads/main/AltStore%20Repo.json
 https://raw.githubusercontent.com/lightofsnow1/altstore--/refs/heads/main/altstore.json
 https://raw.githubusercontent.com/realmios/library/main/repo.json
+https://alt.crystall1ne.dev
+https://apps.sidestore.io
+https://connect.sidestore.io/apps.json
+https://buildbot.libretro.com/stable/altstore.json
+https://github.com/khcrysalis/feather/raw/main/app-repo.json
+https://raw.githubusercontent.com/Aidoku/Aidoku/altstore/apps.json
+https://raw.githubusercontent.com/lo-cafe/winston-altstore/main/apps.json
+https://repo.madari.media/nightly/repo.json
+https://polymorph-distribution.netlify.app/source.json
+https://raw.githubusercontent.com/thenightmancodeth/chromium-ios/master/altstore-source.json

@@ -43,3 +43,66 @@ https://raw.githubusercontent.com/Apps2Samsung/Apps2Samsung/HEAD/docs/sidestore/
 
 # the kept Husk source already lists the same Henge builds.
 https://raw.githubusercontent.com/Leviidev/Henge/HEAD/repo.json
+
+# the NuvioMobile feed in urls.txt covers every IPA in this feed.
+https://raw.githubusercontent.com/NuvioMedia/NuvioDesktop/HEAD/store.json
+
+# the feed distributes a modified X app under X's bundle ID.
+https://raw.githubusercontent.com/NeoFreeBird/app/HEAD/resources/AltSource-X.json
+
+# the feed distributes a modified Twitter app under X's bundle ID.
+https://raw.githubusercontent.com/NeoFreeBird/app/HEAD/resources/AltSource.json
+
+# the feed distributes modified WhatsApp and Instagram apps.
+https://raw.githubusercontent.com/FouadRaheb/Watusi-for-WhatsApp/HEAD/altstore/source.json
+
+# the app uses an iOS kernel exploit. The listed IPA size also differs from the release.
+https://raw.githubusercontent.com/rooootdev/lara/HEAD/source.json
+
+# the feed distributes a modified build under Christian Selig's Apollo bundle ID.
+https://raw.githubusercontent.com/Apollo-Reborn/Apollo-Reborn/HEAD/apps.json
+
+# the feed distributes a modified build under Christian Selig's Apollo bundle ID.
+https://raw.githubusercontent.com/Apollo-Reborn/Apollo-Reborn/HEAD/apps_glass.json
+
+# the feed distributes a modified build under Christian Selig's Apollo bundle ID.
+https://raw.githubusercontent.com/Apollo-Reborn/Apollo-Reborn/HEAD/apps_glass_icons.json
+
+# the feed distributes a modified build under Christian Selig's Apollo bundle ID.
+https://raw.githubusercontent.com/Apollo-Reborn/Apollo-Reborn/HEAD/apps_noext.json
+
+# the feed distributes a modified build under Christian Selig's Apollo bundle ID.
+https://raw.githubusercontent.com/Apollo-Reborn/Apollo-Reborn/HEAD/apps_noext_glass.json
+
+# the feed distributes a modified build under Christian Selig's Apollo bundle ID.
+https://raw.githubusercontent.com/Apollo-Reborn/Apollo-Reborn/HEAD/apps_noext_glass_icons.json
+
+# the feed distributes an unofficial repack under Christian Selig's Apollo bundle ID.
+https://raw.githubusercontent.com/Balackburn/Apollo/HEAD/apps.json
+
+# the feed distributes an unofficial repack under Christian Selig's Apollo bundle ID.
+https://raw.githubusercontent.com/Balackburn/Apollo/HEAD/apps_glass.json
+
+# the feed distributes an unofficial repack under Christian Selig's Apollo bundle ID.
+https://raw.githubusercontent.com/Balackburn/Apollo/HEAD/apps_noext.json
+
+# the feed distributes an unofficial repack under Christian Selig's Apollo bundle ID.
+https://raw.githubusercontent.com/Balackburn/Apollo/HEAD/apps_noext_glass.json
+
+# the manifest matches the AnymeX feed already in urls.txt byte for byte.
+https://raw.githubusercontent.com/RyanYuuki/AnymeX/HEAD/repo/source.json
+
+# the app bypasses the iOS sandbox to access other apps' containers.
+https://raw.githubusercontent.com/kolbicz/WQFiles/HEAD/source.json
+
+# the manifest matches the Streamer feed already in urls.txt byte for byte.
+https://raw.githubusercontent.com/StreamerApp/Streamer/HEAD/altstore.json
+
+# the feed claims version 1.2.1 and points to a filename absent from the latest release.
+https://raw.githubusercontent.com/StreamerApp/Streamer/HEAD/scarlet.json
+
+# the older beta repeats the bundle ID of the kept stable feed.
+https://raw.githubusercontent.com/Kyosee/VeneraX/HEAD/altstore-source-beta.json
+
+# the IPA link uses a placeholder GitHub repository outside the source owner's account.
+https://raw.githubusercontent.com/IReaderorg/IReader/HEAD/altstore-source.json

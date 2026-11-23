@@ -18,3 +18,10 @@ The spam repo contains only apps made by spam authors such as Nabzclan. The main
 [AltSource (raw)](https://raw.githubusercontent.com/RagingEnby/AioRepo/refs/heads/master/repo++.json) 
 ([Add to AltStore](https://intradeus.github.io/http-protocol-redirector?r=altstore://source?url=https://raw.githubusercontent.com/RagingEnby/AioRepo/refs/heads/master/repo++.json) | 
 [Add to SideStore](https://intradeus.github.io/http-protocol-redirector?r=sidestore://source?url=https://raw.githubusercontent.com/RagingEnby/AioRepo/refs/heads/master/repo++.json) | [Online View](https://altsource.by.lao.sb/browse/?source=https%3A%2F%2Fraw.githubusercontent.com%2FRagingEnby%2FAioRepo%2Frefs%2Fheads%2Fmaster%2Frepo%2B%2B.json))
+# Running
+The scraper is written in Go. It writes `repo.json` and `repo++.json` in the AltStore classic source format (the sideload build, not AltStore PAL).
+```sh
+go run .
+go test ./...
+```
+The `Update repo` GitHub Action runs it every 6 hours and on manual dispatch, then commits the new files.

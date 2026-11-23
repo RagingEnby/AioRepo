@@ -248,3 +248,18 @@ https://raw.githubusercontent.com/pa-jesusf/KikoFlu/HEAD/altstore-source.json
 https://raw.githubusercontent.com/jo32/tvbox-silicon/HEAD/website/public/altstore.json
 https://raw.githubusercontent.com/venera-app/venera-prime/HEAD/alt_store.json
 https://raw.githubusercontent.com/JustLookAtNow/pt_mate/HEAD/altsource/AltSource.json
+
+# added by source audit 2026-11-23
+https://raw.githubusercontent.com/bobsupra/NuvioTVOS/HEAD/apps.json
+https://raw.githubusercontent.com/verback2308/Opaline/HEAD/source/apps.json
+https://raw.githubusercontent.com/fspecii/LinPad/HEAD/release/source.json
+https://raw.githubusercontent.com/Aminark/legado-ios/HEAD/docs/altstore.json
+https://raw.githubusercontent.com/Kianuni/Camlo/HEAD/apps.json
+https://raw.githubusercontent.com/SerStars/Nugget-Wallpapers/HEAD/other/pocketposter_source.json
+https://raw.githubusercontent.com/VortXTV/VortX/HEAD/altstore/source.json
+https://raw.githubusercontent.com/g8row/PhotosBackup/HEAD/docs/apps.json
+https://raw.githubusercontent.com/juananzzz/resonus/HEAD/Source.json
+https://raw.githubusercontent.com/mirazbakis/AltLoad/HEAD/source.json
+https://raw.githubusercontent.com/mengangs/Cloudn/HEAD/altstore.json
+https://raw.githubusercontent.com/silentprovider423/HomeRoll/HEAD/sidestore.json
+https://raw.githubusercontent.com/jevonlipsey/pico-ios/HEAD/altstore.json

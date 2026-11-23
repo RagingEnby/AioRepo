@@ -106,3 +106,66 @@ https://raw.githubusercontent.com/Kyosee/VeneraX/HEAD/altstore-source-beta.json
 
 # the IPA link uses a placeholder GitHub repository outside the source owner's account.
 https://raw.githubusercontent.com/IReaderorg/IReader/HEAD/altstore-source.json
+
+# the checked-in nightly manifest is dated 2024 and lists 1,800,157 bytes for the current 4,453,850-byte release asset.
+https://raw.githubusercontent.com/NearFrame/OpenParsec/HEAD/altstore.json
+
+# the v1.6 manifest lists 14,000,000 bytes for a 16,394,645-byte release asset.
+https://raw.githubusercontent.com/Nyasami/Ksign/HEAD/repo.json
+
+# the third-party catalog routes IPAs through gh-proxy.com and includes modified Apollo and YouTube builds.
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/all-apps-proxy.json
+
+# the third-party catalog includes modified Apollo and YouTube builds under their original bundle IDs.
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/all-apps.json
+
+# the AltGallery feed mirrors the ARMSX2 release and adds no new bundle ID.
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/ARMSX2/apps.json
+
+# the AltGallery feed mirrors the Aidoku release and adds no new bundle ID.
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/Aidoku/apps.json
+
+# the AltGallery feed mirrors the Mak5er release and adds no new bundle ID.
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/AirCard/apps.json
+
+# the AltGallery feed mirrors the altstoreio release and adds no new bundle ID.
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/AltStore/apps.json
+
+# the AltGallery feed mirrors the AniBakaBaka release and adds no new bundle ID.
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/AniBaka/apps.json
+
+# the AltGallery feed mirrors the Sle2p release and adds no new bundle ID.
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/AniCh/apps.json
+
+# the AltGallery feed mirrors the openAnimeFlow release and adds no new bundle ID.
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/AnimeFlow/apps.json
+
+# the AltGallery feed mirrors the open-ani release and adds no new bundle ID.
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/Animeko/apps.json
+
+# the mirror distributes a modified Apollo build under Christian Selig's bundle ID.
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/Apollo-Reborn/apps.json
+
+# the AltGallery feed mirrors the Lakr233 release and adds no new bundle ID.
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/Asspp/apps.json
+
+# the AltGallery feed mirrors the thebcd69 release and adds no new bundle ID.
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/BCD/apps.json
+
+# the AltGallery feed mirrors the breeze-project-org release and adds no new bundle ID.
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/Breeze/apps.json
+
+# the AltGallery feed mirrors the mengangs release and adds no new bundle ID.
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/Cloudn/apps.json
+
+# the AltGallery feed mirrors the AhmedBafkir release and adds no new bundle ID.
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/DLiPA/apps.json
+
+# the AltGallery feed mirrors the aayush2622 release and adds no new bundle ID.
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/Dartotsu/apps.json
+
+# the AltGallery feed mirrors the moliango release and adds no new bundle ID.
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/Doer/apps.json
+
+# the AltGallery feed mirrors the OatmealDome release and adds no new bundle ID.
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/DolphiniOS/apps.json

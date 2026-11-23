@@ -242,3 +242,9 @@ https://raw.githubusercontent.com/raoxwup/haka_comic/HEAD/alt_store.json
 https://raw.githubusercontent.com/mengangs/ipadn/HEAD/altstore-source.json
 https://raw.githubusercontent.com/StayLameBro/backburner/HEAD/altstore/source.json
 https://raw.githubusercontent.com/Kyosee/VeneraX/HEAD/altstore-source.json
+
+# added by source audit 2026-11-23
+https://raw.githubusercontent.com/pa-jesusf/KikoFlu/HEAD/altstore-source.json
+https://raw.githubusercontent.com/jo32/tvbox-silicon/HEAD/website/public/altstore.json
+https://raw.githubusercontent.com/venera-app/venera-prime/HEAD/alt_store.json
+https://raw.githubusercontent.com/JustLookAtNow/pt_mate/HEAD/altsource/AltSource.json

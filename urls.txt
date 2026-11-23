@@ -223,3 +223,16 @@ https://raw.githubusercontent.com/lo-cafe/winston-altstore/main/apps.json
 https://repo.madari.media/nightly/repo.json
 https://polymorph-distribution.netlify.app/source.json
 https://raw.githubusercontent.com/thenightmancodeth/chromium-ios/master/altstore-source.json
+
+# added by source audit 2026-11-23
+https://raw.githubusercontent.com/mornyeapp/Mornye/HEAD/apps.json
+https://raw.githubusercontent.com/czy0729/Bangumi/HEAD/alt_store.json
+https://raw.githubusercontent.com/vcmi/vcmi/HEAD/docs/maintainers/scripts/updates/altstore.json
+https://raw.githubusercontent.com/NuvioMedia/NuvioMobile/HEAD/store.json
+https://raw.githubusercontent.com/InukaAsith/TwinDesk/HEAD/altstore.json
+https://raw.githubusercontent.com/yattee/yattee/HEAD/altstore-source.json
+https://raw.githubusercontent.com/Leviidev/Husk/HEAD/altsource.json
+https://raw.githubusercontent.com/BlackHatDevX/openspot-music-app/HEAD/apps.json
+https://raw.githubusercontent.com/imxieyi/Kernarium/HEAD/sideload/source.json
+https://raw.githubusercontent.com/Apps2Samsung/Apps2Samsung/HEAD/docs/sidestore/apps.json
+https://raw.githubusercontent.com/CyrilPeng/Venera-Next/HEAD/alt_store.json

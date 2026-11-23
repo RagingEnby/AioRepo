@@ -1,3 +1,45 @@
 # Sources the find-altstore-sources audit turned down. Each line is a URL
 # with a "# reason" comment above it. They are never added to urls.txt, and
 # later searches and the audit queue skip them. appdb may still list some.
+
+# duplicate of the JHenTai manifest already in urls.txt.
+https://raw.githubusercontent.com/jiangtian616/JHenTai/HEAD/altsource/AltSource.json
+
+# duplicate of the Feather manifest reached by the old GitHub URL in urls.txt.
+https://raw.githubusercontent.com/claration/feather/HEAD/app-repo.json
+
+# duplicate of the Mangayomi manifest already in urls.txt.
+https://raw.githubusercontent.com/kodjodevf/mangayomi/HEAD/repo/source.json
+
+# duplicate of the JavDB manifest already in urls.txt.
+https://raw.githubusercontent.com/bdvajstudio/javdb/HEAD/alt.json
+
+# the default branch lists 0.3.95. The documented main-branch feed lists 0.4.8.
+https://raw.githubusercontent.com/bryanthaboi/gen1recomp/HEAD/mobile/ios/app-repo.json
+
+# duplicate of the stable EhPanda manifest already in urls.txt.
+https://raw.githubusercontent.com/EhPanda-Team/EhPanda/HEAD/AltStore.json
+
+# release 3.0.0 has no EhPanda-Beta.ipa asset.
+https://raw.githubusercontent.com/EhPanda-Team/EhPanda/HEAD/AltStoreBeta.json
+
+# the SideStore build repeats the bundle ID in the stable source already in urls.txt.
+https://raw.githubusercontent.com/EhPanda-Team/EhPanda/HEAD/SideStore.json
+
+# not sure: the manifest lists 82.6 MB but links to the 108.5 MB IPA.
+https://raw.githubusercontent.com/zzanehip/The-OldOS-Project/HEAD/source.json
+
+# the legacy download points to the latest release, which has no iOS IPA.
+https://raw.githubusercontent.com/off-grid-ai/OGAM/HEAD/altstore-source.json
+
+# the fork reuses the upstream Erosion bundle ID.
+https://raw.githubusercontent.com/Kianuni/Erosion-CN/HEAD/apps.json
+
+# the manifest has been stale since October 2024. AioRepo already lists 0.12.1.
+https://raw.githubusercontent.com/DonutWare/Fladder/HEAD/altstore.json
+
+# the beta feed uses the same bundle ID as the stable feed kept in this audit.
+https://raw.githubusercontent.com/Apps2Samsung/Apps2Samsung/HEAD/docs/sidestore/beta/apps.json
+
+# the kept Husk source already lists the same Henge builds.
+https://raw.githubusercontent.com/Leviidev/Henge/HEAD/repo.json

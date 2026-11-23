@@ -1,7 +1,7 @@
 {
   "name": "RagingEnby's AIO Source++",
   "identifier": "dev.ragingenby.aiorepo.spam",
-  "subtitle": "[11/23/26 16:53] RagingEnby's AIO Source but with ONLY spam apps (99% Nabzclan slop)",
+  "subtitle": "[11/23/26 17:19] RagingEnby's AIO Source but with ONLY spam apps (99% Nabzclan slop)",
   "description": "RagingEnby's AIO Source but with ONLY spam apps (99% Nabzclan slop)",
   "iconURL": "https://raw.githubusercontent.com/RagingEnby/RagingEnby/main/pfp.png",
   "website": "https://ragingenby.dev/",
@@ -19,7 +19,7 @@
       "versions": [
         {
           "version": "357.0",
-          "date": "2026-11-23T16:53:26-05:00",
+          "date": "2026-11-23T17:19:45-05:00",
           "localizedDescription": "This uses version 357.0 of Discord TestFlight Build with Unbound 1.12.4 injected.",
           "downloadURL": "https://repo.ballermc.com/tubevault/Unbound%201.12.4%20-%20Discord%20357.0-TestFlight.ipa",
           "size": 104245417
@@ -30,7 +30,7 @@
         "privacy": {}
       },
       "version": "357.0",
-      "versionDate": "2026-11-23T16:53:26-05:00",
+      "versionDate": "2026-11-23T17:19:45-05:00",
       "versionDescription": "This uses version 357.0 of Discord TestFlight Build with Unbound 1.12.4 injected.",
       "downloadURL": "https://repo.ballermc.com/tubevault/Unbound%201.12.4%20-%20Discord%20357.0-TestFlight.ipa",
       "size": 104245417
@@ -47,7 +47,7 @@
       "versions": [
         {
           "version": "1.12.0",
-          "date": "2026-11-23T16:53:26-05:00",
+          "date": "2026-11-23T17:19:45-05:00",
           "localizedDescription": "This uses version 1.12.0 of Opaline.",
           "downloadURL": "https://repo.ballermc.com/tubevault/Opaline_1.12.0.ipa",
           "size": 6685919
@@ -58,7 +58,7 @@
         "privacy": {}
       },
       "version": "1.12.0",
-      "versionDate": "2026-11-23T16:53:26-05:00",
+      "versionDate": "2026-11-23T17:19:45-05:00",
       "versionDescription": "This uses version 1.12.0 of Opaline.",
       "downloadURL": "https://repo.ballermc.com/tubevault/Opaline_1.12.0.ipa",
       "size": 6685919

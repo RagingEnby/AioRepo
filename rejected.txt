@@ -318,3 +318,51 @@ https://raw.githubusercontent.com/Amadeus1P048596/zhihu-plus-plus-swift/HEAD/sid
 
 # the same apps.json manifest is already listed in urls.txt under main.
 https://raw.githubusercontent.com/swaggyP36000/TrollStore-IPAs/HEAD/apps.json
+
+# not sure: kernel-exploit app (DarkSword, libgrabkernel2) from an account whose whole history starts in July 2026.
+https://raw.githubusercontent.com/leonardob8777-bit/Eagle/HEAD/source.json
+
+# not sure: three-week-old project from an owner with little history, and the app takes an Apple account sign-in for its built-in SideStore.
+https://raw.githubusercontent.com/cartouche-app/Cartouche/HEAD/app/sidestore-source.json
+
+# the feed lists upstream Venera 1.6.2 from January 2026. AioRepo already has Venera-SSR 2.1.5.
+https://raw.githubusercontent.com/Kiastr/Venera-SSR/HEAD/alt_store.json
+
+# the newest build is from June 2025, and the feed mirrors other people's release repos.
+https://raw.githubusercontent.com/drphe/KhoIPA/HEAD/upload/EpicGamesIPASource.json
+
+# downloads are configuration profiles and itms-services links, not IPAs.
+https://raw.githubusercontent.com/drphe/KhoIPA/HEAD/upload/applejr.json
+
+# mirror of Fouad Raheb's feed. AioRepo already lists the same fouadraheb.com builds.
+https://raw.githubusercontent.com/drphe/KhoIPA/HEAD/upload/fouadraheb.json
+
+# the feed lists MeloNX 1.7.0 from April 2025. AioRepo already has 2.7.
+https://raw.githubusercontent.com/VertexSelection/MeloVertex/HEAD/source.json
+
+# stale snapshot of the official AltStore feed. AioRepo already has newer builds.
+https://raw.githubusercontent.com/luh-99/SideStoreAndAltStore-Sources/HEAD/AltStore%20Complete/source.json
+
+# stale 2020 snapshot with no new apps.
+https://raw.githubusercontent.com/luh-99/SideStoreAndAltStore-Sources/HEAD/Burrito%E2%80%99s%20AltStore/source.json
+
+# copy of the CyPwn library. AioRepo already lists the same ipa.cypwn.xyz files.
+https://raw.githubusercontent.com/luh-99/SideStoreAndAltStore-Sources/HEAD/CyPwn%20iPA%20Library/source.json
+
+# stale January 2024 snapshot with SharePoint links. AioRepo already has newer builds.
+https://raw.githubusercontent.com/luh-99/SideStoreAndAltStore-Sources/HEAD/Qn_%E2%80%99s%20AltStore%20Repo/source.json
+
+# stale snapshot of iSH build 786. AioRepo already has build 813.
+https://raw.githubusercontent.com/luh-99/SideStoreAndAltStore-Sources/HEAD/iSH%20AltStore%20Repo/source.json
+
+# September 2025 snapshot of the AppTesters repo, which AioRepo already lists.
+https://raw.githubusercontent.com/luh-99/SideStoreAndAltStore-Sources/HEAD/source.json
+
+# the same AltStore.json manifest is already listed in urls.txt under main.
+https://raw.githubusercontent.com/AlanLang/BitClient/HEAD/AltStore.json
+
+# the repo was last pushed in January 2025.
+https://raw.githubusercontent.com/azu0609/repo/HEAD/altstore_repo.json
+
+# the repo was last pushed in January 2025.
+https://raw.githubusercontent.com/azu0609/repo/HEAD/scarlet_repo.json

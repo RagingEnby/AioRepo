@@ -281,3 +281,18 @@ https://raw.githubusercontent.com/81199000/DouDuo/HEAD/docs/source/douduo.json
 https://raw.githubusercontent.com/TarbleFR/RewindBox/HEAD/source.json
 https://raw.githubusercontent.com/mrdrvt99/Altstore-Repository/HEAD/apps.json
 https://raw.githubusercontent.com/movixstream/MovixOpenSource/HEAD/app/movix-ios-source.json
+
+# added by source audit 2026-11-23 (50 to 99 stars)
+https://raw.githubusercontent.com/MarkusSela/IW4-Pocket/HEAD/source.json
+https://raw.githubusercontent.com/felixchaos/EhViewer-Apple/HEAD/source.json
+https://raw.githubusercontent.com/mateo-m/empo-app/HEAD/altstore-source.json
+https://raw.githubusercontent.com/NekoSurf/NekoSurf/HEAD/source.json
+https://raw.githubusercontent.com/oenderg/Reflourished-Darwin/HEAD/altstore/source.json
+https://raw.githubusercontent.com/madeye/gterm/HEAD/docs/altstore.json
+https://raw.githubusercontent.com/xibrox/Shirox/HEAD/apps.json
+https://raw.githubusercontent.com/impin2rex/Laya/HEAD/sidestore/source.json
+https://raw.githubusercontent.com/ErikVeland/Lemmings/HEAD/altstore.json
+https://raw.githubusercontent.com/yodaluca23/Fusion-AltStore/HEAD/source.json
+https://raw.githubusercontent.com/Nikita-sud/latentjam/HEAD/website/altstore.json
+https://raw.githubusercontent.com/DjangoCustard225/Vesper/HEAD/altsource/source.json
+https://raw.githubusercontent.com/thatSFguy/reticulum-mobile-app/HEAD/docs/altstore.json

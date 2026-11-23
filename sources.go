@@ -17,13 +17,12 @@ import (
 const (
 	tierManual = iota // urls.txt, picked by hand
 	tierChoco         // the Choco IPA library list
-	tierFound         // appdb, discovered.txt, and links found in sources
+	tierFound         // appdb
 )
 
 const (
-	manualFile     = "urls.txt"
-	discoveredFile = "discovered.txt"
-	deadFile       = "dead.txt"
+	manualFile = "urls.txt"
+	deadFile   = "dead.txt"
 )
 
 // sourceURL is a source to fetch and where it came from.
@@ -45,7 +44,6 @@ func urlLists() []urlList {
 		{"urls.txt", tierManual, func(context.Context, *fetcher) ([]string, error) { return readURLFile(manualFile) }, true},
 		{"choco", tierChoco, chocoRepos, false},
 		{"appdb", tierFound, appdbRepos, false},
-		{"discovered", tierFound, func(context.Context, *fetcher) ([]string, error) { return readURLFileOptional(discoveredFile) }, true},
 	}
 }
 

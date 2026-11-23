@@ -12,10 +12,11 @@ import (
 	"time"
 )
 
-// Discovery searches GitHub for source files, checks that each one parses
-// with at least one installable app, and appends the new ones to
-// discovered.txt. It needs GITHUB_TOKEN, since code search requires
-// authentication.
+// Discovery searches GitHub for source files, keeps the ones that parse with
+// at least one installable app, looks up the stars and activity of the repo
+// that hosts each one, and queues them in candidates.json for a security
+// audit. It never adds a source to the scrape. It needs GITHUB_TOKEN, since
+// code search requires authentication.
 
 // discoverQueries are GitHub code search queries. Each returns at most 1000
 // results, so the AltStore query is split by file name.
@@ -35,17 +36,28 @@ type githubClient struct {
 	token string
 	http  *http.Client
 	base  string
+
+	mu    sync.Mutex
 	pause time.Duration
 	last  time.Time
 }
 
-func (g *githubClient) get(ctx context.Context, path string, params url.Values, out any) error {
+func (g *githubClient) wait(ctx context.Context) error {
+	g.mu.Lock()
+	defer g.mu.Unlock()
 	if wait := g.pause - time.Since(g.last); wait > 0 {
 		if err := sleepCtx(ctx, wait); err != nil {
 			return err
 		}
 	}
 	g.last = time.Now()
+	return nil
+}
+
+func (g *githubClient) get(ctx context.Context, path string, params url.Values, out any) error {
+	if err := g.wait(ctx); err != nil {
+		return err
+	}
 	u := g.base + path
 	if len(params) > 0 {
 		u += "?" + params.Encode()
@@ -78,8 +90,8 @@ func rawURL(repo, path string) string {
 	return "https://raw.githubusercontent.com/" + repo + "/HEAD/" + strings.Join(parts, "/")
 }
 
-func (g *githubClient) searchCode(ctx context.Context, query string) ([]string, error) {
-	var urls []string
+func (g *githubClient) searchCode(ctx context.Context, query string) ([]candidate, error) {
+	var out []candidate
 	for page := 1; page <= 10; page++ {
 		var res struct {
 			Items []struct {
@@ -92,24 +104,24 @@ func (g *githubClient) searchCode(ctx context.Context, query string) ([]string, 
 		params := url.Values{"q": {query}, "per_page": {"100"}, "page": {fmt.Sprint(page)}}
 		if err := g.get(ctx, "/search/code", params, &res); err != nil {
 			// Search past the 1000th result answers 422. Keep what we have.
-			if len(urls) > 0 {
-				return urls, nil
+			if len(out) > 0 {
+				return out, nil
 			}
 			return nil, err
 		}
 		for _, it := range res.Items {
-			urls = append(urls, rawURL(it.Repository.FullName, it.Path))
+			out = append(out, candidate{URL: rawURL(it.Repository.FullName, it.Path), Origin: "github-search", Repo: it.Repository.FullName})
 		}
 		if len(res.Items) < 100 {
 			break
 		}
 	}
-	return urls, nil
+	return out, nil
 }
 
 // topicFiles lists the .json files at the root of repos tagged with the
 // altstore-source topic.
-func (g *githubClient) topicFiles(ctx context.Context) ([]string, error) {
+func (g *githubClient) topicFiles(ctx context.Context) ([]candidate, error) {
 	var res struct {
 		Items []struct {
 			FullName string `json:"full_name"`
@@ -118,7 +130,7 @@ func (g *githubClient) topicFiles(ctx context.Context) ([]string, error) {
 	if err := g.get(ctx, "/search/repositories", url.Values{"q": {"topic:altstore-source"}, "per_page": {"100"}}, &res); err != nil {
 		return nil, err
 	}
-	var urls []string
+	var out []candidate
 	for _, repo := range res.Items {
 		var files []struct {
 			Name string `json:"name"`
@@ -129,11 +141,54 @@ func (g *githubClient) topicFiles(ctx context.Context) ([]string, error) {
 		}
 		for _, f := range files {
 			if f.Type == "file" && strings.HasSuffix(strings.ToLower(f.Name), ".json") {
-				urls = append(urls, rawURL(repo.FullName, f.Name))
+				out = append(out, candidate{URL: rawURL(repo.FullName, f.Name), Origin: "github-topic", Repo: repo.FullName})
 			}
 		}
 	}
-	return urls, nil
+	return out, nil
+}
+
+type repoInfo struct {
+	Stars    int    `json:"stargazers_count"`
+	Fork     bool   `json:"fork"`
+	Archived bool   `json:"archived"`
+	PushedAt string `json:"pushed_at"`
+}
+
+// repoFacts fills in stars and activity for each candidate's repo. The core
+// API allows 5000 requests an hour, so a few hundred repos are fine.
+func repoFacts(ctx context.Context, token string, cs []candidate) {
+	g := &githubClient{token: token, http: &http.Client{Timeout: 30 * time.Second}, base: "https://api.github.com"}
+	repos := map[string]*repoInfo{}
+	for _, c := range cs {
+		if c.Repo != "" {
+			repos[c.Repo] = nil
+		}
+	}
+	var mu sync.Mutex
+	var wg sync.WaitGroup
+	sem := make(chan struct{}, 8)
+	for repo := range repos {
+		wg.Add(1)
+		go func() {
+			defer wg.Done()
+			sem <- struct{}{}
+			defer func() { <-sem }()
+			var info repoInfo
+			if err := g.get(ctx, "/repos/"+repo, nil, &info); err != nil {
+				return
+			}
+			mu.Lock()
+			repos[repo] = &info
+			mu.Unlock()
+		}()
+	}
+	wg.Wait()
+	for i := range cs {
+		if info := repos[cs[i].Repo]; info != nil {
+			cs[i].Stars, cs[i].Fork, cs[i].Archived, cs[i].PushedAt = info.Stars, info.Fork, info.Archived, info.PushedAt
+		}
+	}
 }
 
 func runDiscover(ctx context.Context) error {
@@ -143,59 +198,78 @@ func runDiscover(ctx context.Context) error {
 	}
 	g := &githubClient{token: token, http: &http.Client{Timeout: 30 * time.Second}, base: "https://api.github.com", pause: codeSearchPause}
 
-	known := map[string]bool{}
-	for _, path := range []string{manualFile, discoveredFile, deadFile, rejectedFile} {
-		urls, err := readURLFileOptional(path)
-		if err != nil {
-			return err
-		}
-		for _, u := range urls {
-			known[normalizeURL(u)] = true
-		}
+	known, err := knownSources()
+	if err != nil {
+		return err
+	}
+	queued, err := loadCandidates(candidatesFile)
+	if err != nil {
+		return err
+	}
+	inQueue := map[string]bool{}
+	for _, c := range queued {
+		inQueue[normalizeURL(c.URL)] = true
 	}
 
-	var candidates []string
-	add := func(urls []string) {
-		for _, u := range urls {
-			if k := normalizeURL(u); !known[k] {
-				known[k] = true
-				candidates = append(candidates, u)
+	seen := map[string]bool{}
+	var found []candidate
+	add := func(cs []candidate) {
+		for _, c := range cs {
+			if k := normalizeURL(c.URL); !known[k] && !seen[k] {
+				seen[k] = true
+				found = append(found, c)
 			}
 		}
 	}
 	for _, q := range discoverQueries {
-		urls, err := g.searchCode(ctx, q)
+		cs, err := g.searchCode(ctx, q)
 		if err != nil {
 			fmt.Fprintf(os.Stderr, "warning: search %q: %v\n", q, err)
 			continue
 		}
-		fmt.Printf("search %q: %d files\n", q, len(urls))
-		add(urls)
+		fmt.Printf("search %q: %d files\n", q, len(cs))
+		add(cs)
 	}
-	if urls, err := g.topicFiles(ctx); err != nil {
+	if cs, err := g.topicFiles(ctx); err != nil {
 		fmt.Fprintf(os.Stderr, "warning: topic search: %v\n", err)
 	} else {
-		fmt.Printf("topic altstore-source: %d files\n", len(urls))
-		add(urls)
+		fmt.Printf("topic altstore-source: %d files\n", len(cs))
+		add(cs)
 	}
-	fmt.Println("CANDIDATES:", len(candidates))
+	fmt.Println("FOUND:", len(found))
 
-	valid := validateSources(ctx, newFetcher(), candidates)
-	fmt.Println("VALID:", len(valid))
-	return appendURLFile(discoveredFile, "found by GitHub search on "+time.Now().In(localTZ).Format(time.DateOnly), valid)
+	// Only new files need the slow fetch. Queued ones just get fresh facts.
+	var fresh, again []candidate
+	for _, c := range found {
+		if inQueue[normalizeURL(c.URL)] {
+			again = append(again, c)
+		} else {
+			fresh = append(fresh, c)
+		}
+	}
+	valid := validateSources(ctx, newFetcher(), fresh)
+	fmt.Println("NEW AND VALID:", len(valid))
+	all := append(valid, again...)
+	repoFacts(ctx, token, all)
+	added, err := mergeCandidates(candidatesFile, all, known, time.Now())
+	if err != nil {
+		return err
+	}
+	fmt.Printf("QUEUED %d new candidates in %s\n", added, candidatesFile)
+	return nil
 }
 
 // validateSources returns the candidates that parse and have at least one
 // installable, non-PAL app.
-func validateSources(ctx context.Context, f *fetcher, candidates []string) []string {
+func validateSources(ctx context.Context, f *fetcher, cs []candidate) []candidate {
 	p := newParser(time.Now(), nil)
-	ok := make([]bool, len(candidates))
+	ok := make([]bool, len(cs))
 	var wg sync.WaitGroup
-	for i, u := range candidates {
+	for i, c := range cs {
 		wg.Add(1)
 		go func() {
 			defer wg.Done()
-			resp, err := f.get(ctx, u, getOptions{attempts: 2})
+			resp, err := f.get(ctx, c.URL, getOptions{attempts: 2})
 			if err != nil {
 				return
 			}
@@ -212,10 +286,10 @@ func validateSources(ctx context.Context, f *fetcher, candidates []string) []str
 		}()
 	}
 	wg.Wait()
-	var out []string
-	for i, u := range candidates {
+	var out []candidate
+	for i, c := range cs {
 		if ok[i] {
-			out = append(out, u)
+			out = append(out, c)
 		}
 	}
 	return out

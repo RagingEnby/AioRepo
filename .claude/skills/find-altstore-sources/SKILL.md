@@ -1,6 +1,6 @@
 ---
 name: find-altstore-sources
-description: Search the web for AltStore and SideStore sources that AioRepo does not scrape yet, check them with the repo's checker, and hand the results to a High-tier model for a security audit. The auditor adds only sources it is fully confident in to urls.txt, commits, and pushes. Use when the user says "find altstore sources", "find new repos", "search for altsources", or asks to grow urls.txt.
+description: Take the top of the AioRepo audit queue (candidates.json) and search the web for more AltStore and SideStore sources, check them with the repo's checker, and hand the results to a High-tier model for a security audit. The auditor adds only sources it is fully confident in to urls.txt, commits, and pushes. Use when the user says "find altstore sources", "find new repos", "search for altsources", "audit the candidate queue", or asks to grow urls.txt.
 ---
 
 # Find AltStore sources
@@ -21,15 +21,30 @@ Work from the AioRepo root (the folder with `main.go` and `urls.txt`).
    `mkdir -p "$TMPDIR/altsources"` (use your session scratch directory if you
    have one). Below it is called `SCRATCH`.
 
-The repo already knows the URLs in `urls.txt`, `discovered.txt`, `dead.txt`,
-and `rejected.txt`. The checker marks those, so you do not need to read them.
+The repo already knows the URLs in `urls.txt`, `dead.txt`, and
+`rejected.txt`. The checker marks those, so you do not need to read them.
 
-## 2. Search
+## 2. Take the top of the queue
+
+`candidates.json` holds sources found automatically, ranked with the most
+likely to be trustworthy first. Start with those:
+
+```sh
+go run . candidates -n 25 > SCRATCH/candidates.txt
+```
+
+For each line, add a row `URL<TAB>candidates.json queue` to
+`SCRATCH/found-at.tsv`.
+
+If the user asked only to work through the queue, skip step 3.
+
+## 3. Search the web
 
 Spend about 15 to 25 searches. Collect every URL that looks like a source
 file: it usually ends in `.json`, or is a bare domain such as
 `https://alt.example.dev`. Write each one on its own line in
-`SCRATCH/candidates.txt`. Duplicates are fine.
+`SCRATCH/candidates.txt` (append, do not overwrite the queue URLs).
+Duplicates are fine.
 
 Run these web searches:
 
@@ -70,7 +85,7 @@ How to read a page:
 Also save, for each URL, where you found it. Write lines like
 `URL<TAB>where you found it` to `SCRATCH/found-at.tsv`. The auditor uses this.
 
-## 3. Check the candidates
+## 4. Check the candidates
 
 Run:
 
@@ -89,7 +104,7 @@ jq 'length' SCRATCH/new.json
 If the count is 0, tell the user that no new working sources were found,
 list how many URLs you checked, and stop. Do not start the auditor.
 
-## 4. Start the auditor
+## 5. Start the auditor
 
 Load the `model-tiers` skill. Use the High tier: GPT 6.2 Sol on the `codex`
 provider with `{"reasoningEffort":"high"}`. If Sol is not available, use
@@ -115,7 +130,7 @@ Do not touch the repo while the auditor runs.
 > commit and push to the current branch under the rules in that file.
 > Report back with the table it asks for.
 
-## 5. Report
+## 6. Report
 
 Pass the auditor's table to the user as it is. Add how many URLs you checked
 and how many reached the auditor. If the auditor pushed, give the commit hash

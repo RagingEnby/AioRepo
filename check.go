@@ -63,7 +63,7 @@ func runCheck(ctx context.Context, args []string) error {
 	}
 
 	known := map[string]string{}
-	for _, path := range []string{manualFile, discoveredFile, deadFile, rejectedFile} {
+	for _, path := range []string{manualFile, deadFile, rejectedFile} {
 		list, err := readURLFileOptional(path)
 		if err != nil {
 			return err

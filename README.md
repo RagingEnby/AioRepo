@@ -4,22 +4,22 @@ Inclusion of an app in this repository does NOT indicate endorsement. This proje
 [AltStore](https://altstore.io/) is a sideloading platform allowing you to install third party applications on Apple devices. There are many AltSource's made by third parties. These are rest API's/static json files that return a list of apps and their download links. These are awesome but there are a ton of repos with 1-2 apps and getting them all into your AltStore just to have a large library to browse is exhausting and damn near impossible. That's where collection repo's come in. I'm not too familiar with the history of AltSource's, but I know the idea of scraping a ton of AltSources to create one mega source is not new. I'm not the first one to do it and I won't be the last. However all public ones I could find had many issues (missing a few small apps I want, missing some larger repos, etc.). That's why I decided to make AioRepo
 ## Sources
 I scrape the following lists of AltSources:
-- `urls.txt`, a list of repositories I added by hand
-- `discovered.txt`, repositories found automatically (see below)
+- `urls.txt`, a list of repositories I added by hand or that passed a security audit
 - https://choco-ipa-library-v2.onrender.com/
 - https://appdb.to/
 
 Both AltStore sources and Scarlet repos are read. All of these are scraped and their apps exported into one json file, `repo.json`.
 
-New sources are found two ways:
-- Every run follows "add source" links (`altstore://source?url=...`) and `sourceURL` fields inside the sources it scrapes.
-- A weekly job searches GitHub code for AltStore and Scarlet source files.
+New sources are only scraped after a security audit. Candidates wait in `candidates.json`, ranked by how likely they are to be trustworthy (GitHub stars, with forks, archived repos, and repos idle for a year ranked lower). They come from:
+- "add source" links (`altstore://source?url=...`) and `sourceURL` fields inside the sources each run scrapes
+- a weekly job that searches GitHub code for AltStore and Scarlet source files
+- web searches by the `find-altstore-sources` agent skill
 
-A third way is the `find-altstore-sources` agent skill in `.claude/skills/`. A small model searches the web and runs `go run . check` on what it finds. A High-tier model then audits each candidate against `AUDIT.md` in that folder. It adds only sources it fully trusts to `urls.txt`, records the rest in `rejected.txt`, and commits and pushes.
+The skill in `.claude/skills/find-altstore-sources/` runs the audit. A small model takes the top of the queue (`go run . candidates`) and anything it finds on the web, and runs `go run . check` on them. A High-tier model then audits each one against `AUDIT.md` in that folder. It adds only sources it fully trusts to `urls.txt`, records the rest in `rejected.txt`, and commits and pushes.
 
-Sources that work are added to `discovered.txt`. Sources that fail every run for 7 days move to `dead.txt` and are skipped. Delete a line from `dead.txt` to try it again.
+Sources that fail every run for 7 days move to `dead.txt` and are skipped. Delete a line from `dead.txt` to try it again.
 
-When two sources have the same app (same bundle ID), `urls.txt` wins over Choco, and Choco wins over appdb and discovered sources. A less trusted source can only replace an app when its version is newer and the developer name matches. Copies by the same developer have their versions merged, up to 10 per app.
+When two sources have the same app (same bundle ID), `urls.txt` wins over Choco, and Choco wins over appdb. A less trusted source can only replace an app when its version is newer and the developer name matches. Copies by the same developer have their versions merged, up to 10 per app.
 # Installation
 The spam repo contains only apps made by spam authors such as Nabzclan. The main repo includes none of these.
 ## Main Repo
@@ -41,7 +41,8 @@ For example, `https://ragingenby.github.io/AioRepo/recent.json`.
 The scraper is written in Go. It writes `repo.json` and `repo++.json` in the AltStore classic source format (the sideload build, not AltStore PAL).
 ```sh
 go run .            # build the sources
-go run . discover   # search GitHub for new sources (needs GITHUB_TOKEN)
+go run . discover   # queue GitHub search results for audit (needs GITHUB_TOKEN)
+go run . candidates -n 25   # print the top of the audit queue
 go run . check URL  # print facts about candidate sources as JSON
 go test ./...
 go test -run TestGolden -update   # rewrite testdata/golden after an intended parser change
@@ -60,5 +61,5 @@ A rule is `<field> <op> <value>`, for example `developer is Holloway` or `bundle
 A run fails instead of writing when `repo.json` would lose more than 30% of its apps. Set `AIOREPO_FORCE=1`, or tick "force" when starting the workflow by hand, to write anyway.
 ## Workflows
 - `Update repo` runs every 6 hours and on manual dispatch. It commits `repo.json` and `repo++.json` only when an app changed, then publishes the Pages site.
-- `Discover sources` runs weekly and commits new sources to `discovered.txt`. Set a `DISCOVERY_TOKEN` secret (a fine-grained token with public repository read access) if the default token cannot use code search.
+- `Discover sources` runs weekly and queues new sources in `candidates.json`. Nothing it finds is scraped before the audit. Set a `DISCOVERY_TOKEN` secret (a fine-grained token with public repository read access) if the default token cannot use code search.
 - `CI` runs gofmt, go vet, staticcheck, and the tests on pushes and pull requests.

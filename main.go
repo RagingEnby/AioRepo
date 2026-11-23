@@ -4,7 +4,9 @@
 // Usage:
 //
 //	aiorepo            build the sources
-//	aiorepo discover   search GitHub for new sources and add them to discovered.txt
+//	aiorepo discover   search GitHub for new sources and queue them in candidates.json
+//	aiorepo candidates [-n N]
+//	                   print the top N queued sources that are not audited yet
 //	aiorepo check URL... | -f FILE
 //	                   print facts about candidate sources as JSON, for an audit
 package main
@@ -26,6 +28,8 @@ func main() {
 	var err error
 	if len(os.Args) > 1 && os.Args[1] == "discover" {
 		err = runDiscover(ctx)
+	} else if len(os.Args) > 1 && os.Args[1] == "candidates" {
+		err = runCandidates(os.Args[2:])
 	} else if len(os.Args) > 1 && os.Args[1] == "check" {
 		err = runCheck(ctx, os.Args[2:])
 	} else if len(os.Args) > 1 {
@@ -73,13 +77,10 @@ func run(ctx context.Context) error {
 	}
 
 	usable := 0
-	var found, dead []string
+	var dead []string
 	for _, r := range results {
 		if r.usable() && r.Status != statusDuplicate {
 			usable++
-		}
-		if r.Origin == "crawl" && r.usable() && r.Status != statusDuplicate {
-			found = append(found, r.URL)
 		}
 		if r.Status == statusFailed && r.Failures >= deadAfter {
 			dead = append(dead, r.URL)
@@ -134,15 +135,20 @@ func run(ctx context.Context) error {
 	if err := seen.save(seenFile); err != nil {
 		return err
 	}
-	if err := appendURLFile(discoveredFile, "found in other sources on "+now.Format(time.DateOnly), found); err != nil {
-		return err
-	}
 	if err := appendURLFile(deadFile, fmt.Sprintf("failed %d runs in a row as of %s", deadAfter, now.Format(time.DateOnly)), dead); err != nil {
 		return err
 	}
-	if len(found) > 0 || len(dead) > 0 {
-		fmt.Printf("DISCOVERED %d, DEAD %d\n", len(found), len(dead))
+	// Links to other sources wait in the audit queue. They are not scraped
+	// until the audit moves them to urls.txt.
+	known, err := knownSources()
+	if err != nil {
+		return err
 	}
+	queued, err := mergeCandidates(candidatesFile, linkedSources(results, urls), known, now)
+	if err != nil {
+		return err
+	}
+	fmt.Printf("QUEUED %d linked sources for audit, DEAD %d\n", queued, len(dead))
 
 	status := buildStatus(results, len(mainApps), len(spam), now)
 	return writeSite(mainApps, spam, opt, status)

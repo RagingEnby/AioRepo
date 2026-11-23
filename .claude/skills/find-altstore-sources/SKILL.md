@@ -127,8 +127,9 @@ Do not touch the repo while the auditor runs.
 > `<SCRATCH>/found-at.tsv`. Read `.claude/skills/find-altstore-sources/AUDIT.md`
 > in the checkout and follow it exactly. It says how to audit, what to
 > write, and when you may commit and push. The user has authorized you to
-> commit and push to the current branch under the rules in that file.
-> Report back with the table it asks for.
+> commit and push to the current branch under the rules in that file. Do
+> not start subagents of your own. Report back with the table it asks for,
+> and state how many candidates you received and how many you decided.
 
 ## 6. Report
 

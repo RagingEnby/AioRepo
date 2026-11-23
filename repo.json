@@ -1,8 +1,8 @@
 {
   "name": "RagingEnby's AIO Source",
   "identifier": "dev.ragingenby.aiorepo",
-  "subtitle": "[11/23/26 16:53] Every single repo I could find, united.",
-  "description": "I got really sick and tired of typing in a billion different repos. So this one repo scrapes 98 AltSources and combines them into one, beautiful, united repository.",
+  "subtitle": "[11/23/26 17:19] Every single repo I could find, united.",
+  "description": "I got really sick and tired of typing in a billion different repos. So this one repo scrapes 96 AltSources and combines them into one, beautiful, united repository.",
   "iconURL": "https://raw.githubusercontent.com/RagingEnby/RagingEnby/main/pfp.png",
   "website": "https://ragingenby.dev/",
   "patreonURL": "https://patreon.com/RagingEnby",
@@ -25,7 +25,7 @@
       "versions": [
         {
           "version": "1.25.0",
-          "date": "2026-11-23T16:53:26-05:00",
+          "date": "2026-11-23T17:19:45-05:00",
           "localizedDescription": "Injected with Subscription Unlocked",
           "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/24-11-2026/SimplyDraw_1.25.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
           "size": 59340162
@@ -36,7 +36,7 @@
         "privacy": {}
       },
       "version": "1.25.0",
-      "versionDate": "2026-11-23T16:53:26-05:00",
+      "versionDate": "2026-11-23T17:19:45-05:00",
       "versionDescription": "Injected with Subscription Unlocked",
       "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/24-11-2026/SimplyDraw_1.25.0_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
       "size": 59340162
@@ -50,7 +50,7 @@
       "versions": [
         {
           "version": "10.32.2",
-          "date": "2026-11-23T16:53:26-05:00",
+          "date": "2026-11-23T17:19:45-05:00",
           "localizedDescription": "Injected with Subscription Unlocked",
           "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/24-11-2026/SimplyGuitar_10.32.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
           "size": 158975348
@@ -61,7 +61,7 @@
         "privacy": {}
       },
       "version": "10.32.2",
-      "versionDate": "2026-11-23T16:53:26-05:00",
+      "versionDate": "2026-11-23T17:19:45-05:00",
       "versionDescription": "Injected with Subscription Unlocked",
       "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/24-11-2026/SimplyGuitar_10.32.2_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
       "size": 158975348
@@ -75,7 +75,7 @@
       "versions": [
         {
           "version": "0.1.654",
-          "date": "2026-11-23T16:53:26-05:00",
+          "date": "2026-11-23T17:19:45-05:00",
           "localizedDescription": "Injected with Subscription Unlocked",
           "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/24-11-2026/RiseSleep_0.1.654_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
           "size": 135601801
@@ -86,10 +86,35 @@
         "privacy": {}
       },
       "version": "0.1.654",
-      "versionDate": "2026-11-23T16:53:26-05:00",
+      "versionDate": "2026-11-23T17:19:45-05:00",
       "versionDescription": "Injected with Subscription Unlocked",
       "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/24-11-2026/RiseSleep_0.1.654_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
       "size": 135601801
+    },
+    {
+      "name": "ShutEye",
+      "bundleIdentifier": "health.sleep.sounds.tracker.alarm.calm",
+      "developerName": "Unknown",
+      "localizedDescription": "Injected with Premium\n\nSource: AppTesters IPA Repo",
+      "iconURL": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/health.sleep.sounds.tracker.alarm.calm.png",
+      "versions": [
+        {
+          "version": "3.6.1",
+          "date": "2026-11-23T17:19:45-05:00",
+          "localizedDescription": "Injected with Premium",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/24-11-2026/ShutEye_3.6.1_Premium_%40thisismanpreets_apptesters.org.ipa",
+          "size": 611936715
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "version": "3.6.1",
+      "versionDate": "2026-11-23T17:19:45-05:00",
+      "versionDescription": "Injected with Premium",
+      "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/24-11-2026/ShutEye_3.6.1_Premium_%40thisismanpreets_apptesters.org.ipa",
+      "size": 611936715
     },
     {
       "name": "PeakVisor",
@@ -100,7 +125,7 @@
       "versions": [
         {
           "version": "5.124",
-          "date": "2026-11-23T16:53:26-05:00",
+          "date": "2026-11-23T17:19:45-05:00",
           "localizedDescription": "Injected with Subscription Unlocked",
           "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/24-11-2026/PeakVisor_5.124_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
           "size": 165357118
@@ -111,7 +136,7 @@
         "privacy": {}
       },
       "version": "5.124",
-      "versionDate": "2026-11-23T16:53:26-05:00",
+      "versionDate": "2026-11-23T17:19:45-05:00",
       "versionDescription": "Injected with Subscription Unlocked",
       "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/24-11-2026/PeakVisor_5.124_Subscription_Unlocked_%40thisismanpreets_apptesters.org.ipa",
       "size": 165357118
@@ -2949,13 +2974,6 @@
           "sha256": "ce6acd806bb657a0c7da3d669fba13f7677828edd490b76176e9bcc331ef1edb"
         },
         {
-          "version": "20.31.6",
-          "date": "2025-08-07T00:00:00-04:00",
-          "localizedDescription": "Use v20.10.4 if you want to use cast, from here -\n\nhttps://t.me/+rvcObIvOpctiMDI9\n\nA modified version of Youtube supercharged with YTLite (by @dayanch96)",
-          "downloadURL": "https://files.catbox.moe/omgrso.ipa",
-          "size": 130097628
-        },
-        {
           "version": "20.09.3",
           "date": "2025-03-04T00:00:00-05:00",
           "localizedDescription": "• YouTube updated to v19.39.1\n• YTLite (Full) updated to v5.1",
@@ -2969,6 +2987,13 @@
           "localizedDescription": "• YouTube updated to v19.39.1\n• uYouEnhanced replaced with YTLiteFull v5.0.2",
           "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/YouTube.v19.39.1.+.YTLiteFull.v5.0.2.ipa",
           "size": 106000000
+        },
+        {
+          "version": "19.16.3",
+          "date": "2024-04-30T00:00:00-04:00",
+          "localizedDescription": "• YouTube updated to v19.16.3\n• uYouEnhanced updated to v3.0.3",
+          "downloadURL": "https://github.com/WuXu1/WuXu1.github.io/releases/download/Latest/YouTube.v19.16.3.+.uYouEnhanced.v3.0.3.ipa",
+          "size": 119000000
         }
       ],
       "appPermissions": {
@@ -23760,31 +23785,6 @@
       "versionDescription": "Tweaks: spotifyglass, SpotifyAudioProbe\n\nThis is a modded version of Spotify. This includes both Vitrine v1.0.0-b16 and Pixie Download Manager v1.4.",
       "downloadURL": "https://repo.ballermc.com/tubevault/Spotify-9.1.90-Vitrine-b16-Pixie-v1.4.ipa",
       "size": 131308654
-    },
-    {
-      "name": "ShutEye",
-      "bundleIdentifier": "health.sleep.sounds.tracker.alarm.calm",
-      "developerName": "Unknown",
-      "localizedDescription": "Injected with Premium\n\nSource: AppTesters IPA Repo",
-      "iconURL": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/health.sleep.sounds.tracker.alarm.calm.png",
-      "versions": [
-        {
-          "version": "3.6.0",
-          "date": "2026-11-07T00:00:00-05:00",
-          "localizedDescription": "Injected with Premium",
-          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/07-11-2026/ShutEye_3.6.0_Premium_%40thisismanpreets_apptesters.org.ipa",
-          "size": 604398465
-        }
-      ],
-      "appPermissions": {
-        "entitlements": [],
-        "privacy": {}
-      },
-      "version": "3.6.0",
-      "versionDate": "2026-11-07T00:00:00-05:00",
-      "versionDescription": "Injected with Premium",
-      "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/07-11-2026/ShutEye_3.6.0_Premium_%40thisismanpreets_apptesters.org.ipa",
-      "size": 604398465
     },
     {
       "name": "Yawn",
@@ -179705,33 +179705,20 @@
       "name": "Balatro",
       "bundleIdentifier": "com.unofficial.balatro",
       "developerName": "driftywinds",
-      "subtitle": "The best rogue-like card game! | If you want to donate: - https://ko-fi.com/driftywinds",
-      "localizedDescription": "When Poker Meets Solitaire \n\nJoin https://t.me/+rvcObIvOpctiMDI9 for more.\n\nSource: driftywinds' AltStore Repo",
-      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/a6/b1/14/a6b114b7-541f-d929-1724-6665b9ccf255/iOS_AppIcon_Premium-0-0-1x_U007epad-0-85-220.png/492x0w.png",
-      "tintColor": "#6B06C9",
-      "screenshots": {
-        "iphone": [
-          {
-            "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/82/5b/18/825b18a7-a2bc-51c9-bf27-7b809ccc2825/c808e66d-63ea-48c8-8c8f-4b27fa42e7a5_Balatro_Screenshot_iOS_2796x1290_UK_01.png/1286x0w.png"
-          },
-          {
-            "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/21/04/5a/21045a23-5de5-56d4-1c63-f25f5fc3dd9b/ca6fb4fb-fa04-4c37-b490-be29bb29f2b2_Balatro_Screenshot_iOS_2796x1290_UK_02.png/1286x0w.png"
-          },
-          {
-            "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d9/d8/2d/d9d82deb-78d2-b668-e047-9b020406797d/7dba81a9-24eb-453f-b83c-314996d73407_Balatro_Screenshot_iOS_2796x1290_UK_03.png/1286x0w.png"
-          },
-          {
-            "imageURL": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/eb/c5/e4/ebc5e419-93e9-bab8-fd02-a85474130ae7/d4077610-3c78-4f0a-a3db-b136f2228fc6_Balatro_Screenshot_iOS_2796x1290_UK_04b.png/1286x0w.png"
-          }
-        ]
-      },
+      "subtitle": "When poker meets solitaire",
+      "localizedDescription": "When poker meets solitaire.\n\nSource: Accretion",
+      "iconURL": "https://getaccretion.app/icons/068fe8eec2206d6c.jpg",
+      "tintColor": "#000000",
+      "category": "games",
       "versions": [
         {
           "version": "1.0.1o",
+          "buildVersion": "1.0.1o",
           "date": "2025-02-26T00:00:00-05:00",
-          "localizedDescription": "When Poker Meets Solitaire \n\nJoin https://t.me/+rvcObIvOpctiMDI9 for more.",
+          "localizedDescription": "When Poker Meets Solitaire   Join https://t.me/+rvcObIvOpctiMDI9 for more.",
           "downloadURL": "https://github.com/driftywinds/balatro-builds/releases/download/v1.0.1o/Balatro.v1.0.1o-FULL.ipa",
-          "size": 91750400
+          "size": 91750400,
+          "minOSVersion": "14.0"
         }
       ],
       "appPermissions": {
@@ -179740,7 +179727,7 @@
       },
       "version": "1.0.1o",
       "versionDate": "2025-02-26T00:00:00-05:00",
-      "versionDescription": "When Poker Meets Solitaire \n\nJoin https://t.me/+rvcObIvOpctiMDI9 for more.",
+      "versionDescription": "When Poker Meets Solitaire   Join https://t.me/+rvcObIvOpctiMDI9 for more.",
       "downloadURL": "https://github.com/driftywinds/balatro-builds/releases/download/v1.0.1o/Balatro.v1.0.1o-FULL.ipa",
       "size": 91750400
     },

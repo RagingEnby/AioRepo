@@ -263,3 +263,13 @@ https://raw.githubusercontent.com/mirazbakis/AltLoad/HEAD/source.json
 https://raw.githubusercontent.com/mengangs/Cloudn/HEAD/altstore.json
 https://raw.githubusercontent.com/silentprovider423/HomeRoll/HEAD/sidestore.json
 https://raw.githubusercontent.com/jevonlipsey/pico-ios/HEAD/altstore.json
+
+# added by source audit 2026-11-23
+https://raw.githubusercontent.com/faroukbmiled/RyukSign/HEAD/app-repo.json
+https://raw.githubusercontent.com/MaftyManicEMU/DukeX/HEAD/altsource/source.json
+https://raw.githubusercontent.com/xXWapixelXx/Mirage-updates/HEAD/source.json
+https://raw.githubusercontent.com/MXFia19/TwitchUnblock/HEAD/apps-tv-stable.json
+https://raw.githubusercontent.com/MXFia19/TwitchUnblock/HEAD/apps.json
+https://raw.githubusercontent.com/creazy231/tools-for-autodarts/HEAD/Autodarts_Tools_Source.json
+https://raw.githubusercontent.com/varshneydevansh/FilterTube/HEAD/website/public/ios/source.json
+https://raw.githubusercontent.com/1Selxo/Mangatan/HEAD/repo/source.json

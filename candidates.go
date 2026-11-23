@@ -140,15 +140,26 @@ func knownSources() (map[string]bool, error) {
 }
 
 // runCandidates prints the top N queued URLs, one per line, for the audit.
+// -min-stars skips candidates whose GitHub repo has fewer stars.
 func runCandidates(args []string) error {
-	n := 25
+	n, minStars := 25, 0
 	for i := 0; i < len(args); i++ {
-		if args[i] == "-n" && i+1 < len(args) {
-			v, err := strconv.Atoi(args[i+1])
+		if i+1 >= len(args) {
+			break
+		}
+		v, err := strconv.Atoi(args[i+1])
+		switch args[i] {
+		case "-n":
 			if err != nil || v <= 0 {
 				return fmt.Errorf("-n wants a positive number")
 			}
 			n = v
+			i++
+		case "-min-stars":
+			if err != nil || v < 0 {
+				return fmt.Errorf("-min-stars wants a number")
+			}
+			minStars = v
 			i++
 		}
 	}
@@ -165,7 +176,7 @@ func runCandidates(args []string) error {
 		if n == 0 {
 			break
 		}
-		if known[normalizeURL(c.URL)] {
+		if known[normalizeURL(c.URL)] || c.Stars < minStars {
 			continue
 		}
 		b.WriteString(c.URL + "\n")

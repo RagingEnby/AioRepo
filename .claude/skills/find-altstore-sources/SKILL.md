@@ -33,6 +33,13 @@ likely to be trustworthy first. Start with those:
 go run . candidates -n 25 > SCRATCH/candidates.txt
 ```
 
+If the user named a star cutoff, add it, for example
+`go run . candidates -n 25 -min-stars 100`. When the user asks for a whole
+cutoff (for example "everything with 100+ stars"), run one batch of 25, let
+the auditor finish and push, then take the next batch. Never run two
+auditors at once, since both would edit `urls.txt`. Stop when the command
+prints nothing.
+
 For each line, add a row `URL<TAB>candidates.json queue` to
 `SCRATCH/found-at.tsv`.
 

@@ -286,3 +286,51 @@ https://raw.githubusercontent.com/TarbleFR/RewindBox/HEAD/docs/releases/pending-
 
 # This fork still uses the upstream NeoStation bundle ID com.neogamelab.neostation.
 https://raw.githubusercontent.com/TarbleFR/RewindBox/HEAD/source.json
+
+# The feed lists 2.2 and AioRepo already has the maintainer's 2.3.2 release.
+https://raw.githubusercontent.com/Sami-Wali/ryP0/HEAD/repo.json
+
+# The feed includes cracked YouTube builds and uses Google's YouTube and YouTube Music bundle IDs.
+https://raw.githubusercontent.com/mrdrvt99/Altstore-Repository/HEAD/apps.json
+
+# YouPro is a modified YouTube build that uses Google's bundle ID.
+https://raw.githubusercontent.com/mrdrvt99/Altstore-Repository/HEAD/youpro.json
+
+# The feed distributes injected YouTube builds through the Catbox file locker.
+https://raw.githubusercontent.com/lowiqentity/APEX/HEAD/JSON/esign.json
+
+# The feed distributes injected YouTube builds through the Catbox file locker.
+https://raw.githubusercontent.com/lowiqentity/APEX/HEAD/JSON/store.json
+
+# The app relies on an iOS kernel exploit.
+https://raw.githubusercontent.com/kolbicz/Cyanide/HEAD/source.json
+
+# The feed matches the SideStore RetroArch feed already in urls.txt.
+https://raw.githubusercontent.com/SideStore/Community-Source/HEAD/staticApps/Retroarch.json
+
+# The feed matches the SideStore Play! feed already in urls.txt. One older build is a QuarkSources reupload.
+https://raw.githubusercontent.com/SideStore/Community-Source/HEAD/staticApps/play.json
+
+# TwitchMods repacks Twitch and uses Twitch's bundle ID.
+https://raw.githubusercontent.com/gunnerkidBT/TwitchAdBlock/HEAD/apps.json
+
+# This test feed repeats the stable Apple TV feed's bundle ID and starts with an older build.
+https://raw.githubusercontent.com/MXFia19/TwitchUnblock/HEAD/apps-tv.json
+
+# not sure: The build compiles code translated from the Skate 3 executable. The packaging check only excludes original game files.
+https://raw.githubusercontent.com/andrewnakas/skate3-ios-setup/HEAD/source.json
+
+# The README calls this a continuity mirror. It republishes recovered builds from the discontinued NoopApp project.
+https://raw.githubusercontent.com/ParthJadhav/noop/HEAD/altstore-source.json
+
+# The feed points to a raw GitHub branch file for the IPA. The project publishes a separate GitHub release asset.
+https://raw.githubusercontent.com/movixstream/MovixOpenSource/HEAD/app/movix-ios-source.json
+
+# The Scarlet feed also points to a raw GitHub branch file for the IPA.
+https://raw.githubusercontent.com/movixstream/MovixOpenSource/HEAD/app/movix-scarlet-source.json
+
+# The README identifies kangyun1994's repository as the official feed and release publisher.
+https://raw.githubusercontent.com/Amadeus1P048596/zhihu-plus-plus-swift/HEAD/sidestore-source.json
+
+# The feed matches a feed already in urls.txt and contains cracked builds of third-party apps.
+https://raw.githubusercontent.com/swaggyP36000/TrollStore-IPAs/HEAD/apps.json

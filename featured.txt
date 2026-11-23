@@ -1,0 +1,9 @@
+# Bundle IDs shown as featured in repo.json, one per line. IDs that are not
+# in the current build are skipped.
+com.rileytestut.Delta
+com.utmapp.UTM
+me.oatmealdome.dolphinios-njb
+com.libretro.dist.ios.RetroArch
+org.provenance-emu.provenance
+org.ppsspp.ppsspp
+com.SideStore.SideStore

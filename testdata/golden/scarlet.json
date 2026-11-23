@@ -1,0 +1,149 @@
+{
+  "name": "RagingEnby's AIO Source",
+  "identifier": "dev.ragingenby.aiorepo",
+  "subtitle": "[1/1/27 12:00] Every single repo I could find, united.",
+  "description": "I got really sick and tired of typing in a billion different repos. So this one repo scrapes 1 AltSources and combines them into one, beautiful, united repository.",
+  "iconURL": "https://raw.githubusercontent.com/RagingEnby/RagingEnby/main/pfp.png",
+  "website": "https://ragingenby.dev/",
+  "patreonURL": "https://patreon.com/RagingEnby",
+  "apps": [
+    {
+      "name": "ControlConfig",
+      "bundleIdentifier": "com.f1shy-dev.ControlConfig",
+      "developerName": "BomberFish",
+      "localizedDescription": "Tool to change functionality of Control Center tiles. WIP.\n\nSource: azu0609's repo",
+      "iconURL": "https://raw.githubusercontent.com/BomberFish/ControlConfig/b1c19aa036cf87cf123439a98be0c01c1e3d6c39/ControlConfig/Assets.xcassets/AppIcon.appiconset/Icon%20Template%20512pt.png",
+      "category": "utilities",
+      "versions": [
+        {
+          "version": "0.1.0-alpha",
+          "date": "2027-01-01T07:00:00-05:00",
+          "downloadURL": "https://github.com/BomberFish/ControlConfig/releases/download/0.1.0/ControlConfig-0.1.0-alpha.ipa",
+          "size": 0
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "version": "0.1.0-alpha",
+      "versionDate": "2027-01-01T07:00:00-05:00",
+      "downloadURL": "https://github.com/BomberFish/ControlConfig/releases/download/0.1.0/ControlConfig-0.1.0-alpha.ipa",
+      "size": 0
+    },
+    {
+      "name": "Rosiecord",
+      "bundleIdentifier": "com.hammerandchisel.discord",
+      "developerName": "acquitelol",
+      "localizedDescription": "Enmity, but with custom icons\n\nSource: azu0609's repo",
+      "iconURL": "https://raw.githubusercontent.com/acquitelol/rosiecord/master/Icons/EnmityIcon60x60%402x.png",
+      "screenshots": {
+        "iphone": [
+          {
+            "imageURL": "https://raw.githubusercontent.com/acquitelol/rosiecord/master/Rosiecord_Mocks/Plumpy.png"
+          },
+          {
+            "imageURL": "https://raw.githubusercontent.com/acquitelol/rosiecord/master/Rosiecord_Mocks/Plumpy_Flowercord.png"
+          }
+        ]
+      },
+      "versions": [
+        {
+          "version": "223",
+          "date": "2027-01-01T07:00:00-05:00",
+          "downloadURL": "https://github.com/acquitelol/rosiecord/releases/download/rosiecord_223/Rosiecord-223_GGSans-Font+Plumpy_Icons.ipa",
+          "size": 0
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "version": "223",
+      "versionDate": "2027-01-01T07:00:00-05:00",
+      "downloadURL": "https://github.com/acquitelol/rosiecord/releases/download/rosiecord_223/Rosiecord-223_GGSans-Font+Plumpy_Icons.ipa",
+      "size": 0
+    },
+    {
+      "name": "Cowabunga",
+      "bundleIdentifier": "com.leemin.Cowabunga",
+      "developerName": "leminlimez",
+      "localizedDescription": "IOS 14.0-15.7.1 & 16.0-16.1.2 MacDirtyCow ToolBox\n\nSource: azu0609's repo",
+      "iconURL": "https://user-images.githubusercontent.com/52459150/215552092-9dc1e029-da35-43da-867f-17279e3dc180.png",
+      "screenshots": {
+        "iphone": [
+          {
+            "imageURL": "https://raw.githubusercontent.com/leminlimez/Cowabunga/main/Images/Home.PNG"
+          },
+          {
+            "imageURL": "https://raw.githubusercontent.com/leminlimez/Cowabunga/main/Images/Tools.PNG"
+          },
+          {
+            "imageURL": "https://raw.githubusercontent.com/leminlimez/Cowabunga/main/Images/SpringboardTools.PNG"
+          },
+          {
+            "imageURL": "https://raw.githubusercontent.com/leminlimez/Cowabunga/main/Images/Audio_Changer.PNG"
+          },
+          {
+            "imageURL": "https://raw.githubusercontent.com/leminlimez/Cowabunga/main/Images/Passcode_Editor.PNG"
+          },
+          {
+            "imageURL": "https://raw.githubusercontent.com/leminlimez/Cowabunga/main/Images/LS_Footnote.PNG"
+          },
+          {
+            "imageURL": "https://raw.githubusercontent.com/leminlimez/Cowabunga/main/Images/Misc.PNG"
+          },
+          {
+            "imageURL": "https://raw.githubusercontent.com/leminlimez/Cowabunga/main/Images/Extra_Tools.PNG"
+          }
+        ]
+      },
+      "versions": [
+        {
+          "version": "10.3.2",
+          "date": "2027-01-01T07:00:00-05:00",
+          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v10.3.2/Cowabunga.ipa",
+          "size": 0
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "version": "10.3.2",
+      "versionDate": "2027-01-01T07:00:00-05:00",
+      "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v10.3.2/Cowabunga.ipa",
+      "size": 0
+    },
+    {
+      "name": "KillMyOTA",
+      "bundleIdentifier": "org.haxi0.KillMyOTA",
+      "developerName": "haxi0",
+      "localizedDescription": "OTA Killer for iOS 15.0 - 16.1.2\n\nSource: azu0609's repo",
+      "iconURL": "https://raw.githubusercontent.com/haxi0/KillMyOTA/master/KillMyOTA-modified.png",
+      "versions": [
+        {
+          "version": "1.1",
+          "date": "2027-01-01T07:00:00-05:00",
+          "downloadURL": "https://github.com/haxi0/KillMyOTA/releases/download/1.1/KillMyOTA-1.1.ipa",
+          "size": 0
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "version": "1.1",
+      "versionDate": "2027-01-01T07:00:00-05:00",
+      "downloadURL": "https://github.com/haxi0/KillMyOTA/releases/download/1.1/KillMyOTA-1.1.ipa",
+      "size": 0
+    }
+  ],
+  "news": []
+}
+{
+  "name": "links",
+  "identifier": "",
+  "apps": [],
+  "news": []
+}

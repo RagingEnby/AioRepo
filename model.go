@@ -42,7 +42,10 @@ type App struct {
 	Size               int64  `json:"size"`
 
 	// Not written. Used for filtering and deduplication.
-	isPAL bool
+	isPAL      bool
+	sourceName string
+	tier       int
+	undated    bool // dates come from first sighting, not the source
 }
 
 type Version struct {

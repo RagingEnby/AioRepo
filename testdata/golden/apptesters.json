@@ -1,0 +1,70 @@
+{
+  "name": "RagingEnby's AIO Source",
+  "identifier": "dev.ragingenby.aiorepo",
+  "subtitle": "[1/1/27 12:00] Every single repo I could find, united.",
+  "description": "I got really sick and tired of typing in a billion different repos. So this one repo scrapes 1 AltSources and combines them into one, beautiful, united repository.",
+  "iconURL": "https://raw.githubusercontent.com/RagingEnby/RagingEnby/main/pfp.png",
+  "website": "https://ragingenby.dev/",
+  "patreonURL": "https://patreon.com/RagingEnby",
+  "apps": [
+    {
+      "name": "Enki",
+      "bundleIdentifier": "PHCXZHD53T.com.enki.insights",
+      "developerName": "Unknown",
+      "localizedDescription": "Injected with Premium\n\nSource: AppTesters IPA Repo",
+      "iconURL": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/PHCXZHD53T.com.enki.insights.png",
+      "versions": [
+        {
+          "version": "2.40.17",
+          "date": "2026-11-18T00:00:00-05:00",
+          "localizedDescription": "Injected with Premium",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/18-11-2026/Enki_2.40.17_Premium_%40thisismanpreets_apptesters.org.ipa",
+          "size": 23297696
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "version": "2.40.17",
+      "versionDate": "2026-11-18T00:00:00-05:00",
+      "versionDescription": "Injected with Premium",
+      "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/18-11-2026/Enki_2.40.17_Premium_%40thisismanpreets_apptesters.org.ipa",
+      "size": 23297696
+    },
+    {
+      "name": "EasyAnatomy3D",
+      "bundleIdentifier": "AB.iOsteology",
+      "developerName": "Unknown",
+      "localizedDescription": "Injected with Premium\n\nSource: AppTesters IPA Repo",
+      "iconURL": "https://raw.githubusercontent.com/apptesters-org/AppTesters_Repo/main/icons/AB.iOsteology.png",
+      "versions": [
+        {
+          "version": "5.40.0",
+          "date": "2026-07-16T00:00:00-04:00",
+          "localizedDescription": "Injected with Premium",
+          "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-07-2026/EasyAnatomy3D_5.40.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+          "size": 1411225367
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "version": "5.40.0",
+      "versionDate": "2026-07-16T00:00:00-04:00",
+      "versionDescription": "Injected with Premium",
+      "downloadURL": "https://github.com/apptesters-org/AppTesters_Repo/releases/download/16-07-2026/EasyAnatomy3D_5.40.0_Premium_%40thisismanpreets_apptesters.org.ipa",
+      "size": 1411225367
+    }
+  ],
+  "news": []
+}
+{
+  "name": "links",
+  "identifier": "",
+  "apps": [],
+  "news": [
+    "https://repository.apptesters.org/"
+  ]
+}

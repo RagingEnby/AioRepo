@@ -2,3 +2,7 @@
 /AioRepo
 /aiorepo
 *.tmp
+
+# Run outputs that are not committed
+/.cache/
+/_site/

@@ -1,0 +1,2 @@
+# Sources that failed every run for 7 days. They are skipped.
+# Delete a line to try that source again.

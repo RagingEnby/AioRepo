@@ -169,3 +169,87 @@ https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/Doer/apps.json
 
 # the AltGallery feed mirrors the OatmealDome release and adds no new bundle ID.
 https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/DolphiniOS/apps.json
+
+# AltGallery generates third-party feeds from upstream releases. These feeds add no new bundle IDs.
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/DukeX/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/EhPanda/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/Fathom/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/Feather/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/Fladder/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/GestaltX/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/HermesEnabler/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/Husk/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/Iridium/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/KMusic/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/Kazumi-Swift/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/Kazumi/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/Kumone/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/LSX4/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/LightNovelShelf/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/LinuxRunner/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/LiveContainer+SideStore/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/MD3Music-iOS/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/Madeira/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/Mangayomi/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/ManicEMU/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/MeloX/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/MiniWatts/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/Mornye/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/MoviePilot-App/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/MoviePilotLite/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/Musly/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/Opaline/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/OpenParsec/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/OpenScreenSharing/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/Orchard/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/PSX3IOS/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/PiliPlus/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/Pixiv-SwiftUI/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/Playport/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/PureLive/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/Rich4Renew/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/Roam-Control/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/RushHours/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/SceneBox/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/SideStore/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/Silverphase/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/SimpleLive/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/Stats/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/StikDebug/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/Suwayomi-Tsumiru/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/Swipt/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/TiebaPure/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/UTM/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/VRCM/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/Venera-Next/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/WQFiles/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/WQGuard/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/WQManager/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/WQToolkit/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/ZhihuMinusMinus/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/iBuilder/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/iDeck/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/iPadn/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/iRAM-Plus/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/iTorrent/apps.json
+
+# AltGallery generates these third-party feeds and routes downloads through gh-proxy.com.
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/Iridium/apps-proxy.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/Mangayomi/apps-proxy.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/PiliPlus/apps-proxy.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/RewindBox/apps-proxy.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/RushHours/apps-proxy.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/UTM/apps-proxy.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/Venera-Next/apps-proxy.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/WQFiles/apps-proxy.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/iBuilder/apps-proxy.json
+
+# AltGallery mirrors Erosion-CN, which keeps the upstream Erosion bundle ID.
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/Erosion-CN/apps.json
+
+# AltGallery mirrors RewindBox, which keeps the upstream NeoStation bundle ID.
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/RewindBox/apps.json
+
+# AltGallery lists modified YouTube builds under Google's bundle ID.
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/YouProEXTRA/apps-proxy.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/YouProEXTRA/apps.json

@@ -236,3 +236,9 @@ https://raw.githubusercontent.com/BlackHatDevX/openspot-music-app/HEAD/apps.json
 https://raw.githubusercontent.com/imxieyi/Kernarium/HEAD/sideload/source.json
 https://raw.githubusercontent.com/Apps2Samsung/Apps2Samsung/HEAD/docs/sidestore/apps.json
 https://raw.githubusercontent.com/CyrilPeng/Venera-Next/HEAD/alt_store.json
+
+# added by source audit 2026-11-23
+https://raw.githubusercontent.com/raoxwup/haka_comic/HEAD/alt_store.json
+https://raw.githubusercontent.com/mengangs/ipadn/HEAD/altstore-source.json
+https://raw.githubusercontent.com/StayLameBro/backburner/HEAD/altstore/source.json
+https://raw.githubusercontent.com/Kyosee/VeneraX/HEAD/altstore-source.json

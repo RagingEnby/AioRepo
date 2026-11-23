@@ -1,0 +1,76 @@
+{
+  "META": {
+    "repoName": "azu0609's repo",
+    "repoIcon": "https://azu0609.github.io/repo/repo.logo.png"
+  },
+  "Tweaked": [
+    {
+      "name": "Rosiecord",
+      "version": "223",
+      "icon": "https://raw.githubusercontent.com/acquitelol/rosiecord/master/Icons/EnmityIcon60x60%402x.png",
+      "down": "https://github.com/acquitelol/rosiecord/releases/download/rosiecord_223/Rosiecord-223_GGSans-Font+Plumpy_Icons.ipa",
+      "dev": "acquitelol",
+      "category": "Tweaked Apps",
+      "description": "Enmity, but with custom icons",
+      "bundleID": "com.hammerandchisel.discord",
+      "appstore": "com.hammerandchisel.discord",
+      "enableBackup": true,
+      "screenshots": [
+        "https://raw.githubusercontent.com/acquitelol/rosiecord/master/Rosiecord_Mocks/Plumpy.png",
+        "https://raw.githubusercontent.com/acquitelol/rosiecord/master/Rosiecord_Mocks/Plumpy_Flowercord.png"
+      ]
+    }
+  ],
+  "Macdirtycow": [
+    {
+      "name": "Cowabunga",
+      "version": "10.3.2",
+      "down": "https://github.com/leminlimez/Cowabunga/releases/download/v10.3.2/Cowabunga.ipa",
+      "dev": "leminlimez",
+      "icon": "https://user-images.githubusercontent.com/52459150/215552092-9dc1e029-da35-43da-867f-17279e3dc180.png",
+      "category": "Macdirtycow",
+      "description": "IOS 14.0-15.7.1 & 16.0-16.1.2 MacDirtyCow ToolBox",
+      "bundleID": "com.leemin.Cowabunga",
+      "enableBackup": true,
+      "screenshots": [
+        "https://raw.githubusercontent.com/leminlimez/Cowabunga/main/Images/Home.PNG",
+        "https://raw.githubusercontent.com/leminlimez/Cowabunga/main/Images/Tools.PNG",
+        "https://raw.githubusercontent.com/leminlimez/Cowabunga/main/Images/SpringboardTools.PNG",
+        "https://raw.githubusercontent.com/leminlimez/Cowabunga/main/Images/Audio_Changer.PNG",
+        "https://raw.githubusercontent.com/leminlimez/Cowabunga/main/Images/Passcode_Editor.PNG",
+        "https://raw.githubusercontent.com/leminlimez/Cowabunga/main/Images/LS_Footnote.PNG",
+        "https://raw.githubusercontent.com/leminlimez/Cowabunga/main/Images/Misc.PNG",
+        "https://raw.githubusercontent.com/leminlimez/Cowabunga/main/Images/Extra_Tools.PNG"
+      ]
+    },
+    {
+      "name": "KillMyOTA",
+      "version": "1.1",
+      "down": "https://github.com/haxi0/KillMyOTA/releases/download/1.1/KillMyOTA-1.1.ipa",
+      "dev": "haxi0",
+      "icon": "https://raw.githubusercontent.com/haxi0/KillMyOTA/master/KillMyOTA-modified.png",
+      "category": "Macdirtycow",
+      "description": "OTA Killer for iOS 15.0 - 16.1.2",
+      "bundleID": "org.haxi0.KillMyOTA",
+      "contact": {
+        "web": "https://haxi0-dev.com/",
+        "twitter": "https://twitter.com/haxi0sm"
+      }
+    },
+    {
+      "name": "ControlConfig",
+      "version": "0.1.0-alpha",
+      "down": "https://github.com/BomberFish/ControlConfig/releases/download/0.1.0/ControlConfig-0.1.0-alpha.ipa",
+      "dev": "BomberFish",
+      "icon": "https://raw.githubusercontent.com/BomberFish/ControlConfig/b1c19aa036cf87cf123439a98be0c01c1e3d6c39/ControlConfig/Assets.xcassets/AppIcon.appiconset/Icon%20Template%20512pt.png",
+      "category": "Macdirtycow",
+      "description": "Tool to change functionality of Control Center tiles. WIP.",
+      "bundleID": "com.f1shy-dev.ControlConfig",
+      "enableBackup": true,
+      "contact": {
+        "web": "https://bomberfish.ca/",
+        "fosstodon": "https://fosstodon.org/@BomberFish"
+      }
+    }
+  ]
+}

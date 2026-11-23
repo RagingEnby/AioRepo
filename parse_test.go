@@ -33,8 +33,24 @@ func TestParseDate(t *testing.T) {
 	if got, err := parseDate(json.Number("1676635200")); err != nil || !got.Equal(time.Unix(1676635200, 0)) {
 		t.Errorf("unix seconds: %v %v", got, err)
 	}
-	if _, err := parseDate("not a date"); err == nil {
-		t.Error("expected error for garbage date")
+	for _, bad := range []string{"not a date", "2023", "NaN", "Inf", "1e9"} {
+		if got, err := parseDate(bad); err == nil {
+			t.Errorf("parseDate(%q) = %v, want error", bad, got)
+		}
+	}
+}
+
+var testNow = time.Date(2027, 1, 1, 12, 0, 0, 0, time.UTC)
+
+var testParser = newParser(testNow, nil)
+
+func TestFutureDateClamped(t *testing.T) {
+	app := testParser.parseApp(decode(t, `{
+		"name": "F", "bundleIdentifier": "com.f",
+		"versions": [{"version": "1", "date": "2099-01-01", "downloadURL": "https://a.com/f.ipa"}]
+	}`))
+	if app == nil || !app.lastUpdated().Equal(testNow) {
+		t.Fatalf("future date not clamped: %+v", app)
 	}
 }
 
@@ -82,7 +98,7 @@ func decode(t *testing.T, s string) object {
 }
 
 func TestParseAppLegacyLayout(t *testing.T) {
-	app := parseApp(decode(t, `{
+	app := testParser.parseApp(decode(t, `{
 		"name": "Old", "bundleIdentifier": "com.old", "iconURL": "",
 		"version": 1.5, "versionDate": "2020-1-2", "downloadURL": "https://a.com/old.ipa",
 		"size": "1234", "versionDescription": "notes",
@@ -106,7 +122,7 @@ func TestParseAppLegacyLayout(t *testing.T) {
 }
 
 func TestParseAppVersions(t *testing.T) {
-	app := parseApp(decode(t, `{
+	app := testParser.parseApp(decode(t, `{
 		"name": "A", "bundleIdentifier": "com.a", "developerName": "Dev",
 		"localizedDescription": "d", "iconURL": "https://a.com/i.png", "tintColor": "nope",
 		"versions": [
@@ -150,20 +166,20 @@ func TestParseAppRejects(t *testing.T) {
 		`{"name": "A"}`,
 		`{"name": null, "bundleIdentifier": "com.a"}`,
 	} {
-		if app := parseApp(decode(t, s)); app != nil {
+		if app := testParser.parseApp(decode(t, s)); app != nil {
 			t.Errorf("parseApp(%s) kept the app", s)
 		}
 	}
 }
 
 func TestParseSourceErrors(t *testing.T) {
-	if _, err := parseSource([]byte(`{"apps": [{}]}`)); err != errNoName {
+	if _, err := testParser.parseSource([]byte(`{"apps": [{}]}`)); err != errNoName {
 		t.Errorf("no name: %v", err)
 	}
-	if _, err := parseSource([]byte(`{"name": "x", "apps": []}`)); err != errNoApps {
+	if _, err := testParser.parseSource([]byte(`{"name": "x", "apps": []}`)); err != errNoApps {
 		t.Errorf("no apps: %v", err)
 	}
-	if _, err := parseSource([]byte("\xEF\xBB\xBF" + `{"name": "x", "apps": [{"name": "a"}]}`)); err != nil {
+	if _, err := testParser.parseSource([]byte("\xEF\xBB\xBF" + `{"name": "x", "apps": [{"name": "a"}]}`)); err != nil {
 		t.Errorf("bom: %v", err)
 	}
 }

@@ -45,6 +45,9 @@ var (
 
 	shortDatePart = regexp.MustCompile(`^(\d{4})-(\d{1,2})-(\d{1,2})`)
 	compactOffset = regexp.MustCompile(`([+-]\d{2})(\d{2})$`)
+	// Unix seconds or milliseconds. Nine or more digits, so a bare year such
+	// as "2023" is not read as a time in 1970.
+	unixTime = regexp.MustCompile(`^\d{9,}(\.\d+)?$`)
 )
 
 // parseDate reads the many date styles found in sources: ISO 8601 with or
@@ -62,7 +65,11 @@ func parseDate(v any) (time.Time, error) {
 	if s == "" {
 		return time.Time{}, fmt.Errorf("empty date")
 	}
-	if n, err := strconv.ParseFloat(s, 64); err == nil && !strings.Contains(s, "-") {
+	if unixTime.MatchString(s) {
+		n, err := strconv.ParseFloat(s, 64)
+		if err != nil {
+			return time.Time{}, err
+		}
 		if n > 1e11 { // milliseconds
 			n /= 1000
 		}

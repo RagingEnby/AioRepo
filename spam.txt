@@ -1,0 +1,15 @@
+# Apps that match any rule here go to repo++.json instead of repo.json.
+# Format: <field> <op> <value>
+#   field: name, developer, subtitle, bundle, icon, download, source, description
+#   op:    is, contains, prefix, suffix, regex
+# Matching ignores case.
+
+subtitle prefix Injected with
+developer is Holloway
+developer is lscs3
+developer is polo
+developer contains CyPwn
+developer is TubeVault
+icon contains nabzclan
+name contains IPAVault
+bundle contains happymod

@@ -7,6 +7,7 @@ import (
 	"fmt"
 	"math"
 	"net/url"
+	"regexp"
 	"sort"
 	"strconv"
 	"strings"
@@ -25,13 +26,29 @@ var (
 
 type object = map[string]any
 
+// parser converts third-party sources. Version dates later than now are
+// clamped to now, so a source cannot sort its apps above everything else or
+// win a bundle ID collision with a date in the future.
+type parser struct {
+	now time.Time
+	// firstSeen gives a date for formats that have none (Scarlet). It may
+	// be nil, in which case now is used.
+	firstSeen func(bundleID, version string) time.Time
+}
+
+func newParser(now time.Time, firstSeen func(bundleID, version string) time.Time) *parser {
+	return &parser{now: now.In(localTZ).Truncate(time.Second), firstSeen: firstSeen}
+}
+
 // ParsedSource is a third-party source after its apps were normalized.
 type ParsedSource struct {
 	Name string
 	Apps []*App
+	// Links holds other source URLs that this source mentions.
+	Links []string
 }
 
-func parseSource(data []byte) (*ParsedSource, error) {
+func (p *parser) parseSource(data []byte) (*ParsedSource, error) {
 	data = trimBOM(data)
 	dec := json.NewDecoder(bytes.NewReader(data))
 	dec.UseNumber()
@@ -43,6 +60,28 @@ func parseSource(data []byte) (*ParsedSource, error) {
 	if !ok {
 		return nil, errors.New("source is not a json object")
 	}
+	var src *ParsedSource
+	var err error
+	// Some repos (AppTesters) publish one file in both formats. The AltStore
+	// half has dates, so it wins.
+	if meta, ok := obj["META"].(object); ok && !hasApps(obj) {
+		src, err = p.parseScarlet(obj, meta)
+	} else {
+		src, err = p.parseAltSource(obj)
+	}
+	if err != nil {
+		return nil, err
+	}
+	src.Links = sourceLinks(obj, data)
+	return src, nil
+}
+
+func hasApps(obj object) bool {
+	apps, _ := obj["apps"].([]any)
+	return len(apps) > 0
+}
+
+func (p *parser) parseAltSource(obj object) (*ParsedSource, error) {
 	name := str(obj["name"])
 	if name == "" {
 		return nil, errNoName
@@ -57,11 +96,112 @@ func parseSource(data []byte) (*ParsedSource, error) {
 		if !ok {
 			continue
 		}
-		if app := parseApp(ao); app != nil {
+		if app := p.parseApp(ao); app != nil {
 			src.Apps = append(src.Apps, app)
 		}
 	}
 	return src, nil
+}
+
+// parseScarlet reads a Scarlet repo: a META object with repoName, and app
+// lists under any other key. Scarlet apps have no dates, so each version is
+// dated when this scraper first saw it.
+func (p *parser) parseScarlet(obj, meta object) (*ParsedSource, error) {
+	name := str(meta["repoName"])
+	if name == "" {
+		return nil, errNoName
+	}
+	keys := make([]string, 0, len(obj))
+	for k := range obj {
+		if k != "META" {
+			keys = append(keys, k)
+		}
+	}
+	sort.Strings(keys)
+	src := &ParsedSource{Name: name}
+	for _, k := range keys {
+		list, _ := obj[k].([]any)
+		for _, item := range list {
+			if o, ok := item.(object); ok {
+				if app := p.parseScarletApp(o); app != nil {
+					src.Apps = append(src.Apps, app)
+				}
+			}
+		}
+	}
+	if len(src.Apps) == 0 {
+		return nil, errNoApps
+	}
+	return src, nil
+}
+
+func (p *parser) parseScarletApp(o object) *App {
+	name, bundleID, version := str(o["name"]), str(o["bundleID"]), str(o["version"])
+	dl, ok := cleanURL(str(o["down"]))
+	if name == "" || bundleID == "" || version == "" || !ok {
+		return nil
+	}
+	date := p.now
+	if p.firstSeen != nil {
+		date = p.firstSeen(bundleID, version)
+	}
+	if date.After(p.now) {
+		date = p.now
+	}
+	app := &App{
+		undated:              true,
+		Name:                 name,
+		BundleIdentifier:     bundleID,
+		DeveloperName:        str(o["dev"]),
+		LocalizedDescription: str(o["description"]),
+		// Scarlet categories ("Tweaked Apps") are not AltStore ones.
+		// inferCategory picks one later.
+		AppPermissions: &AppPermissions{Entitlements: []string{}, Privacy: map[string]string{}},
+		Versions: []*Version{{
+			Version:              version,
+			Date:                 date.Format(time.RFC3339),
+			LocalizedDescription: str(o["changelog"]),
+			DownloadURL:          dl,
+		}},
+	}
+	if app.DeveloperName == "" {
+		app.DeveloperName = "Unknown"
+	}
+	if app.LocalizedDescription == "" {
+		app.LocalizedDescription = name
+	}
+	if icon, ok := cleanURL(str(o["icon"])); ok {
+		app.IconURL = icon
+	} else {
+		app.IconURL = iconURL
+	}
+	app.Screenshots = parseScreenshots(o["screenshots"])
+	app.syncLegacy()
+	return app
+}
+
+var sourceLinkRe = regexp.MustCompile(`(?:altstore|sidestore)://source\?url=([^\s"'<>\\)\]]+)`)
+
+// sourceLinks finds other sources that a source mentions: its sourceURL
+// field and altstore:// or sidestore:// "add source" links anywhere in it.
+func sourceLinks(obj object, data []byte) []string {
+	seen := map[string]bool{}
+	var out []string
+	add := func(s string) {
+		if u, ok := cleanURL(s); ok && !seen[u] {
+			seen[u] = true
+			out = append(out, u)
+		}
+	}
+	add(str(obj["sourceURL"]))
+	for _, m := range sourceLinkRe.FindAllSubmatch(data, -1) {
+		raw := string(m[1])
+		if dec, err := url.QueryUnescape(raw); err == nil {
+			raw = dec
+		}
+		add(raw)
+	}
+	return out
 }
 
 func trimBOM(b []byte) []byte {
@@ -72,7 +212,7 @@ func trimBOM(b []byte) []byte {
 }
 
 // parseApp returns nil when the app cannot be made valid for AltStore.
-func parseApp(o object) *App {
+func (p *parser) parseApp(o object) *App {
 	name := str(o["name"])
 	bundleID := str(o["bundleIdentifier"])
 	if name == "" || bundleID == "" {
@@ -109,15 +249,16 @@ func parseApp(o object) *App {
 	app.Patreon = parsePatreon(o["patreon"])
 
 	var versions []*Version
-	if list, ok := o["versions"].([]any); ok {
+	// An empty versions array falls through to the legacy fields.
+	if list, ok := o["versions"].([]any); ok && len(list) > 0 {
 		for _, rv := range list {
 			if vo, ok := rv.(object); ok {
-				if v := parseVersion(vo, "date"); v != nil {
+				if v := p.parseVersion(vo, "date"); v != nil {
 					versions = append(versions, v)
 				}
 			}
 		}
-	} else if v := parseVersion(o, "versionDate"); v != nil {
+	} else if v := p.parseVersion(o, "versionDate"); v != nil {
 		// Legacy single-version layout with fields on the app itself.
 		if v.LocalizedDescription == "" {
 			v.LocalizedDescription = str(o["versionDescription"])
@@ -125,18 +266,11 @@ func parseApp(o object) *App {
 		versions = append(versions, v)
 	}
 	app.Versions = dedupeVersions(versions)
-	if len(app.Versions) > 0 {
-		latest := app.Versions[0]
-		app.Version = latest.Version
-		app.VersionDate = latest.Date
-		app.VersionDescription = latest.LocalizedDescription
-		app.DownloadURL = latest.DownloadURL
-		app.Size = latest.Size
-	}
+	app.syncLegacy()
 	return app
 }
 
-func parseVersion(o object, dateKey string) *Version {
+func (p *parser) parseVersion(o object, dateKey string) *Version {
 	version := str(o["version"])
 	if version == "" {
 		return nil
@@ -144,6 +278,9 @@ func parseVersion(o object, dateKey string) *Version {
 	date, err := parseDate(o[dateKey])
 	if err != nil {
 		return nil
+	}
+	if date.After(p.now) {
+		date = p.now
 	}
 	dl, ok := cleanURL(str(o["downloadURL"]))
 	if !ok {

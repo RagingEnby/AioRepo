@@ -1,0 +1,7 @@
+# Sources added automatically: links found inside other sources, and files
+# found by the weekly GitHub search. They rank below urls.txt. Move a line to
+# dead.txt to drop it.
+
+# found in other sources on 2026-11-23
+https://driftywinds.github.io/AltStore/apps.json
+https://driftywinds.github.io/AltStore/theta.json

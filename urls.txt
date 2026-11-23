@@ -273,3 +273,11 @@ https://raw.githubusercontent.com/MXFia19/TwitchUnblock/HEAD/apps.json
 https://raw.githubusercontent.com/creazy231/tools-for-autodarts/HEAD/Autodarts_Tools_Source.json
 https://raw.githubusercontent.com/varshneydevansh/FilterTube/HEAD/website/public/ios/source.json
 https://raw.githubusercontent.com/1Selxo/Mangatan/HEAD/repo/source.json
+
+# added by source audit 2026-11-23 (re-audit)
+https://raw.githubusercontent.com/Apollo-Reborn/Apollo-Reborn/HEAD/apps.json
+https://raw.githubusercontent.com/JuMatt/JetSetRadioFuture-Unleashed/HEAD/altstore/source.json
+https://raw.githubusercontent.com/81199000/DouDuo/HEAD/docs/source/douduo.json
+https://raw.githubusercontent.com/TarbleFR/RewindBox/HEAD/source.json
+https://raw.githubusercontent.com/mrdrvt99/Altstore-Repository/HEAD/apps.json
+https://raw.githubusercontent.com/movixstream/MovixOpenSource/HEAD/app/movix-ios-source.json

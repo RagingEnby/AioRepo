@@ -32,7 +32,7 @@ https://raw.githubusercontent.com/zzanehip/The-OldOS-Project/HEAD/source.json
 # the legacy download points to the latest release, which has no iOS IPA.
 https://raw.githubusercontent.com/off-grid-ai/OGAM/HEAD/altstore-source.json
 
-# the fork reuses the upstream Erosion bundle ID.
+# the feed would promote an iOS sandbox-escape toolkit with cross-app data access.
 https://raw.githubusercontent.com/Kianuni/Erosion-CN/HEAD/apps.json
 
 # the manifest has been stale since October 2024. AioRepo already lists 0.12.1.
@@ -47,52 +47,49 @@ https://raw.githubusercontent.com/Leviidev/Henge/HEAD/repo.json
 # the NuvioMobile feed in urls.txt covers every IPA in this feed.
 https://raw.githubusercontent.com/NuvioMedia/NuvioDesktop/HEAD/store.json
 
-# the feed distributes a modified X app under X's bundle ID.
+# the X-branded build uses NeoFreeBird 7.3.1 on X 12.39. AioRepo has the same tweak on X 12.46.
 https://raw.githubusercontent.com/NeoFreeBird/app/HEAD/resources/AltSource-X.json
 
-# the feed distributes a modified Twitter app under X's bundle ID.
+# the Twitter-branded build uses NeoFreeBird 7.3.1 on X 12.39. AioRepo has the same tweak on X 12.46.
 https://raw.githubusercontent.com/NeoFreeBird/app/HEAD/resources/AltSource.json
 
-# the feed distributes modified WhatsApp and Instagram apps.
+# the newest build in this feed is from November 16, 2025. AioRepo already lists newer builds and direct Fouad Raheb assets.
 https://raw.githubusercontent.com/FouadRaheb/Watusi-for-WhatsApp/HEAD/altstore/source.json
 
-# the app uses an iOS kernel exploit. The listed IPA size also differs from the release.
+# the manifest lists 3,450,675 bytes for a release IPA that is 5,972,209 bytes.
 https://raw.githubusercontent.com/rooootdev/lara/HEAD/source.json
 
-# the feed distributes a modified build under Christian Selig's Apollo bundle ID.
-https://raw.githubusercontent.com/Apollo-Reborn/Apollo-Reborn/HEAD/apps.json
-
-# the feed distributes a modified build under Christian Selig's Apollo bundle ID.
+# the GLASS build shares the bundle ID and 4.1.0 version with the canonical Apollo Reborn feed. AioRepo keeps one package per bundle ID and version.
 https://raw.githubusercontent.com/Apollo-Reborn/Apollo-Reborn/HEAD/apps_glass.json
 
-# the feed distributes a modified build under Christian Selig's Apollo bundle ID.
+# the GLASS Icons build shares the bundle ID and 4.1.0 version with the canonical Apollo Reborn feed. AioRepo keeps one package per bundle ID and version.
 https://raw.githubusercontent.com/Apollo-Reborn/Apollo-Reborn/HEAD/apps_glass_icons.json
 
-# the feed distributes a modified build under Christian Selig's Apollo bundle ID.
+# the no-extensions build shares the bundle ID and 4.1.0 version with the canonical Apollo Reborn feed. AioRepo keeps one package per bundle ID and version.
 https://raw.githubusercontent.com/Apollo-Reborn/Apollo-Reborn/HEAD/apps_noext.json
 
-# the feed distributes a modified build under Christian Selig's Apollo bundle ID.
+# the GLASS no-extensions build shares the bundle ID and 4.1.0 version with the canonical Apollo Reborn feed. AioRepo keeps one package per bundle ID and version.
 https://raw.githubusercontent.com/Apollo-Reborn/Apollo-Reborn/HEAD/apps_noext_glass.json
 
-# the feed distributes a modified build under Christian Selig's Apollo bundle ID.
+# the GLASS Icons no-extensions build shares the bundle ID and 4.1.0 version with the canonical Apollo Reborn feed. AioRepo keeps one package per bundle ID and version.
 https://raw.githubusercontent.com/Apollo-Reborn/Apollo-Reborn/HEAD/apps_noext_glass_icons.json
 
-# the feed distributes an unofficial repack under Christian Selig's Apollo bundle ID.
+# this feed mirrors the same standard 4.1.0 release published by the Apollo Reborn project.
 https://raw.githubusercontent.com/Balackburn/Apollo/HEAD/apps.json
 
-# the feed distributes an unofficial repack under Christian Selig's Apollo bundle ID.
+# this feed mirrors the same 4.1.0 GLASS release published by the Apollo Reborn project.
 https://raw.githubusercontent.com/Balackburn/Apollo/HEAD/apps_glass.json
 
-# the feed distributes an unofficial repack under Christian Selig's Apollo bundle ID.
+# this feed mirrors the same 4.1.0 no-extensions release published by the Apollo Reborn project.
 https://raw.githubusercontent.com/Balackburn/Apollo/HEAD/apps_noext.json
 
-# the feed distributes an unofficial repack under Christian Selig's Apollo bundle ID.
+# this feed mirrors the same 4.1.0 GLASS no-extensions release published by the Apollo Reborn project.
 https://raw.githubusercontent.com/Balackburn/Apollo/HEAD/apps_noext_glass.json
 
 # the manifest matches the AnymeX feed already in urls.txt byte for byte.
 https://raw.githubusercontent.com/RyanYuuki/AnymeX/HEAD/repo/source.json
 
-# the app bypasses the iOS sandbox to access other apps' containers.
+# the same 0.9.20 IPA is already in AioRepo. This feed would promote a tool for bypassing the iOS sandbox to access other apps’ data.
 https://raw.githubusercontent.com/kolbicz/WQFiles/HEAD/source.json
 
 # the manifest matches the Streamer feed already in urls.txt byte for byte.
@@ -104,7 +101,7 @@ https://raw.githubusercontent.com/StreamerApp/Streamer/HEAD/scarlet.json
 # the older beta repeats the bundle ID of the kept stable feed.
 https://raw.githubusercontent.com/Kyosee/VeneraX/HEAD/altstore-source-beta.json
 
-# the IPA link uses a placeholder GitHub repository outside the source owner's account.
+# the only IPA points at the placeholder github.com/user/repo and returns HTTP 404. The entry is dated January 2024.
 https://raw.githubusercontent.com/IReaderorg/IReader/HEAD/altstore-source.json
 
 # the checked-in nightly manifest is dated 2024 and lists 1,800,157 bytes for the current 4,453,850-byte release asset.
@@ -113,10 +110,10 @@ https://raw.githubusercontent.com/NearFrame/OpenParsec/HEAD/altstore.json
 # the v1.6 manifest lists 14,000,000 bytes for a 16,394,645-byte release asset.
 https://raw.githubusercontent.com/Nyasami/Ksign/HEAD/repo.json
 
-# the third-party catalog routes IPAs through gh-proxy.com and includes modified Apollo and YouTube builds.
+# all 82 IPA links use a forwarding proxy that does not provide its own retained release assets.
 https://raw.githubusercontent.com/bebound/AltGallery/HEAD/all-apps-proxy.json
 
-# the third-party catalog includes modified Apollo and YouTube builds under their original bundle IDs.
+# the catalog points at rolling nightly IPA URLs for LiveContainer and Swipt that do not pin the listed packages.
 https://raw.githubusercontent.com/bebound/AltGallery/HEAD/all-apps.json
 
 # the AltGallery feed mirrors the ARMSX2 release and adds no new bundle ID.
@@ -143,7 +140,7 @@ https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/AnimeFlow/apps.js
 # the AltGallery feed mirrors the open-ani release and adds no new bundle ID.
 https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/Animeko/apps.json
 
-# the mirror distributes a modified Apollo build under Christian Selig's bundle ID.
+# this mirror adds the same Apollo 4.1.0 bundle and version as the official Apollo Reborn feed.
 https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/Apollo-Reborn/apps.json
 
 # the AltGallery feed mirrors the Lakr233 release and adds no new bundle ID.
@@ -244,30 +241,29 @@ https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/Venera-Next/apps-
 https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/WQFiles/apps-proxy.json
 https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/iBuilder/apps-proxy.json
 
-# AltGallery mirrors Erosion-CN, which keeps the upstream Erosion bundle ID.
+# this mirror points at the same Erosion-CN 1.0.6 IPA AioRepo already lists.
 https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/Erosion-CN/apps.json
 
-# AltGallery mirrors RewindBox, which keeps the upstream NeoStation bundle ID.
+# this mirror repeats the same RewindBox release asset as the maintainer’s feed.
 https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/RewindBox/apps.json
 
-# AltGallery lists modified YouTube builds under Google's bundle ID.
+# the IPA forwarding proxy timed out. The underlying YouProEXTRA build is also older than the one in the maintainer’s catalog.
 https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/YouProEXTRA/apps-proxy.json
+
+# the mirror lists YouProEXTRA on YouTube 21.33.6. The maintainer’s catalog has the same tweak on 21.47.6.
 https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/YouProEXTRA/apps.json
 
-# The feed republishes cracked and tweaked third-party apps under their original bundle IDs.
+# the same apps_altstore.json manifest is already listed in urls.txt under refs/heads/main.
 https://raw.githubusercontent.com/Neoncat-OG/TrollStore-IPAs/HEAD/apps_altstore.json
 
 # The Synkplay v0.27.0 release and its IPA URL both return HTTP 404.
 https://raw.githubusercontent.com/yuroyami/syncplay-mobile/HEAD/altstore_yuroyami.json
 
-# The feed lists tweaked third-party apps under the original YouTube and Spotify bundle IDs.
+# the listed SpooferX IPA returned HTTP 403, so the feed failed the direct-download check.
 https://raw.githubusercontent.com/DebianArch64/Scarlet/HEAD/repo.json
 
-# The feed lists Sposify++, a tweaked Spotify build under Spotify's original bundle ID.
+# the listed SpooferX IPA returned HTTP 403, so the feed failed the direct-download check.
 https://raw.githubusercontent.com/DebianArch64/Scarlet/HEAD/scarlet.json
-
-# The project says its releases include Sega's game code recompiled into a native binary.
-https://raw.githubusercontent.com/JuMatt/JetSetRadioFuture-Unleashed/HEAD/altstore/source.json
 
 # The manifest is byte-for-byte identical to the Camlo feed named in the README.
 https://raw.githubusercontent.com/Kianuni/Camlo/HEAD/repo.json
@@ -275,34 +271,25 @@ https://raw.githubusercontent.com/Kianuni/Camlo/HEAD/repo.json
 # Two older download URLs, v1.5.1 and v1.5.2, return HTML release pages instead of IPA files.
 https://raw.githubusercontent.com/mona-hrt/mona/HEAD/ios_source.json
 
-# This manifest downloads from the project's Gitee mirror, outside the audit's allowed download hosts.
-https://raw.githubusercontent.com/81199000/DouDuo/HEAD/docs/source/douduo.json
-
 # not sure: The candidate lists v6.4.2, the existing mirror has v6.4.6, and the project site returned HTTP 403.
 https://raw.githubusercontent.com/Snozxyx/Tatakai/HEAD/public/altstore/apps.json
 
-# This fork still uses the upstream NeoStation bundle ID com.neogamelab.neostation.
+# the pending-release manifest lists the same build 721 IPA as the maintainer’s published source.json.
 https://raw.githubusercontent.com/TarbleFR/RewindBox/HEAD/docs/releases/pending-0.0.11/source.json
-
-# This fork still uses the upstream NeoStation bundle ID com.neogamelab.neostation.
-https://raw.githubusercontent.com/TarbleFR/RewindBox/HEAD/source.json
 
 # The feed lists 2.2 and AioRepo already has the maintainer's 2.3.2 release.
 https://raw.githubusercontent.com/Sami-Wali/ryP0/HEAD/repo.json
 
-# The feed includes cracked YouTube builds and uses Google's YouTube and YouTube Music bundle IDs.
-https://raw.githubusercontent.com/mrdrvt99/Altstore-Repository/HEAD/apps.json
-
-# YouPro is a modified YouTube build that uses Google's bundle ID.
+# the standalone feed lists the same current YouPro IPA as the maintainer’s combined catalog and has no newer release.
 https://raw.githubusercontent.com/mrdrvt99/Altstore-Repository/HEAD/youpro.json
 
-# The feed distributes injected YouTube builds through the Catbox file locker.
+# the newest Catbox IPA could not be fetched, and the feed only lists builds older than AioRepo’s YouTube 21.47.6.
 https://raw.githubusercontent.com/lowiqentity/APEX/HEAD/JSON/esign.json
 
-# The feed distributes injected YouTube builds through the Catbox file locker.
+# the newest Catbox IPA could not be fetched, and the feed only lists builds older than AioRepo’s YouTube 21.47.6.
 https://raw.githubusercontent.com/lowiqentity/APEX/HEAD/JSON/store.json
 
-# The app relies on an iOS kernel exploit.
+# the feed would add an app that provides an iOS kernel exploit.
 https://raw.githubusercontent.com/kolbicz/Cyanide/HEAD/source.json
 
 # The feed matches the SideStore RetroArch feed already in urls.txt.
@@ -311,26 +298,23 @@ https://raw.githubusercontent.com/SideStore/Community-Source/HEAD/staticApps/Ret
 # The feed matches the SideStore Play! feed already in urls.txt. One older build is a QuarkSources reupload.
 https://raw.githubusercontent.com/SideStore/Community-Source/HEAD/staticApps/play.json
 
-# TwitchMods repacks Twitch and uses Twitch's bundle ID.
+# the tweak sends signed VOD playback URLs to a built-in proxy whose operator could not be established. AioRepo already has Twitch 32.1.
 https://raw.githubusercontent.com/gunnerkidBT/TwitchAdBlock/HEAD/apps.json
 
 # This test feed repeats the stable Apple TV feed's bundle ID and starts with an older build.
 https://raw.githubusercontent.com/MXFia19/TwitchUnblock/HEAD/apps-tv.json
 
-# not sure: The build compiles code translated from the Skate 3 executable. The packaging check only excludes original game files.
+# the 2.7.1 IPA has bundle ID com.nakas.skate3, but the manifest lists com.skate3recomp.skate3.
 https://raw.githubusercontent.com/andrewnakas/skate3-ios-setup/HEAD/source.json
 
-# The README calls this a continuity mirror. It republishes recovered builds from the discontinued NoopApp project.
+# the continuity mirror lists NOOP 8.2.0. AioRepo already has 12.1.0.
 https://raw.githubusercontent.com/ParthJadhav/noop/HEAD/altstore-source.json
 
-# The feed points to a raw GitHub branch file for the IPA. The project publishes a separate GitHub release asset.
-https://raw.githubusercontent.com/movixstream/MovixOpenSource/HEAD/app/movix-ios-source.json
-
-# The Scarlet feed also points to a raw GitHub branch file for the IPA.
+# the Scarlet manifest lists the same Movix 2.6.14 IPA as the official AltStore Classic feed.
 https://raw.githubusercontent.com/movixstream/MovixOpenSource/HEAD/app/movix-scarlet-source.json
 
 # The README identifies kangyun1994's repository as the official feed and release publisher.
 https://raw.githubusercontent.com/Amadeus1P048596/zhihu-plus-plus-swift/HEAD/sidestore-source.json
 
-# The feed matches a feed already in urls.txt and contains cracked builds of third-party apps.
+# the same apps.json manifest is already listed in urls.txt under main.
 https://raw.githubusercontent.com/swaggyP36000/TrollStore-IPAs/HEAD/apps.json

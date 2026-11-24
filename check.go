@@ -16,7 +16,7 @@ import (
 // searches skip them.
 const rejectedFile = "rejected.txt"
 
-// checkReport describes one candidate source for a human or model auditor.
+// checkReport describes one candidate source for review.
 // It holds facts only; the audit decides.
 type checkReport struct {
 	URL   string `json:"url"`

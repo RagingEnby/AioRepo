@@ -14,7 +14,7 @@ import (
 
 // candidatesFile is the queue of sources waiting for a security audit.
 // Discovery and link crawling only ever write here. A source is scraped only
-// after the find-altstore-sources audit moves it to urls.txt.
+// after a security audit moves it to urls.txt.
 const candidatesFile = "candidates.json"
 
 type candidate struct {

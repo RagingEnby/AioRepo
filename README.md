@@ -13,9 +13,9 @@ Both AltStore sources and Scarlet repos are read. All of these are scraped and t
 New sources are only scraped after a security audit. Candidates wait in `candidates.json`, ranked by how likely they are to be trustworthy (GitHub stars, with forks, archived repos, and repos idle for a year ranked lower). They come from:
 - "add source" links (`altstore://source?url=...`) and `sourceURL` fields inside the sources each run scrapes
 - a weekly job that searches GitHub code for AltStore and Scarlet source files
-- web searches by the `find-altstore-sources` agent skill
+- manual web searches
 
-The skill in `.claude/skills/find-altstore-sources/` runs the audit. A small model takes the top of the queue (`go run . candidates`) and anything it finds on the web, and runs `go run . check` on them. A High-tier model then audits each one against `AUDIT.md` in that folder. It adds only sources it fully trusts to `urls.txt`, records the rest in `rejected.txt`, and commits and pushes.
+Sources in `candidates.json` are reviewed with `go run . candidates` and `go run . check`. Trusted sources move to `urls.txt`, and rejected ones are recorded in `rejected.txt`.
 
 Sources that fail every run for 7 days move to `dead.txt` and are skipped. Delete a line from `dead.txt` to try it again.
 

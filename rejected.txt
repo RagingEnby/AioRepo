@@ -1,4 +1,4 @@
-# Sources the find-altstore-sources audit turned down. Each line is a URL
+# Sources turned down during security audits. Each line is a URL
 # with a "# reason" comment above it. They are never added to urls.txt, and
 # later searches and the audit queue skip them. appdb may still list some.
 
@@ -89,7 +89,7 @@ https://raw.githubusercontent.com/Balackburn/Apollo/HEAD/apps_noext_glass.json
 # the manifest matches the AnymeX feed already in urls.txt byte for byte.
 https://raw.githubusercontent.com/RyanYuuki/AnymeX/HEAD/repo/source.json
 
-# the same 0.9.20 IPA is already in AioRepo. This feed would promote a tool for bypassing the iOS sandbox to access other apps’ data.
+# the same 0.9.20 IPA is already in AioRepo. This feed would promote a tool for bypassing the iOS sandbox to access other apps' data.
 https://raw.githubusercontent.com/kolbicz/WQFiles/HEAD/source.json
 
 # the manifest matches the Streamer feed already in urls.txt byte for byte.
@@ -244,13 +244,13 @@ https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/iBuilder/apps-pro
 # this mirror points at the same Erosion-CN 1.0.6 IPA AioRepo already lists.
 https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/Erosion-CN/apps.json
 
-# this mirror repeats the same RewindBox release asset as the maintainer’s feed.
+# this mirror repeats the same RewindBox release asset as the maintainer's feed.
 https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/RewindBox/apps.json
 
-# the IPA forwarding proxy timed out. The underlying YouProEXTRA build is also older than the one in the maintainer’s catalog.
+# the IPA forwarding proxy timed out. The underlying YouProEXTRA build is also older than the one in the maintainer's catalog.
 https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/YouProEXTRA/apps-proxy.json
 
-# the mirror lists YouProEXTRA on YouTube 21.33.6. The maintainer’s catalog has the same tweak on 21.47.6.
+# the mirror lists YouProEXTRA on YouTube 21.33.6. The maintainer's catalog has the same tweak on 21.47.6.
 https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/YouProEXTRA/apps.json
 
 # the same apps_altstore.json manifest is already listed in urls.txt under refs/heads/main.
@@ -274,19 +274,19 @@ https://raw.githubusercontent.com/mona-hrt/mona/HEAD/ios_source.json
 # not sure: The candidate lists v6.4.2, the existing mirror has v6.4.6, and the project site returned HTTP 403.
 https://raw.githubusercontent.com/Snozxyx/Tatakai/HEAD/public/altstore/apps.json
 
-# the pending-release manifest lists the same build 721 IPA as the maintainer’s published source.json.
+# the pending-release manifest lists the same build 721 IPA as the maintainer's published source.json.
 https://raw.githubusercontent.com/TarbleFR/RewindBox/HEAD/docs/releases/pending-0.0.11/source.json
 
 # The feed lists 2.2 and AioRepo already has the maintainer's 2.3.2 release.
 https://raw.githubusercontent.com/Sami-Wali/ryP0/HEAD/repo.json
 
-# the standalone feed lists the same current YouPro IPA as the maintainer’s combined catalog and has no newer release.
+# the standalone feed lists the same current YouPro IPA as the maintainer's combined catalog and has no newer release.
 https://raw.githubusercontent.com/mrdrvt99/Altstore-Repository/HEAD/youpro.json
 
-# the newest Catbox IPA could not be fetched, and the feed only lists builds older than AioRepo’s YouTube 21.47.6.
+# the newest Catbox IPA could not be fetched, and the feed only lists builds older than AioRepo's YouTube 21.47.6.
 https://raw.githubusercontent.com/lowiqentity/APEX/HEAD/JSON/esign.json
 
-# the newest Catbox IPA could not be fetched, and the feed only lists builds older than AioRepo’s YouTube 21.47.6.
+# the newest Catbox IPA could not be fetched, and the feed only lists builds older than AioRepo's YouTube 21.47.6.
 https://raw.githubusercontent.com/lowiqentity/APEX/HEAD/JSON/store.json
 
 # the feed would add an app that provides an iOS kernel exploit.

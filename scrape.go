@@ -54,10 +54,14 @@ func (s *scraper) scrapeAll(ctx context.Context, urls []sourceURL) []*sourceResu
 }
 
 // linkedSources returns the source URLs mentioned inside the scraped sources
-// that are not scraped themselves. They go to the audit queue, never
-// straight into the scrape.
-func linkedSources(results []*sourceResult, scraped []sourceURL) []candidate {
+// that are not scraped themselves and not in skip (already listed or queued),
+// so the maxLinks cap counts only new links. They go to the audit queue,
+// never straight into the scrape.
+func linkedSources(results []*sourceResult, scraped []sourceURL, skip map[string]bool) []candidate {
 	known := map[string]bool{}
+	for k := range skip {
+		known[k] = true
+	}
 	for _, u := range scraped {
 		known[normalizeURL(u.URL)] = true
 	}

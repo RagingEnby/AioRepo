@@ -1,0 +1,46 @@
+name: Discover sources
+
+on:
+  schedule:
+    - cron: "30 3 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+# Shares the group with the update workflow so the two never push at once.
+concurrency:
+  group: update-repo
+  cancel-in-progress: false
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+
+      - uses: actions/setup-go@40f1582b2485089dde7abd97c1529aa768e1baff # v5
+        with:
+          go-version-file: go.mod
+
+      # Code search needs a token. DISCOVERY_TOKEN (a fine-grained personal
+      # token with public read access) is used when set, since some GitHub
+      # App tokens cannot use code search.
+      - name: Search GitHub
+        run: go run . discover
+        env:
+          GITHUB_TOKEN: ${{ secrets.DISCOVERY_TOKEN || secrets.GITHUB_TOKEN }}
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add candidates.json
+          if git diff --cached --quiet; then
+            echo "No new candidates"
+            exit 0
+          fi
+          git commit -m "chore: queue sources found by github search for audit"
+          git pull --rebase
+          git push

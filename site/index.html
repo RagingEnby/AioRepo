@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AioRepo</title>
+<meta name="description" content="Browse every app in RagingEnby's AIO AltStore source.">
+<style>
+:root {
+  --bg: #f6f6f8; --card: #fff; --fg: #17171c; --muted: #6b6b76; --border: #e3e3e8;
+  --accent: #7c4dff; --accent-fg: #fff; --bad: #c62828; --warn: #b26a00; --ok: #2e7d32;
+  color-scheme: light dark;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #111114; --card: #1b1b20; --fg: #ececf1; --muted: #9a9aa6; --border: #2c2c33;
+    --accent: #9d7bff; --bad: #ef5350; --warn: #ffb74d; --ok: #66bb6a; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 15px/1.45 system-ui, -apple-system, sans-serif; }
+header { padding: 24px 16px 8px; max-width: 1100px; margin: 0 auto; }
+h1 { margin: 0 0 4px; font-size: 24px; }
+.sub { color: var(--muted); margin: 0 0 14px; }
+.add { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 10px; }
+.add a { background: var(--accent); color: var(--accent-fg); text-decoration: none; padding: 7px 12px; border-radius: 8px; font-size: 14px; }
+.add a.alt { background: var(--card); color: var(--fg); border: 1px solid var(--border); }
+nav { display: flex; gap: 4px; border-bottom: 1px solid var(--border); max-width: 1100px; margin: 0 auto; padding: 0 16px; }
+nav button { background: none; border: 0; color: var(--muted); padding: 10px 12px; font: inherit; cursor: pointer; border-bottom: 2px solid transparent; }
+nav button[aria-selected="true"] { color: var(--fg); border-color: var(--accent); }
+main { max-width: 1100px; margin: 0 auto; padding: 16px; }
+.controls { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+.controls input, .controls select { font: inherit; padding: 8px 10px; border: 1px solid var(--border); border-radius: 8px; background: var(--card); color: var(--fg); }
+.controls input { flex: 1 1 220px; min-width: 0; }
+.count { color: var(--muted); font-size: 13px; margin-bottom: 8px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 10px; }
+.app { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 12px; display: grid; grid-template-columns: 52px 1fr; gap: 10px; min-width: 0; }
+.app img { width: 52px; height: 52px; border-radius: 12px; object-fit: cover; background: var(--border); }
+.app .n { font-weight: 600; overflow-wrap: anywhere; }
+.app .m { color: var(--muted); font-size: 13px; overflow-wrap: anywhere; }
+.app .src { color: var(--muted); font-size: 12px; margin-top: 4px; }
+.app a { color: var(--accent); font-size: 13px; }
+.more { display: block; margin: 16px auto; font: inherit; padding: 8px 16px; border-radius: 8px; border: 1px solid var(--border); background: var(--card); color: var(--fg); cursor: pointer; }
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+th, td { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--border); vertical-align: top; }
+td.u { overflow-wrap: anywhere; max-width: 380px; }
+.pill { border-radius: 999px; padding: 1px 8px; font-size: 12px; white-space: nowrap; border: 1px solid currentColor; }
+.ok, .cached { color: var(--ok); } .stale, .duplicate { color: var(--warn); } .failed { color: var(--bad); }
+.tablewrap { overflow-x: auto; }
+.hidden { display: none; }
+</style>
+</head>
+<body>
+<header>
+  <h1>RagingEnby's AIO Source</h1>
+  <p class="sub" id="summary">Loading…</p>
+  <div class="add" id="add"></div>
+  <p class="sub">Including an app here is not an endorsement. Some apps in scraped sources may be malicious.</p>
+</header>
+<nav role="tablist">
+  <button role="tab" aria-selected="true" data-tab="apps">Apps</button>
+  <button role="tab" aria-selected="false" data-tab="sources">Sources</button>
+</nav>
+<main>
+  <section id="apps">
+    <div class="controls">
+      <input id="q" type="search" placeholder="Search name, developer, bundle ID, or source" aria-label="Search">
+      <select id="cat" aria-label="Category"><option value="">All categories</option></select>
+      <select id="which" aria-label="Source">
+        <option value="repo.json">Main</option>
+        <option value="repo++.json">Spam (++)</option>
+      </select>
+    </div>
+    <div class="count" id="count"></div>
+    <div class="grid" id="grid"></div>
+    <button class="more hidden" id="more">Show more</button>
+  </section>
+  <section id="sources" class="hidden">
+    <div class="count" id="scount"></div>
+    <div class="tablewrap"><table>
+      <thead><tr><th>Status</th><th>Source</th><th>Apps</th><th>From</th><th>Detail</th></tr></thead>
+      <tbody id="stable"></tbody>
+    </table></div>
+  </section>
+</main>
+<script>
+const PAGE = 120;
+const base = new URL('.', location.href).href;
+let apps = [], shown = 0, filtered = [];
+
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const sourceOf = a => (a.localizedDescription.match(/\n\nSource: (.*)$/) || [])[1] || '';
+
+function addLinks() {
+  const extra = [['repo.json', 'Main'], ['recent.json', 'Last 90 days'], ['repo++.json', 'Spam']];
+  document.getElementById('add').innerHTML = extra.map(([f, label], i) =>
+    `<a class="${i ? 'alt' : ''}" href="altstore://source?url=${encodeURIComponent(base + f)}">Add ${label} to AltStore</a>`
+  ).join('') + `<a class="alt" href="sidestore://source?url=${encodeURIComponent(base + 'repo.json')}">Add to SideStore</a>`;
+}
+
+function render(reset) {
+  const grid = document.getElementById('grid');
+  if (reset) { grid.innerHTML = ''; shown = 0; }
+  const slice = filtered.slice(shown, shown + PAGE);
+  grid.insertAdjacentHTML('beforeend', slice.map(a => `
+    <div class="app">
+      <img loading="lazy" src="${esc(a.iconURL)}" alt="" onerror="this.style.visibility='hidden'">
+      <div>
+        <div class="n">${esc(a.name)}</div>
+        <div class="m">${esc(a.developerName)} · ${esc(a.version)} · ${esc((a.versionDate || '').slice(0, 10))}${a.category ? ' · ' + esc(a.category) : ''}</div>
+        <div class="m">${esc(a.bundleIdentifier)}</div>
+        <div class="src">${esc(sourceOf(a))}</div>
+        <a href="${esc(a.downloadURL)}" rel="noopener nofollow">Download IPA</a>
+      </div>
+    </div>`).join(''));
+  shown += slice.length;
+  document.getElementById('more').classList.toggle('hidden', shown >= filtered.length);
+  document.getElementById('count').textContent = `${filtered.length.toLocaleString()} apps`;
+}
+
+function filter() {
+  const q = document.getElementById('q').value.trim().toLowerCase();
+  const cat = document.getElementById('cat').value;
+  filtered = apps.filter(a => (!cat || a.category === cat) &&
+    (!q || [a.name, a.developerName, a.bundleIdentifier, sourceOf(a)].some(v => (v || '').toLowerCase().includes(q))));
+  render(true);
+}
+
+async function loadApps(file) {
+  document.getElementById('count').textContent = 'Loading…';
+  const src = await (await fetch(file)).json();
+  apps = src.apps;
+  const cats = [...new Set(apps.map(a => a.category).filter(Boolean))].sort();
+  const sel = document.getElementById('cat'), cur = sel.value;
+  sel.innerHTML = '<option value="">All categories</option>' + cats.map(c => `<option${c === cur ? ' selected' : ''}>${esc(c)}</option>`).join('');
+  filter();
+}
+
+async function loadStatus() {
+  const s = await (await fetch('status.json')).json();
+  const when = new Date(s.generatedAt).toLocaleString();
+  const ok = (s.counts.ok || 0) + (s.counts.cached || 0) + (s.counts.stale || 0);
+  document.getElementById('summary').textContent =
+    `${s.mainApps.toLocaleString()} apps from ${ok} sources. Updated ${when}.`;
+  document.getElementById('scount').textContent =
+    Object.entries(s.counts).map(([k, v]) => `${k}: ${v}`).join(' · ');
+  const order = { failed: 0, stale: 1, duplicate: 2, cached: 3, ok: 4 };
+  const rows = [...s.sources].sort((a, b) => order[a.status] - order[b.status] || b.apps - a.apps);
+  document.getElementById('stable').innerHTML = rows.map(r => `<tr>
+    <td><span class="pill ${esc(r.status)}">${esc(r.status)}</span></td>
+    <td class="u">${esc(r.name || '')}<div class="m"><a href="${esc(r.url)}" rel="noopener nofollow">${esc(r.url)}</a></div></td>
+    <td>${r.apps}</td><td>${esc(r.origin)}</td>
+    <td class="u">${r.failures ? esc(r.failures + ' failed runs. ') : ''}${esc(r.error || '')}</td></tr>`).join('');
+}
+
+document.querySelectorAll('nav button').forEach(b => b.addEventListener('click', () => {
+  document.querySelectorAll('nav button').forEach(x => x.setAttribute('aria-selected', x === b));
+  document.getElementById('apps').classList.toggle('hidden', b.dataset.tab !== 'apps');
+  document.getElementById('sources').classList.toggle('hidden', b.dataset.tab !== 'sources');
+}));
+let timer;
+document.getElementById('q').addEventListener('input', () => { clearTimeout(timer); timer = setTimeout(filter, 150); });
+document.getElementById('cat').addEventListener('change', filter);
+document.getElementById('which').addEventListener('change', e => loadApps(e.target.value));
+document.getElementById('more').addEventListener('click', () => render(false));
+
+addLinks();
+loadApps('repo.json').catch(e => document.getElementById('count').textContent = 'Could not load apps: ' + e);
+loadStatus().catch(e => document.getElementById('summary').textContent = 'Could not load status: ' + e);
+</script>
+</body>
+</html>

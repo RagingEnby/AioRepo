@@ -1,0 +1,368 @@
+# Sources the find-altstore-sources audit turned down. Each line is a URL
+# with a "# reason" comment above it. They are never added to urls.txt, and
+# later searches and the audit queue skip them. appdb may still list some.
+
+# duplicate of the JHenTai manifest already in urls.txt.
+https://raw.githubusercontent.com/jiangtian616/JHenTai/HEAD/altsource/AltSource.json
+
+# duplicate of the Feather manifest reached by the old GitHub URL in urls.txt.
+https://raw.githubusercontent.com/claration/feather/HEAD/app-repo.json
+
+# duplicate of the Mangayomi manifest already in urls.txt.
+https://raw.githubusercontent.com/kodjodevf/mangayomi/HEAD/repo/source.json
+
+# duplicate of the JavDB manifest already in urls.txt.
+https://raw.githubusercontent.com/bdvajstudio/javdb/HEAD/alt.json
+
+# the default branch lists 0.3.95. The documented main-branch feed lists 0.4.8.
+https://raw.githubusercontent.com/bryanthaboi/gen1recomp/HEAD/mobile/ios/app-repo.json
+
+# duplicate of the stable EhPanda manifest already in urls.txt.
+https://raw.githubusercontent.com/EhPanda-Team/EhPanda/HEAD/AltStore.json
+
+# release 3.0.0 has no EhPanda-Beta.ipa asset.
+https://raw.githubusercontent.com/EhPanda-Team/EhPanda/HEAD/AltStoreBeta.json
+
+# the SideStore build repeats the bundle ID in the stable source already in urls.txt.
+https://raw.githubusercontent.com/EhPanda-Team/EhPanda/HEAD/SideStore.json
+
+# not sure: the manifest lists 82.6 MB but links to the 108.5 MB IPA.
+https://raw.githubusercontent.com/zzanehip/The-OldOS-Project/HEAD/source.json
+
+# the legacy download points to the latest release, which has no iOS IPA.
+https://raw.githubusercontent.com/off-grid-ai/OGAM/HEAD/altstore-source.json
+
+# the feed would promote an iOS sandbox-escape toolkit with cross-app data access.
+https://raw.githubusercontent.com/Kianuni/Erosion-CN/HEAD/apps.json
+
+# the manifest has been stale since October 2024. AioRepo already lists 0.12.1.
+https://raw.githubusercontent.com/DonutWare/Fladder/HEAD/altstore.json
+
+# the beta feed uses the same bundle ID as the stable feed kept in this audit.
+https://raw.githubusercontent.com/Apps2Samsung/Apps2Samsung/HEAD/docs/sidestore/beta/apps.json
+
+# the kept Husk source already lists the same Henge builds.
+https://raw.githubusercontent.com/Leviidev/Henge/HEAD/repo.json
+
+# the NuvioMobile feed in urls.txt covers every IPA in this feed.
+https://raw.githubusercontent.com/NuvioMedia/NuvioDesktop/HEAD/store.json
+
+# the X-branded build uses NeoFreeBird 7.3.1 on X 12.39. AioRepo has the same tweak on X 12.46.
+https://raw.githubusercontent.com/NeoFreeBird/app/HEAD/resources/AltSource-X.json
+
+# the Twitter-branded build uses NeoFreeBird 7.3.1 on X 12.39. AioRepo has the same tweak on X 12.46.
+https://raw.githubusercontent.com/NeoFreeBird/app/HEAD/resources/AltSource.json
+
+# the newest build in this feed is from November 16, 2025. AioRepo already lists newer builds and direct Fouad Raheb assets.
+https://raw.githubusercontent.com/FouadRaheb/Watusi-for-WhatsApp/HEAD/altstore/source.json
+
+# the manifest lists 3,450,675 bytes for a release IPA that is 5,972,209 bytes.
+https://raw.githubusercontent.com/rooootdev/lara/HEAD/source.json
+
+# the GLASS build shares the bundle ID and 4.1.0 version with the canonical Apollo Reborn feed. AioRepo keeps one package per bundle ID and version.
+https://raw.githubusercontent.com/Apollo-Reborn/Apollo-Reborn/HEAD/apps_glass.json
+
+# the GLASS Icons build shares the bundle ID and 4.1.0 version with the canonical Apollo Reborn feed. AioRepo keeps one package per bundle ID and version.
+https://raw.githubusercontent.com/Apollo-Reborn/Apollo-Reborn/HEAD/apps_glass_icons.json
+
+# the no-extensions build shares the bundle ID and 4.1.0 version with the canonical Apollo Reborn feed. AioRepo keeps one package per bundle ID and version.
+https://raw.githubusercontent.com/Apollo-Reborn/Apollo-Reborn/HEAD/apps_noext.json
+
+# the GLASS no-extensions build shares the bundle ID and 4.1.0 version with the canonical Apollo Reborn feed. AioRepo keeps one package per bundle ID and version.
+https://raw.githubusercontent.com/Apollo-Reborn/Apollo-Reborn/HEAD/apps_noext_glass.json
+
+# the GLASS Icons no-extensions build shares the bundle ID and 4.1.0 version with the canonical Apollo Reborn feed. AioRepo keeps one package per bundle ID and version.
+https://raw.githubusercontent.com/Apollo-Reborn/Apollo-Reborn/HEAD/apps_noext_glass_icons.json
+
+# this feed mirrors the same standard 4.1.0 release published by the Apollo Reborn project.
+https://raw.githubusercontent.com/Balackburn/Apollo/HEAD/apps.json
+
+# this feed mirrors the same 4.1.0 GLASS release published by the Apollo Reborn project.
+https://raw.githubusercontent.com/Balackburn/Apollo/HEAD/apps_glass.json
+
+# this feed mirrors the same 4.1.0 no-extensions release published by the Apollo Reborn project.
+https://raw.githubusercontent.com/Balackburn/Apollo/HEAD/apps_noext.json
+
+# this feed mirrors the same 4.1.0 GLASS no-extensions release published by the Apollo Reborn project.
+https://raw.githubusercontent.com/Balackburn/Apollo/HEAD/apps_noext_glass.json
+
+# the manifest matches the AnymeX feed already in urls.txt byte for byte.
+https://raw.githubusercontent.com/RyanYuuki/AnymeX/HEAD/repo/source.json
+
+# the same 0.9.20 IPA is already in AioRepo. This feed would promote a tool for bypassing the iOS sandbox to access other apps’ data.
+https://raw.githubusercontent.com/kolbicz/WQFiles/HEAD/source.json
+
+# the manifest matches the Streamer feed already in urls.txt byte for byte.
+https://raw.githubusercontent.com/StreamerApp/Streamer/HEAD/altstore.json
+
+# the feed claims version 1.2.1 and points to a filename absent from the latest release.
+https://raw.githubusercontent.com/StreamerApp/Streamer/HEAD/scarlet.json
+
+# the older beta repeats the bundle ID of the kept stable feed.
+https://raw.githubusercontent.com/Kyosee/VeneraX/HEAD/altstore-source-beta.json
+
+# the only IPA points at the placeholder github.com/user/repo and returns HTTP 404. The entry is dated January 2024.
+https://raw.githubusercontent.com/IReaderorg/IReader/HEAD/altstore-source.json
+
+# the checked-in nightly manifest is dated 2024 and lists 1,800,157 bytes for the current 4,453,850-byte release asset.
+https://raw.githubusercontent.com/NearFrame/OpenParsec/HEAD/altstore.json
+
+# the v1.6 manifest lists 14,000,000 bytes for a 16,394,645-byte release asset.
+https://raw.githubusercontent.com/Nyasami/Ksign/HEAD/repo.json
+
+# all 82 IPA links use a forwarding proxy that does not provide its own retained release assets.
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/all-apps-proxy.json
+
+# the catalog points at rolling nightly IPA URLs for LiveContainer and Swipt that do not pin the listed packages.
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/all-apps.json
+
+# the AltGallery feed mirrors the ARMSX2 release and adds no new bundle ID.
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/ARMSX2/apps.json
+
+# the AltGallery feed mirrors the Aidoku release and adds no new bundle ID.
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/Aidoku/apps.json
+
+# the AltGallery feed mirrors the Mak5er release and adds no new bundle ID.
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/AirCard/apps.json
+
+# the AltGallery feed mirrors the altstoreio release and adds no new bundle ID.
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/AltStore/apps.json
+
+# the AltGallery feed mirrors the AniBakaBaka release and adds no new bundle ID.
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/AniBaka/apps.json
+
+# the AltGallery feed mirrors the Sle2p release and adds no new bundle ID.
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/AniCh/apps.json
+
+# the AltGallery feed mirrors the openAnimeFlow release and adds no new bundle ID.
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/AnimeFlow/apps.json
+
+# the AltGallery feed mirrors the open-ani release and adds no new bundle ID.
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/Animeko/apps.json
+
+# this mirror adds the same Apollo 4.1.0 bundle and version as the official Apollo Reborn feed.
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/Apollo-Reborn/apps.json
+
+# the AltGallery feed mirrors the Lakr233 release and adds no new bundle ID.
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/Asspp/apps.json
+
+# the AltGallery feed mirrors the thebcd69 release and adds no new bundle ID.
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/BCD/apps.json
+
+# the AltGallery feed mirrors the breeze-project-org release and adds no new bundle ID.
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/Breeze/apps.json
+
+# the AltGallery feed mirrors the mengangs release and adds no new bundle ID.
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/Cloudn/apps.json
+
+# the AltGallery feed mirrors the AhmedBafkir release and adds no new bundle ID.
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/DLiPA/apps.json
+
+# the AltGallery feed mirrors the aayush2622 release and adds no new bundle ID.
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/Dartotsu/apps.json
+
+# the AltGallery feed mirrors the moliango release and adds no new bundle ID.
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/Doer/apps.json
+
+# the AltGallery feed mirrors the OatmealDome release and adds no new bundle ID.
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/DolphiniOS/apps.json
+
+# AltGallery generates third-party feeds from upstream releases. These feeds add no new bundle IDs.
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/DukeX/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/EhPanda/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/Fathom/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/Feather/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/Fladder/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/GestaltX/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/HermesEnabler/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/Husk/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/Iridium/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/KMusic/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/Kazumi-Swift/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/Kazumi/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/Kumone/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/LSX4/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/LightNovelShelf/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/LinuxRunner/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/LiveContainer+SideStore/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/MD3Music-iOS/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/Madeira/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/Mangayomi/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/ManicEMU/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/MeloX/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/MiniWatts/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/Mornye/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/MoviePilot-App/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/MoviePilotLite/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/Musly/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/Opaline/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/OpenParsec/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/OpenScreenSharing/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/Orchard/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/PSX3IOS/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/PiliPlus/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/Pixiv-SwiftUI/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/Playport/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/PureLive/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/Rich4Renew/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/Roam-Control/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/RushHours/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/SceneBox/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/SideStore/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/Silverphase/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/SimpleLive/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/Stats/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/StikDebug/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/Suwayomi-Tsumiru/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/Swipt/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/TiebaPure/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/UTM/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/VRCM/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/Venera-Next/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/WQFiles/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/WQGuard/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/WQManager/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/WQToolkit/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/ZhihuMinusMinus/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/iBuilder/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/iDeck/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/iPadn/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/iRAM-Plus/apps.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/iTorrent/apps.json
+
+# AltGallery generates these third-party feeds and routes downloads through gh-proxy.com.
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/Iridium/apps-proxy.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/Mangayomi/apps-proxy.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/PiliPlus/apps-proxy.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/RewindBox/apps-proxy.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/RushHours/apps-proxy.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/UTM/apps-proxy.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/Venera-Next/apps-proxy.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/WQFiles/apps-proxy.json
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/iBuilder/apps-proxy.json
+
+# this mirror points at the same Erosion-CN 1.0.6 IPA AioRepo already lists.
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/Erosion-CN/apps.json
+
+# this mirror repeats the same RewindBox release asset as the maintainer’s feed.
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/RewindBox/apps.json
+
+# the IPA forwarding proxy timed out. The underlying YouProEXTRA build is also older than the one in the maintainer’s catalog.
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/YouProEXTRA/apps-proxy.json
+
+# the mirror lists YouProEXTRA on YouTube 21.33.6. The maintainer’s catalog has the same tweak on 21.47.6.
+https://raw.githubusercontent.com/bebound/AltGallery/HEAD/apps/YouProEXTRA/apps.json
+
+# the same apps_altstore.json manifest is already listed in urls.txt under refs/heads/main.
+https://raw.githubusercontent.com/Neoncat-OG/TrollStore-IPAs/HEAD/apps_altstore.json
+
+# The Synkplay v0.27.0 release and its IPA URL both return HTTP 404.
+https://raw.githubusercontent.com/yuroyami/syncplay-mobile/HEAD/altstore_yuroyami.json
+
+# the listed SpooferX IPA returned HTTP 403, so the feed failed the direct-download check.
+https://raw.githubusercontent.com/DebianArch64/Scarlet/HEAD/repo.json
+
+# the listed SpooferX IPA returned HTTP 403, so the feed failed the direct-download check.
+https://raw.githubusercontent.com/DebianArch64/Scarlet/HEAD/scarlet.json
+
+# The manifest is byte-for-byte identical to the Camlo feed named in the README.
+https://raw.githubusercontent.com/Kianuni/Camlo/HEAD/repo.json
+
+# Two older download URLs, v1.5.1 and v1.5.2, return HTML release pages instead of IPA files.
+https://raw.githubusercontent.com/mona-hrt/mona/HEAD/ios_source.json
+
+# not sure: The candidate lists v6.4.2, the existing mirror has v6.4.6, and the project site returned HTTP 403.
+https://raw.githubusercontent.com/Snozxyx/Tatakai/HEAD/public/altstore/apps.json
+
+# the pending-release manifest lists the same build 721 IPA as the maintainer’s published source.json.
+https://raw.githubusercontent.com/TarbleFR/RewindBox/HEAD/docs/releases/pending-0.0.11/source.json
+
+# The feed lists 2.2 and AioRepo already has the maintainer's 2.3.2 release.
+https://raw.githubusercontent.com/Sami-Wali/ryP0/HEAD/repo.json
+
+# the standalone feed lists the same current YouPro IPA as the maintainer’s combined catalog and has no newer release.
+https://raw.githubusercontent.com/mrdrvt99/Altstore-Repository/HEAD/youpro.json
+
+# the newest Catbox IPA could not be fetched, and the feed only lists builds older than AioRepo’s YouTube 21.47.6.
+https://raw.githubusercontent.com/lowiqentity/APEX/HEAD/JSON/esign.json
+
+# the newest Catbox IPA could not be fetched, and the feed only lists builds older than AioRepo’s YouTube 21.47.6.
+https://raw.githubusercontent.com/lowiqentity/APEX/HEAD/JSON/store.json
+
+# the feed would add an app that provides an iOS kernel exploit.
+https://raw.githubusercontent.com/kolbicz/Cyanide/HEAD/source.json
+
+# The feed matches the SideStore RetroArch feed already in urls.txt.
+https://raw.githubusercontent.com/SideStore/Community-Source/HEAD/staticApps/Retroarch.json
+
+# The feed matches the SideStore Play! feed already in urls.txt. One older build is a QuarkSources reupload.
+https://raw.githubusercontent.com/SideStore/Community-Source/HEAD/staticApps/play.json
+
+# the tweak sends signed VOD playback URLs to a built-in proxy whose operator could not be established. AioRepo already has Twitch 32.1.
+https://raw.githubusercontent.com/gunnerkidBT/TwitchAdBlock/HEAD/apps.json
+
+# This test feed repeats the stable Apple TV feed's bundle ID and starts with an older build.
+https://raw.githubusercontent.com/MXFia19/TwitchUnblock/HEAD/apps-tv.json
+
+# the 2.7.1 IPA has bundle ID com.nakas.skate3, but the manifest lists com.skate3recomp.skate3.
+https://raw.githubusercontent.com/andrewnakas/skate3-ios-setup/HEAD/source.json
+
+# the continuity mirror lists NOOP 8.2.0. AioRepo already has 12.1.0.
+https://raw.githubusercontent.com/ParthJadhav/noop/HEAD/altstore-source.json
+
+# the Scarlet manifest lists the same Movix 2.6.14 IPA as the official AltStore Classic feed.
+https://raw.githubusercontent.com/movixstream/MovixOpenSource/HEAD/app/movix-scarlet-source.json
+
+# The README identifies kangyun1994's repository as the official feed and release publisher.
+https://raw.githubusercontent.com/Amadeus1P048596/zhihu-plus-plus-swift/HEAD/sidestore-source.json
+
+# the same apps.json manifest is already listed in urls.txt under main.
+https://raw.githubusercontent.com/swaggyP36000/TrollStore-IPAs/HEAD/apps.json
+
+# not sure: kernel-exploit app (DarkSword, libgrabkernel2) from an account whose whole history starts in July 2026.
+https://raw.githubusercontent.com/leonardob8777-bit/Eagle/HEAD/source.json
+
+# not sure: three-week-old project from an owner with little history, and the app takes an Apple account sign-in for its built-in SideStore.
+https://raw.githubusercontent.com/cartouche-app/Cartouche/HEAD/app/sidestore-source.json
+
+# the feed lists upstream Venera 1.6.2 from January 2026. AioRepo already has Venera-SSR 2.1.5.
+https://raw.githubusercontent.com/Kiastr/Venera-SSR/HEAD/alt_store.json
+
+# the newest build is from June 2025, and the feed mirrors other people's release repos.
+https://raw.githubusercontent.com/drphe/KhoIPA/HEAD/upload/EpicGamesIPASource.json
+
+# downloads are configuration profiles and itms-services links, not IPAs.
+https://raw.githubusercontent.com/drphe/KhoIPA/HEAD/upload/applejr.json
+
+# mirror of Fouad Raheb's feed. AioRepo already lists the same fouadraheb.com builds.
+https://raw.githubusercontent.com/drphe/KhoIPA/HEAD/upload/fouadraheb.json
+
+# the feed lists MeloNX 1.7.0 from April 2025. AioRepo already has 2.7.
+https://raw.githubusercontent.com/VertexSelection/MeloVertex/HEAD/source.json
+
+# stale snapshot of the official AltStore feed. AioRepo already has newer builds.
+https://raw.githubusercontent.com/luh-99/SideStoreAndAltStore-Sources/HEAD/AltStore%20Complete/source.json
+
+# stale 2020 snapshot with no new apps.
+https://raw.githubusercontent.com/luh-99/SideStoreAndAltStore-Sources/HEAD/Burrito%E2%80%99s%20AltStore/source.json
+
+# copy of the CyPwn library. AioRepo already lists the same ipa.cypwn.xyz files.
+https://raw.githubusercontent.com/luh-99/SideStoreAndAltStore-Sources/HEAD/CyPwn%20iPA%20Library/source.json
+
+# stale January 2024 snapshot with SharePoint links. AioRepo already has newer builds.
+https://raw.githubusercontent.com/luh-99/SideStoreAndAltStore-Sources/HEAD/Qn_%E2%80%99s%20AltStore%20Repo/source.json
+
+# stale snapshot of iSH build 786. AioRepo already has build 813.
+https://raw.githubusercontent.com/luh-99/SideStoreAndAltStore-Sources/HEAD/iSH%20AltStore%20Repo/source.json
+
+# September 2025 snapshot of the AppTesters repo, which AioRepo already lists.
+https://raw.githubusercontent.com/luh-99/SideStoreAndAltStore-Sources/HEAD/source.json
+
+# the same AltStore.json manifest is already listed in urls.txt under main.
+https://raw.githubusercontent.com/AlanLang/BitClient/HEAD/AltStore.json
+
+# the repo was last pushed in January 2025.
+https://raw.githubusercontent.com/azu0609/repo/HEAD/altstore_repo.json
+
+# the repo was last pushed in January 2025.
+https://raw.githubusercontent.com/azu0609/repo/HEAD/scarlet_repo.json

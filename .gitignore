@@ -1,10 +1,8 @@
-# Python-generated files
-__pycache__/
-*.py[oc]
-build/
-dist/
-wheels/
-*.egg-info
+# Go build output
+/AioRepo
+/aiorepo
+*.tmp
 
-# Virtual environments
-.venv
+# Run outputs that are not committed
+/.cache/
+/_site/

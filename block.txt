@@ -1,0 +1,3 @@
+# Apps that match any rule here are left out of every output.
+# Same format as spam.txt: <field> <op> <value>
+# Example: download contains malware-host.example

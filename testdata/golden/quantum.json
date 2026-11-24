@@ -1,0 +1,378 @@
+{
+  "name": "RagingEnby's AIO Source",
+  "identifier": "dev.ragingenby.aiorepo",
+  "subtitle": "[1/1/27 12:00] Every single repo I could find, united.",
+  "description": "I got really sick and tired of typing in a billion different repos. So this one repo scrapes 1 AltSources and combines them into one, beautiful, united repository.",
+  "iconURL": "https://raw.githubusercontent.com/RagingEnby/RagingEnby/main/pfp.png",
+  "website": "https://ragingenby.dev/",
+  "patreonURL": "https://patreon.com/RagingEnby",
+  "apps": [
+    {
+      "name": "VCMI",
+      "bundleIdentifier": "eu.vcmi.vcmiclient",
+      "developerName": "VCMI Team",
+      "subtitle": "Heroes of Might & Magic III engine",
+      "localizedDescription": "VCMI is a open source cross-platform HoMM3 engine written from scratch. \n\nYou need data copied from original game to play. \nFollow instructions from https://wiki.vcmi.eu/Installation_on_iOS\n\nSource: Quantum Source",
+      "iconURL": "https://github.com/vcmi/vcmi/raw/develop/client/icons/vcmiclient.512x512.png",
+      "tintColor": "#CD8526",
+      "category": "games",
+      "screenshots": {
+        "iphone": [
+          {
+            "imageURL": "https://raw.githubusercontent.com/vcmi/vcmi-updates/master/altstore/screenshots/screenshot1.png"
+          },
+          {
+            "imageURL": "https://raw.githubusercontent.com/vcmi/vcmi-updates/master/altstore/screenshots/screenshot2.png"
+          },
+          {
+            "imageURL": "https://raw.githubusercontent.com/vcmi/vcmi-updates/master/altstore/screenshots/screenshot3.png"
+          },
+          {
+            "imageURL": "https://raw.githubusercontent.com/vcmi/vcmi-updates/master/altstore/screenshots/screenshot4.png"
+          },
+          {
+            "imageURL": "https://raw.githubusercontent.com/vcmi/vcmi-updates/master/altstore/screenshots/screenshot5.png"
+          },
+          {
+            "imageURL": "https://raw.githubusercontent.com/vcmi/vcmi-updates/master/altstore/screenshots/screenshot6.png"
+          },
+          {
+            "imageURL": "https://raw.githubusercontent.com/vcmi/vcmi-updates/master/altstore/screenshots/screenshot7.png"
+          },
+          {
+            "imageURL": "https://raw.githubusercontent.com/vcmi/vcmi-updates/master/altstore/screenshots/screenshot8.png"
+          },
+          {
+            "imageURL": "https://raw.githubusercontent.com/vcmi/vcmi-updates/master/altstore/screenshots/screenshot9.png"
+          }
+        ]
+      },
+      "versions": [
+        {
+          "version": "1.7.1",
+          "buildVersion": "2025-12-30-476d676",
+          "date": "2025-12-30T09:32:15-05:00",
+          "localizedDescription": "# VCMI 1.7.1\n\nNote: saved games from 1.6 release can be loaded in 1.7\r\n\r\n### Changelog\r\n- Player Changelog: [1.7.0 -> 1.7.1](https://github.com/vcmi/vcmi/blob/master/ChangeLog.md#170---171)\r\n- Full Changelog: https://github.com/vcmi/vcmi/compare/1.7.0..1.7.1\r\n\r\n### Additional builds\r\n<!-- - Android release will be available on Google Play shortly -->\r\n<!-- - Linux release will be available on Flathub shortly -->\r\n<!-- - Ubuntu release will be available on VCMI PPA shortly -->\r\n<!-- - Android release is available on [Google Play](https://play.google.com/store/apps/details?id=is.xyz.vcmi) -->\r\n<!-- - Linux release is available on [Flathub](https://flathub.org/apps/eu.vcmi.VCMI) -->\r\n<!-- - Ubuntu release is available on [VCMI PPA](https://launchpad.net/~vcmi/+archive/ubuntu/ppa) -->\r\n\r\n- Android release is available on [Google Play](https://play.google.com/store/apps/details?id=is.xyz.vcmi)\r\n- Linux release is available on [Flathub](https://flathub.org/apps/eu.vcmi.VCMI)\r\n- Ubuntu release is available on [VCMI PPA](https://launchpad.net/~vcmi/+archive/ubuntu/ppa)\r\n- macOS release can be installed via Homebrew: `brew install --cask --no-quarantine vcmi/vcmi/vcmi`",
+          "downloadURL": "https://github.com/vcmi/vcmi/releases/download/1.7.1/VCMI-iOS.ipa",
+          "size": 26841233,
+          "sha256": "9c0bfb9432c765fd0357b60d22754e57cd398f17d4116e0f416d1cdd995c7432"
+        },
+        {
+          "version": "1.7",
+          "buildVersion": "2025-12-23-e352995",
+          "date": "2025-12-23T10:25:21-05:00",
+          "localizedDescription": "# VCMI 1.7.0\n\nNote: saved games from 1.6 release can be loaded in 1.7\r\n\r\n### Changelog\r\n- Player Changelog: [1.6.8 -> 1.7.0](https://github.com/vcmi/vcmi/blob/master/ChangeLog.md#168---170)\r\n- Full Changelog: https://github.com/vcmi/vcmi/compare/1.6.8..1.7.0\r\n\r\n### Additional builds\r\n<!-- - Android release will be available on Google Play shortly -->\r\n<!-- - Linux release will be available on Flathub shortly -->\r\n<!-- - Ubuntu release will be available on VCMI PPA shortly -->\r\n<!-- - Android release is available on [Google Play](https://play.google.com/store/apps/details?id=is.xyz.vcmi) -->\r\n<!-- - Linux release is available on [Flathub](https://flathub.org/apps/eu.vcmi.VCMI) -->\r\n<!-- - Ubuntu release is available on [VCMI PPA](https://launchpad.net/~vcmi/+archive/ubuntu/ppa) -->\r\n\r\n- Android release is available on [Google Play](https://play.google.com/store/apps/details?id=is.xyz.vcmi)\r\n- Linux release is available on [Flathub](https://flathub.org/apps/eu.vcmi.VCMI)\r\n- Ubuntu release is available on [VCMI PPA](https://launchpad.net/~vcmi/+archive/ubuntu/ppa)\r\n- macOS release can be installed via Homebrew: `brew install --cask --no-quarantine vcmi/vcmi/vcmi`",
+          "downloadURL": "https://github.com/vcmi/vcmi/releases/download/1.7.0/VCMI-iOS.ipa",
+          "size": 26811586,
+          "sha256": "1ddce7ba1a0295c18f9360be11959e5b9fc3f82035d6f16add1eb09838eef8df"
+        },
+        {
+          "version": "1.6.8",
+          "buildVersion": "2025-04-24-a92e29e",
+          "date": "2025-04-25T09:09:24-04:00",
+          "localizedDescription": "# VCMI 1.6.8\n\nNote: saved games from 1.5 release can be loaded in 1.6\r\n\r\n### Changelog\r\n- Player Changelog: [1.6.7 -> 1.6.8](https://github.com/vcmi/vcmi/blob/master/ChangeLog.md#167---168)\r\n- Full Changelog: https://github.com/vcmi/vcmi/compare/1.6.7..1.6.8\r\n\r\n### Additional builds\r\n<!-- - Android release will be available on Google Play shortly -->\r\n<!-- - Linux release will be available on Flathub shortly -->\r\n<!-- - Ubuntu release will be available on VCMI PPA shortly -->\r\n<!-- - Android release is available on [Google Play](https://play.google.com/store/apps/details?id=is.xyz.vcmi) -->\r\n<!-- - Linux release is available on [Flathub](https://flathub.org/apps/eu.vcmi.VCMI) -->\r\n<!-- - Ubuntu release is available on [VCMI PPA](https://launchpad.net/~vcmi/+archive/ubuntu/ppa) -->\r\n\r\n- Android release is available on [Google Play](https://play.google.com/store/apps/details?id=is.xyz.vcmi)\r\n- Linux release is available on [Flathub](https://flathub.org/apps/eu.vcmi.VCMI)\r\n- Ubuntu release is available on [VCMI PPA](https://launchpad.net/~vcmi/+archive/ubuntu/ppa)\r\n- macOS release can be installed via Homebrew: `brew install --cask --no-quarantine vcmi/vcmi/vcmi`",
+          "downloadURL": "https://github.com/vcmi/vcmi/releases/download/1.6.8/VCMI-iOS.ipa",
+          "size": 20825440,
+          "sha256": "16c7e8b19d67898d7c0877d0d2068a92095344a35190e4f0cb7b7099caa55128"
+        },
+        {
+          "version": "1.6.7",
+          "buildVersion": "2025-02-27-dfda6d2",
+          "date": "2025-02-27T14:32:02-05:00",
+          "localizedDescription": "# VCMI 1.6.7\n\nNote: saved games from 1.5 release can be loaded in 1.6\r\n\r\n### Changelog\r\n- Player Changelog: [1.6.6 -> 1.6.7](https://github.com/vcmi/vcmi/blob/master/ChangeLog.md#166---167)\r\n- Full Changelog: https://github.com/vcmi/vcmi/compare/1.6.6..1.6.7\r\n\r\n### Additional builds\r\n<!-- - Android release will be available on Google Play shortly -->\r\n<!-- - Linux release will be available on Flathub shortly -->\r\n<!-- - Ubuntu release will be available on VCMI PPA shortly -->\r\n<!-- - Android release is available on [Google Play](https://play.google.com/store/apps/details?id=is.xyz.vcmi) -->\r\n<!-- - Linux release is available on [Flathub](https://flathub.org/apps/eu.vcmi.VCMI) -->\r\n<!-- - Ubuntu release is available on [VCMI PPA](https://launchpad.net/~vcmi/+archive/ubuntu/ppa) -->\r\n\r\n- Android release is available on [Google Play](https://play.google.com/store/apps/details?id=is.xyz.vcmi)\r\n- Linux release is available on [Flathub](https://flathub.org/apps/eu.vcmi.VCMI)\r\n- Ubuntu release is available on [VCMI PPA](https://launchpad.net/~vcmi/+archive/ubuntu/ppa)\r\n- macOS release can be installed via Homebrew: `brew install --cask --no-quarantine vcmi/vcmi/vcmi`",
+          "downloadURL": "https://github.com/vcmi/vcmi/releases/download/1.6.7/VCMI-iOS.ipa",
+          "size": 20863158,
+          "sha256": "fa07a827210a9a4a202c362be66212a0e942e1fc0c506fe9c396160839e1b8a1"
+        },
+        {
+          "version": "1.6.6",
+          "buildVersion": "2025-02-20-df75079",
+          "date": "2025-02-21T08:02:15-05:00",
+          "localizedDescription": "# VCMI 1.6.6\n\nNote: saved games from 1.5 release can be loaded in 1.6\r\n\r\n### Changelog\r\n- Player Changelog: [1.6.5 -> 1.6.6](https://github.com/vcmi/vcmi/blob/master/ChangeLog.md#165---166)\r\n- Full Changelog: https://github.com/vcmi/vcmi/compare/1.6.5..1.6.6\r\n\r\n### Additional builds\r\n<!-- - Android release will be available on Google Play shortly -->\r\n<!-- - Linux release will be available on Flathub shortly -->\r\n<!-- - Ubuntu release will be available on VCMI PPA shortly -->\r\n<!-- - Android release is available on [Google Play](https://play.google.com/store/apps/details?id=is.xyz.vcmi) -->\r\n<!-- - Linux release is available on [Flathub](https://flathub.org/apps/eu.vcmi.VCMI) -->\r\n<!-- - Ubuntu release is available on [VCMI PPA](https://launchpad.net/~vcmi/+archive/ubuntu/ppa) -->\r\n\r\n- Android release is available on [Google Play](https://play.google.com/store/apps/details?id=is.xyz.vcmi)\r\n- Linux release is available on [Flathub](https://flathub.org/apps/eu.vcmi.VCMI)\r\n- Ubuntu release is available on [VCMI PPA](https://launchpad.net/~vcmi/+archive/ubuntu/ppa)\r\n- macOS release can be installed via Homebrew: `brew install --cask --no-quarantine vcmi/vcmi/vcmi`",
+          "downloadURL": "https://github.com/vcmi/vcmi/releases/download/1.6.6/VCMI-iOS.ipa",
+          "size": 20850507,
+          "sha256": "adeb458a90b272850ad5c521a99289bf6493c071625cb48979228cac16f2370d"
+        },
+        {
+          "version": "1.6.5",
+          "buildVersion": "2025-02-03-7e1ce09",
+          "date": "2025-02-03T10:34:30-05:00",
+          "localizedDescription": "# VCMI 1.6.5\n\nNote: saved games from 1.5 release can be loaded in 1.6\r\n\r\n### Changelog\r\n- Player Changelog: [1.6.4 -> 1.6.5](https://github.com/vcmi/vcmi/blob/master/ChangeLog.md#164---165)\r\n- Full Changelog: https://github.com/vcmi/vcmi/compare/1.6.4..1.6.5\r\n\r\n### Additional builds\r\n<!-- - Android release will be available on Google Play shortly -->\r\n<!-- - Linux release will be available on Flathub shortly -->\r\n<!-- - Ubuntu release will be available on VCMI PPA shortly -->\r\n<!-- - Android release is available on [Google Play](https://play.google.com/store/apps/details?id=is.xyz.vcmi) -->\r\n<!-- - Linux release is available on [Flathub](https://flathub.org/apps/eu.vcmi.VCMI) -->\r\n<!-- - Ubuntu release is available on [VCMI PPA](https://launchpad.net/~vcmi/+archive/ubuntu/ppa) -->\r\n\r\n- Android release is available on [Google Play](https://play.google.com/store/apps/details?id=is.xyz.vcmi)\r\n- Linux release is available on [Flathub](https://flathub.org/apps/eu.vcmi.VCMI)\r\n- Ubuntu release is available on [VCMI PPA](https://launchpad.net/~vcmi/+archive/ubuntu/ppa)\r\n- macOS release can be installed via Homebrew: `brew install --cask --no-quarantine vcmi/vcmi/vcmi`",
+          "downloadURL": "https://github.com/vcmi/vcmi/releases/download/1.6.5/VCMI-iOS.ipa",
+          "size": 20770400,
+          "sha256": "66e28b461339fc2cfa94b90b8f3500e57c3e7ebb288e37f9916ceec079b350dc"
+        },
+        {
+          "version": "1.6.4",
+          "buildVersion": "2025-01-31-89b703c",
+          "date": "2025-01-31T08:20:58-05:00",
+          "localizedDescription": "# VCMI 1.6.4\n\nNote: saved games from 1.5 release can be loaded in 1.6\r\n\r\n### Changelog\r\n- Player Changelog: [1.6.3 -> 1.6.4](https://github.com/vcmi/vcmi/blob/master/ChangeLog.md#163---164)\r\n- Full Changelog: https://github.com/vcmi/vcmi/compare/1.6.3..1.6.4\r\n\r\n### Additional builds\r\n<!-- - Android release will be available on Google Play shortly -->\r\n<!-- - Linux release will be available on Flathub shortly -->\r\n<!-- - Ubuntu release will be available on VCMI PPA shortly -->\r\n<!-- - Android release is available on [Google Play](https://play.google.com/store/apps/details?id=is.xyz.vcmi) -->\r\n<!-- - Linux release is available on [Flathub](https://flathub.org/apps/eu.vcmi.VCMI) -->\r\n<!-- - Ubuntu release is available on [VCMI PPA](https://launchpad.net/~vcmi/+archive/ubuntu/ppa) -->\r\n\r\n- Android release is available on [Google Play](https://play.google.com/store/apps/details?id=is.xyz.vcmi)\r\n- Linux release is available on [Flathub](https://flathub.org/apps/eu.vcmi.VCMI)\r\n- Ubuntu release is available on [VCMI PPA](https://launchpad.net/~vcmi/+archive/ubuntu/ppa)\r\n- macOS release can be installed via Homebrew: `brew install --cask --no-quarantine vcmi/vcmi/vcmi`",
+          "downloadURL": "https://github.com/vcmi/vcmi/releases/download/1.6.4/VCMI-iOS.ipa",
+          "size": 20767021,
+          "sha256": "511e0137d8c04ec07b6f38abbc26596e19069c09642ced762fe9e0882301f10c"
+        },
+        {
+          "version": "1.6.3",
+          "buildVersion": "2025-01-09-ff598b6",
+          "date": "2025-01-09T16:50:13-05:00",
+          "localizedDescription": "# VCMI 1.6.3\n\nNote: saved games from 1.5 release can be loaded in 1.6\r\n\r\n### Changelog\r\n- Player Changelog: [1.6.2 -> 1.6.3](https://github.com/vcmi/vcmi/blob/master/ChangeLog.md#162---163)\r\n- Full Changelog: https://github.com/vcmi/vcmi/compare/1.6.2..1.6.3\r\n\r\n### Additional builds\r\n<!-- - Android release will be available on Google Play shortly -->\r\n<!-- - Linux release will be available on Flathub shortly -->\r\n<!-- - Ubuntu release will be available on VCMI PPA shortly -->\r\n<!-- - Android release is available on [Google Play](https://play.google.com/store/apps/details?id=is.xyz.vcmi) -->\r\n<!-- - Linux release is available on [Flathub](https://flathub.org/apps/eu.vcmi.VCMI) -->\r\n<!-- - Ubuntu release is available on [VCMI PPA](https://launchpad.net/~vcmi/+archive/ubuntu/ppa) -->\r\n\r\n- Android release is available on [Google Play](https://play.google.com/store/apps/details?id=is.xyz.vcmi)\r\n- Linux release is available on [Flathub](https://flathub.org/apps/eu.vcmi.VCMI)\r\n- Ubuntu release is available on [VCMI PPA](https://launchpad.net/~vcmi/+archive/ubuntu/ppa)\r\n- macOS release can be installed via Homebrew: `brew install --cask --no-quarantine vcmi/vcmi/vcmi`",
+          "downloadURL": "https://github.com/vcmi/vcmi/releases/download/1.6.3/VCMI-iOS.ipa",
+          "size": 20716731,
+          "sha256": "f47e2153b23763bba21c135c7dab8fdd6384d2098e6ef8a073fc2232b443adf3"
+        },
+        {
+          "version": "1.6.2",
+          "buildVersion": "2025-01-04-f56fd20",
+          "date": "2025-01-04T11:43:21-05:00",
+          "localizedDescription": "# VCMI 1.6.2\n\nNote: saved games from 1.5 release can be loaded in 1.6\r\n\r\n### Changelog\r\n- Player Changelog: [1.6.1 -> 1.6.2](https://github.com/vcmi/vcmi/blob/master/ChangeLog.md#161---162)\r\n- Full Changelog: https://github.com/vcmi/vcmi/compare/1.6.1..1.6.2\r\n\r\n### Additional builds\r\n<!-- - Android release will be available on Google Play shortly -->\r\n<!-- - Linux release will be available on Flathub shortly -->\r\n<!-- - Ubuntu release will be available on VCMI PPA shortly -->\r\n<!-- - Android release is available on [Google Play](https://play.google.com/store/apps/details?id=is.xyz.vcmi) -->\r\n<!-- - Linux release is available on [Flathub](https://flathub.org/apps/eu.vcmi.VCMI) -->\r\n<!-- - Ubuntu release is available on [VCMI PPA](https://launchpad.net/~vcmi/+archive/ubuntu/ppa) -->\r\n\r\n- Android release is available on [Google Play](https://play.google.com/store/apps/details?id=is.xyz.vcmi)\r\n- Linux release is available on [Flathub](https://flathub.org/apps/eu.vcmi.VCMI)\r\n- Ubuntu release is available on [VCMI PPA](https://launchpad.net/~vcmi/+archive/ubuntu/ppa)\r\n- macOS release can be installed via Homebrew: `brew install --cask --no-quarantine vcmi/vcmi/vcmi`",
+          "downloadURL": "https://github.com/vcmi/vcmi/releases/download/1.6.2/VCMI-iOS.ipa",
+          "size": 20690030,
+          "sha256": "75e5e4976bcd4786e7f182936101aeb7cc0a899a7257231f041fae1fc6489336"
+        },
+        {
+          "version": "1.6.1",
+          "buildVersion": "2024-12-26-b91be77",
+          "date": "2024-12-27T06:24:07-05:00",
+          "localizedDescription": "# VCMI 1.6.1\n\n<!--Warning: saved games from 1.3 release are not supported-->\r\nNote: saved games from 1.5 release can be loaded in 1.6\r\n\r\n### Changelog\r\n- Player Changelog: [1.6.0 -> 1.6.1](https://github.com/vcmi/vcmi/blob/master/ChangeLog.md#160---161)\r\n- Full Changelog: https://github.com/vcmi/vcmi/compare/1.6.0..1.6.1\r\n\r\n### Additional builds\r\n<!-- - Android release will be available on Google Play shortly -->\r\n<!-- - Linux release will be available on Flathub shortly -->\r\n<!-- - Ubuntu release will be available on VCMI PPA shortly -->\r\n<!-- - Android release is available on [Google Play](https://play.google.com/store/apps/details?id=is.xyz.vcmi) -->\r\n<!-- - Linux release is available on [Flathub](https://flathub.org/apps/eu.vcmi.VCMI) -->\r\n<!-- - Ubuntu release is available on [VCMI PPA](https://launchpad.net/~vcmi/+archive/ubuntu/ppa) -->\r\n\r\n- Android release is available on [Google Play](https://play.google.com/store/apps/details?id=is.xyz.vcmi)\r\n- Linux release is available on [Flathub](https://flathub.org/apps/eu.vcmi.VCMI)\r\n- Ubuntu release is available on [VCMI PPA](https://launchpad.net/~vcmi/+archive/ubuntu/ppa)\r\n- macOS release can be installed via Homebrew: `brew install --cask --no-quarantine vcmi/vcmi/vcmi`",
+          "downloadURL": "https://github.com/vcmi/vcmi/releases/download/1.6.1/VCMI-iOS.ipa",
+          "size": 20685749,
+          "sha256": "8b497aa059e3881805212af805aabb4200caf45ed4cc415cb7c08bfcdc3c3c40"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "version": "1.7.1",
+      "versionDate": "2025-12-30T09:32:15-05:00",
+      "versionDescription": "# VCMI 1.7.1\n\nNote: saved games from 1.6 release can be loaded in 1.7\r\n\r\n### Changelog\r\n- Player Changelog: [1.7.0 -> 1.7.1](https://github.com/vcmi/vcmi/blob/master/ChangeLog.md#170---171)\r\n- Full Changelog: https://github.com/vcmi/vcmi/compare/1.7.0..1.7.1\r\n\r\n### Additional builds\r\n<!-- - Android release will be available on Google Play shortly -->\r\n<!-- - Linux release will be available on Flathub shortly -->\r\n<!-- - Ubuntu release will be available on VCMI PPA shortly -->\r\n<!-- - Android release is available on [Google Play](https://play.google.com/store/apps/details?id=is.xyz.vcmi) -->\r\n<!-- - Linux release is available on [Flathub](https://flathub.org/apps/eu.vcmi.VCMI) -->\r\n<!-- - Ubuntu release is available on [VCMI PPA](https://launchpad.net/~vcmi/+archive/ubuntu/ppa) -->\r\n\r\n- Android release is available on [Google Play](https://play.google.com/store/apps/details?id=is.xyz.vcmi)\r\n- Linux release is available on [Flathub](https://flathub.org/apps/eu.vcmi.VCMI)\r\n- Ubuntu release is available on [VCMI PPA](https://launchpad.net/~vcmi/+archive/ubuntu/ppa)\r\n- macOS release can be installed via Homebrew: `brew install --cask --no-quarantine vcmi/vcmi/vcmi`",
+      "downloadURL": "https://github.com/vcmi/vcmi/releases/download/1.7.1/VCMI-iOS.ipa",
+      "size": 26841233
+    },
+    {
+      "name": "emuThreeDS",
+      "bundleIdentifier": "com.antique.emuThreeDS",
+      "developerName": "Antique",
+      "subtitle": "Nintendo 3DS emulator for iOS.",
+      "localizedDescription": "emuThreeDS is a Nintendo 3DS emulator for Apple TV, iPad and iPhone based on Citra.\n\nSource: Quantum Source",
+      "iconURL": "https://i.imgur.com/XUAH0bL.png",
+      "tintColor": "#5CA399",
+      "category": "games",
+      "screenshots": {
+        "iphone": [
+          {
+            "imageURL": "https://i.imgur.com/AhhhDIK.png"
+          },
+          {
+            "imageURL": "https://i.imgur.com/u05omA7.png"
+          }
+        ]
+      },
+      "versions": [
+        {
+          "version": "1.0.7.1",
+          "buildVersion": "2",
+          "date": "2024-02-29T22:47:43-05:00",
+          "localizedDescription": "# v1.0.7.1.2",
+          "downloadURL": "https://github.com/emuPlace/emuThreeDS/releases/download/v1.0.7.1.2/emuThreeDS_v1.0.7.1.2.ipa",
+          "size": 35010897,
+          "sha256": "e27a76af0128c1af81f51bfffe8983a461bb76861cf0c93a0388f9c16339bdcf"
+        },
+        {
+          "version": "1.0.6.5",
+          "buildVersion": "6",
+          "date": "2023-07-31T07:16:28-04:00",
+          "localizedDescription": "# v1.0.6.5 (6) is now out!\n\nSee **[CHANGELOG.md](https://github.com/emuplace/emuthreeds/blob/main/resources/markdowns/CHANGELOG.md)** for more information.",
+          "downloadURL": "https://github.com/emuPlace/emuThreeDS/releases/download/1.0.6.5.6/emuThreeDS.v1.0.6.5.6.ipa",
+          "size": 35642893,
+          "sha256": "f1b0d1df9ca3ce907869aa9d18d109e1c2bceb283971f23bf42de3ecd59e28c9"
+        },
+        {
+          "version": "1.0.6",
+          "buildVersion": "4",
+          "date": "2023-06-15T04:42:18-04:00",
+          "localizedDescription": "# Settings galore, Full controller support, Latest Vulkan and more!\n\nSee **[CHANGELOG.md](https://github.com/emuPlace/emuThreeDS/blob/main/resources/markdowns/CHANGELOG.md)** for more information.\r\n\r\nThis will be the last SwiftUI release as the project is moving back to Swift.",
+          "downloadURL": "https://github.com/emuPlace/emuThreeDS/releases/download/1.0.6.4/emuThreeDS_v1.0.6.4.ipa",
+          "size": 37520848,
+          "sha256": "e63fe50f820286b4124e9e758610c8e707f1d9b76f65301e9ffb1bfcda38566b"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "version": "1.0.7.1",
+      "versionDate": "2024-02-29T22:47:43-05:00",
+      "versionDescription": "# v1.0.7.1.2",
+      "downloadURL": "https://github.com/emuPlace/emuThreeDS/releases/download/v1.0.7.1.2/emuThreeDS_v1.0.7.1.2.ipa",
+      "size": 35010897
+    },
+    {
+      "name": "citra",
+      "bundleIdentifier": "net.rinsuki.slapps.citra.ci-artifact",
+      "developerName": "rinsuki",
+      "subtitle": "Citra Nintendo 3DS emulator for iOS.",
+      "localizedDescription": "Citra is a Nintendo 3DS emulator. This is a fork specifically compiled for iOS devices and is still in its early stages of development. You should not expect the same compatibility and performance that you might expect of the PC version of Citra.\n\nSource: Quantum Source",
+      "iconURL": "https://github.com/rinsuki/citra/blob/ios_frontend/dist/icon.png?raw=true",
+      "tintColor": "#5CA399",
+      "category": "games",
+      "versions": [
+        {
+          "version": "0.1.gha.4865233241.Release.5af330c0e6cac9c183a432d5839cf78780873951",
+          "buildVersion": "1",
+          "date": "2023-05-02T16:46:17-04:00",
+          "localizedDescription": "# iOS (α) CI.4865233241\n\n* Tell compiler to support only A12 or later CPU, but I'm not sure this actually improves performance\r\n\r\n## NOTE\r\n* This version requires A12 or later device (iPhone XS/XR or later)\r\n  * this is coming from GPU requirements (we need layered rendering)\r\n* This version can install to iOS 14 or later device, but...\r\n  * We only supports latest stable iOS.\r\n  * in iOS 14.x or older, you can't use virtual controller (which means you need to use external controller, like DS4 or Xbox or MFi certificated controller)\r\n* This version doesn't supporting these features:\r\n  * Audio Input (Mic)\r\n  * Camera\r\n  * Motion Sensor\r\n  * Touch Screen\r\n  * NFC\r\n  * SELECT/HOME button for physical controller\r\n  * Circle Pad (including Pro), ZL/ZR, SELECT/START/HOME button for virtual controller",
+          "downloadURL": "https://github.com/rinsuki/citra/releases/download/ios/alpha/4865233241/citra_ios_ci_4865233241_Release_5af330c0e6cac9c183a432d5839cf78780873951.ipa",
+          "size": 8581046,
+          "sha256": "bee252d9ce9b350122e5ae0e48d2ec1a6ba87cdf9ef5263a5e8b90e3c0766ca1"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "version": "0.1.gha.4865233241.Release.5af330c0e6cac9c183a432d5839cf78780873951",
+      "versionDate": "2023-05-02T16:46:17-04:00",
+      "versionDescription": "# iOS (α) CI.4865233241\n\n* Tell compiler to support only A12 or later CPU, but I'm not sure this actually improves performance\r\n\r\n## NOTE\r\n* This version requires A12 or later device (iPhone XS/XR or later)\r\n  * this is coming from GPU requirements (we need layered rendering)\r\n* This version can install to iOS 14 or later device, but...\r\n  * We only supports latest stable iOS.\r\n  * in iOS 14.x or older, you can't use virtual controller (which means you need to use external controller, like DS4 or Xbox or MFi certificated controller)\r\n* This version doesn't supporting these features:\r\n  * Audio Input (Mic)\r\n  * Camera\r\n  * Motion Sensor\r\n  * Touch Screen\r\n  * NFC\r\n  * SELECT/HOME button for physical controller\r\n  * Circle Pad (including Pro), ZL/ZR, SELECT/START/HOME button for virtual controller",
+      "downloadURL": "https://github.com/rinsuki/citra/releases/download/ios/alpha/4865233241/citra_ios_ci_4865233241_Release_5af330c0e6cac9c183a432d5839cf78780873951.ipa",
+      "size": 8581046
+    },
+    {
+      "name": "WDBRemoveThreeAppLimit",
+      "bundleIdentifier": "com.worthdoingbadly.WDBRemoveThreeAppLimit",
+      "developerName": "Zhuowei",
+      "subtitle": "Removes three app limit from AltStore!",
+      "localizedDescription": "An app that removes the three app limit for free provisioning. Hit \"Go\" just before installing apps. Should work on iOS 16.1.2 and below / iOS 15.7.1 and below.\n\nThis is very limited:\n\n• Apps still expire after a week\n• They still do not get arbitrary entitlements\n• They still must be signed. It's probably not going to be that useful. It's meant more as a demo of what you can do with MacDirtyCow.\n\nSource: Quantum Source",
+      "iconURL": "https://i.imgur.com/ODvSw7D.png",
+      "tintColor": "#404040",
+      "screenshots": {
+        "iphone": [
+          {
+            "imageURL": "https://i.imgur.com/6pajtgW.png"
+          }
+        ]
+      },
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2023-02-16T00:00:00-05:00",
+          "localizedDescription": "• Updated WDBRemoveThreeAppLimit to v1.0",
+          "downloadURL": "https://github.com/zhuowei/WDBRemoveThreeAppLimit/releases/download/v1.0/WDBRemoveThreeAppLimit-v1.0.ipa",
+          "size": 88800,
+          "sha256": "428982c14796e7caa66d2743964fa37157d0e9db574ada326aa09a65a11c147c",
+          "maxOSVersion": "16.1.2"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "version": "1.0",
+      "versionDate": "2023-02-16T00:00:00-05:00",
+      "versionDescription": "• Updated WDBRemoveThreeAppLimit to v1.0",
+      "downloadURL": "https://github.com/zhuowei/WDBRemoveThreeAppLimit/releases/download/v1.0/WDBRemoveThreeAppLimit-v1.0.ipa",
+      "size": 88800
+    },
+    {
+      "name": "WDBFontOverwrite",
+      "bundleIdentifier": "com.ginsudev.WDBFontOverwrite",
+      "developerName": "Zhuowei + Ginsudev",
+      "subtitle": "Override the iOS system fonts!",
+      "localizedDescription": "An app that allows you to override the system used iOS font with one of the fonts from our built in selection. It's probably not going to be that useful. It's meant more as a demo of what you can do with MacDirtyCow.\n\nSource: Quantum Source",
+      "iconURL": "https://i.imgur.com/SXK4rhS.png",
+      "tintColor": "#404040",
+      "screenshots": {
+        "iphone": [
+          {
+            "imageURL": "https://user-images.githubusercontent.com/704768/209511898-a1477b66-28e4-471a-87d9-36c1c2eb25ca.png"
+          },
+          {
+            "imageURL": "https://user-images.githubusercontent.com/704768/209606970-a382c273-bdcb-425c-bca1-1b6f9b31862f.png"
+          },
+          {
+            "imageURL": "https://user-images.githubusercontent.com/704768/209753262-b8204c92-b873-41a7-8127-38bf86096470.png"
+          }
+        ]
+      },
+      "versions": [
+        {
+          "version": "1.10.8",
+          "date": "2023-02-09T05:15:32-05:00",
+          "localizedDescription": "# v1.10.8\n\n- Updated grant_full_disk_access.\r\n- Concurrency and code improvements/fixes.",
+          "downloadURL": "https://github.com/ginsudev/WDBFontOverwrite/releases/download/v1.10.8/WDBFontOverwrite.ipa",
+          "size": 5348316,
+          "sha256": "c0247494c3852c200aeececaada8476b0967958154a28cfd260b21a9c20392ec",
+          "maxOSVersion": "16.1.2"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "version": "1.10.8",
+      "versionDate": "2023-02-09T05:15:32-05:00",
+      "versionDescription": "# v1.10.8\n\n- Updated grant_full_disk_access.\r\n- Concurrency and code improvements/fixes.",
+      "downloadURL": "https://github.com/ginsudev/WDBFontOverwrite/releases/download/v1.10.8/WDBFontOverwrite.ipa",
+      "size": 5348316
+    },
+    {
+      "name": "Deltroid",
+      "bundleIdentifier": "com.rileytestut.Deltroid",
+      "developerName": "SideStore Team",
+      "subtitle": "Multi-emulator for your classic games on the go!",
+      "localizedDescription": "Deltroid is an all-in-one emulator for iOS. Deltroid builds upon the strengths of its predecessor Delta while improving on it in a community supported fashion. \n\nGithub Repository (https://github.com/lonkelle/Deltroid) \n\nFEATURES\n\nSupported Game Systems\n• Nintendo Entertainment System\n• Super Nintendo Entertainment System\n• Nintendo 64\n• Game Boy (Color)\n• Game Boy Advance\n• Nintendo DS\n• Nintendo DSi\n• Sega Genesis\n• And plenty more to come!\n\nController Support\n• Supports PS4, PS5, Xbox One S, Xbox Series X, and MFi game controllers.\n• Supports bluetooth (and wired) keyboards, as well as the Apple Smart Keyboard.\n• Completely customize button mappings on a per-system, per-controller basis.\n• Map buttons to special “Quick Save”, “Quick Load,” and “Fast Forward” actions.\n\nSave States\n• Save and load save states for any game from the pause menu.\n• Lock save states to prevent them from being accidentally overwritten.\n• Automatically makes backup save states to ensure you never lose your progress.\n• Support for “Quick Saves,” save states that can be quickly saved/loaded with a single button press (requires external controller).\n\nCheats\n• Supports various types of cheat codes for each supported system:\n• NES: Game Genie\n• SNES: Game Genie, Pro Action Replay\n• N64: GameShark\n• GBC: Game Genie, GameShark\n• GBA: Action Replay, Code Breaker, GameShark\n• DS: Action Replay\n\nDeltroid Sync\n• Sync your games, game saves, save states, cheats, controller skins, and controller mappings between devices.\n• View version histories of everything you sync and optionally restore them to earlier versions.\n• Supports both Google Drive and Dropbox.\n\nCustom Controller Skins\n• Beautiful built-in controller skins for all systems.\n• Import controller skins made by others, or even make your own to share with the world!\n\nHold Button\n• Choose buttons for Delta to hold down on your behalf, freeing up your thumbs to press other buttons instead.\n• Perfect for games that typically require one button be held down constantly (ex: run button in Mario games, or the A button in Mario Kart).\n\nFast Forward\n• Speed through slower parts of games by running the game much faster than normal.\n• Easily enable or disable from the pause menu, or optionally with a mapped button on an external controller.\n\n3D/Haptic Touch\n• Use 3D or Haptic Touch to “peek” at games, save states, and cheat codes.\n• App icon shortcuts allow quick access to your most recently played games, or optionally customize the shortcuts to always include certain games.\n\nGame Artwork\n• Automatically displays appropriate box art for imported games.\n• Change a game’s artwork to anything you want, or select from the built-in game artwork database.\n\nMisc.\n• Gyroscope support (WarioWare: Twisted! only)\n• Microphone support (DS only)\n• Support for delta:// URL scheme to jump directly into a specific game.\n\n**Deltroid and Sidestore are in no way affiliated with Nintendo. The name \"Nintendo\" and all associated game console names are registered trademarks of Nintendo Co., Ltd.**\n\nSource: Quantum Source",
+      "iconURL": "https://i.imgur.com/Bimx1aO.png",
+      "tintColor": "#8A28F7",
+      "category": "games",
+      "screenshots": {
+        "iphone": [
+          {
+            "imageURL": "https://user-images.githubusercontent.com/64176728/215964215-34cefad0-7178-4b38-930d-fc3df1c5592b.png"
+          },
+          {
+            "imageURL": "https://user-images.githubusercontent.com/64176728/215960133-70db5b84-d2e4-4638-9f96-179b9100aa9c.png"
+          },
+          {
+            "imageURL": "https://user-images.githubusercontent.com/64176728/215962679-1c01f62f-59ab-4e7f-9a2c-d1353fb409c6.png"
+          },
+          {
+            "imageURL": "https://user-images.githubusercontent.com/64176728/215960144-930836b3-543f-4729-8b6a-e06446aca4c4.png"
+          }
+        ]
+      },
+      "versions": [
+        {
+          "version": "1.5",
+          "date": "2023-02-02T05:51:30-05:00",
+          "localizedDescription": "# v0.9.1\n\n• Fixes default NES / DS skins\r\n• Fixes importing `.md` files from the in-app File Picker.",
+          "downloadURL": "https://github.com/lonkelle/Deltroid/releases/download/v0.9.1/Deltroid.ipa",
+          "size": 48342198,
+          "sha256": "e7334a815833de25221675380d6774a3d2cb6df03fbd56caa80b0d6da553153b"
+        },
+        {
+          "version": "0.1",
+          "date": "2023-02-02T03:00:00-05:00",
+          "localizedDescription": "Additions and Bugfixes. More info: https://github.com/lonkelle/Deltroid/releases",
+          "downloadURL": "https://github.com/lonkelle/Deltroid/releases/download/v0.9.1/Deltroid.ipa",
+          "size": 48300000
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "version": "1.5",
+      "versionDate": "2023-02-02T05:51:30-05:00",
+      "versionDescription": "# v0.9.1\n\n• Fixes default NES / DS skins\r\n• Fixes importing `.md` files from the in-app File Picker.",
+      "downloadURL": "https://github.com/lonkelle/Deltroid/releases/download/v0.9.1/Deltroid.ipa",
+      "size": 48342198
+    }
+  ],
+  "news": []
+}
+{
+  "name": "links",
+  "identifier": "",
+  "apps": [],
+  "news": []
+}

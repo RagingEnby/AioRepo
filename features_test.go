@@ -2,6 +2,7 @@ package main
 
 import (
 	"context"
+	"fmt"
 	"net/http"
 	"net/http/httptest"
 	"os"
@@ -415,8 +416,23 @@ func TestCandidateQueue(t *testing.T) {
 func TestLinkedSourcesSkipScraped(t *testing.T) {
 	r := result(0, "s")
 	r.Parsed.Links = []string{"https://s/", "https://other.com/x.json"}
-	got := linkedSources([]*sourceResult{r}, []sourceURL{{URL: "https://s"}})
+	got := linkedSources([]*sourceResult{r}, []sourceURL{{URL: "https://s"}}, nil)
 	if len(got) != 1 || got[0].URL != "https://other.com/x.json" || got[0].Origin != "link" {
+		t.Errorf("links = %+v", got)
+	}
+}
+
+func TestLinkedSourcesCapCountsOnlyNewLinks(t *testing.T) {
+	r := result(0, "s")
+	skip := map[string]bool{}
+	for i := 0; i < maxLinks; i++ {
+		u := fmt.Sprintf("https://old.com/%03d.json", i)
+		r.Parsed.Links = append(r.Parsed.Links, u)
+		skip[normalizeURL(u)] = true
+	}
+	r.Parsed.Links = append(r.Parsed.Links, "https://zz.com/new.json")
+	got := linkedSources([]*sourceResult{r}, nil, skip)
+	if len(got) != 1 || got[0].URL != "https://zz.com/new.json" {
 		t.Errorf("links = %+v", got)
 	}
 }

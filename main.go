@@ -144,7 +144,18 @@ func run(ctx context.Context) error {
 	if err != nil {
 		return err
 	}
-	queued, err := mergeCandidates(candidatesFile, linkedSources(results, urls), known, now)
+	queue, err := loadCandidates(candidatesFile)
+	if err != nil {
+		return err
+	}
+	skip := map[string]bool{}
+	for k := range known {
+		skip[k] = true
+	}
+	for _, c := range queue {
+		skip[normalizeURL(c.URL)] = true
+	}
+	queued, err := mergeCandidates(candidatesFile, linkedSources(results, urls, skip), known, now)
 	if err != nil {
 		return err
 	}
